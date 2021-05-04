@@ -15,6 +15,7 @@ addonHandler.initTranslation()
 dbDir =os.path.join(globalVars.appArgs.configPath, "zUtilidades", "zLauncher")
 dirRestaura = os.path.join(globalVars.appArgs.configPath, "zUtilidades")
 if os.path.exists(dbDir) == False:
+	os.mkdir(os.path.join(globalVars.appArgs.configPath, "zUtilidades"))
 	os.mkdir(dbDir)
 
 
