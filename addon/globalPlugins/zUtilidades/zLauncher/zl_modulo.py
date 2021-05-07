@@ -78,6 +78,8 @@ class zLanzador(wx.Dialog):
 		self.onFocus()
 		self.chkDatos()
 		self.onRefrescar(None)
+		ajustes.posicion = [0, 0]
+
 		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
 
 	def onFocus(self):
@@ -153,7 +155,10 @@ class zLanzador(wx.Dialog):
 				self.lstAplicaciones.Clear()
 				for i in range(0, len(ajustes.aplicacionesLista)):
 					self.lstAplicaciones.Append(ajustes.aplicacionesLista[i][1])
-				self.lstAplicaciones.SetSelection(ajustes.posicion[1])
+				try:
+					self.lstAplicaciones.SetSelection(ajustes.posicion[1])
+				except:
+					self.lstAplicaciones.SetSelection(0)
 		except:
 			self.lstAplicaciones.Clear()
 			self.lstAplicaciones.Append("Sin aplicaciones")
@@ -340,7 +345,7 @@ Tenga en cuenta que al borrar la categoría se eliminaran las aplicaciones que e
 					else:
 						self.lstCategorias.Append(ajustes.nombreCategoria)
 					self.lstCategorias.SetSelection(indice - 1)
-					self.onRefrescar(None)
+				self.onRefrescar(None)
 		elif valor == "abajo":
 			totalLista = len(ajustes.nombreCategoria) - 1
 			if totalLista == -1:
@@ -358,7 +363,7 @@ Tenga en cuenta que al borrar la categoría se eliminaran las aplicaciones que e
 					else:
 						self.lstCategorias.Append(ajustes.nombreCategoria)
 					self.lstCategorias.SetSelection(indice + 1)
-					self.onRefrescar(None)
+				self.onRefrescar(None)
 
 	def menuAplicaciones(self, event):
 		self.menu = wx.Menu()

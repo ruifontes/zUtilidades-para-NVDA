@@ -84,7 +84,6 @@ aplicacionesLista = []
 IS_WinON = False # Bandera para saber si esta abierta una ventana del complemento
 focoActual = "lstCategorias"
 posicion = [0, 0]
-
 def guardaCategorias():
 	dbOBJ.nombreCategoria = nombreCategoria
 	dbOBJ.archivoCategoria = archivoCategoria
