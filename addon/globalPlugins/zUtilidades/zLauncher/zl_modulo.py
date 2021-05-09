@@ -180,18 +180,28 @@ class zLanzador(wx.Dialog):
 		self.menu.AppendSubMenu(self.categoria, "&Categorías")
 
 		self.aplicacion = wx.Menu()
-		itemAñadirApp = self.aplicacion.Append(4, "&Añadir aplicación")
+
+		self.añadir = wx.Menu()
+		itemAñadirApp = self.añadir.Append(4, "Añadir &aplicación")
 		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemAñadirApp)
-		itemEditar = self.aplicacion.Append(5, "&Editar aplicación")
+		itemAñadirCmd = self.añadir.Append(5, "Añadir comando &CMD")
+		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemAñadirCmd)
+		itemAñadirFol = self.añadir.Append(6, "Añadir accesos a car&petas")
+		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemAñadirFol)
+		itemAñadirLnk = self.añadir.Append(7, "Añadir ejecutar accesos directos de &Windows")
+		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemAñadirLnk)
+		self.aplicacion.AppendSubMenu(self.añadir, "&Añadir")
+
+		itemEditar = self.aplicacion.Append(10, "&Editar aplicación")
 		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemEditar)
-		itemBorrar = self.aplicacion.Append(6, "&Borrar aplicación")
+		itemBorrar = self.aplicacion.Append(11, "&Borrar aplicación")
 		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemBorrar)
 		self.menu.AppendSubMenu(self.aplicacion, "&Aplicaciones")
 
 		self.copiaSeguridad = wx.Menu()
-		itemHacer = self.copiaSeguridad.Append(7, "&Hacer copia de seguridad")
+		itemHacer = self.copiaSeguridad.Append(20, "&Hacer copia de seguridad")
 		self.Bind(wx.EVT_MENU, self.HacerBackup, itemHacer)
-		itemRestaurar = self.copiaSeguridad.Append(8, "&Restaurar copia de seguridad")
+		itemRestaurar = self.copiaSeguridad.Append(21, "&Restaurar copia de seguridad")
 		self.Bind(wx.EVT_MENU, self.RestaurarBackup, itemRestaurar)
 		self.menu.AppendSubMenu(self.copiaSeguridad, "&Hacer o restaurar copias de seguridad")
 
@@ -368,11 +378,20 @@ Tenga en cuenta que al borrar la categoría se eliminaran las aplicaciones que e
 	def menuAplicaciones(self, event):
 		self.menu = wx.Menu()
 
-		itemAñadirApp = self.menu.Append(4, "&Añadir aplicación")
+		self.añadir = wx.Menu()
+		itemAñadirApp = self.añadir.Append(4, "Añadir &aplicación")
 		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemAñadirApp)
-		itemEditar = self.menu.Append(5, "&Editar aplicación")
+		itemAñadirCmd = self.añadir.Append(5, "Añadir comando &CMD")
+		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemAñadirCmd)
+		itemAñadirFol = self.añadir.Append(6, "Añadir accesos a car&petas")
+		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemAñadirFol)
+		itemAñadirLnk = self.añadir.Append(7, "Añadir ejecutar accesos directos de &Windows")
+		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemAñadirLnk)
+		self.menu.AppendSubMenu(self.añadir, "&Añadir")
+
+		itemEditar = self.menu.Append(10, "&Editar aplicación")
 		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemEditar)
-		itemBorrar = self.menu.Append(6, "&Borrar aplicación")
+		itemBorrar = self.menu.Append(11, "&Borrar aplicación")
 		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemBorrar)
 		self.lstAplicaciones.PopupMenu(self.menu)
 
@@ -398,8 +417,13 @@ Agregue una categoría antes para poder añadir una aplicación."""
 					self.onRefrescar(None)
 				else:
 					dlg.Destroy()
-
 		elif id == 5:
+			print("CMD")
+		elif id == 6:
+			print("Carpeta")
+		elif id == 7:
+			print("Acceso directo")
+		elif id == 10:
 			if nombreCategoria == "No hay categorías":
 				msg = \
 """No tiene ninguna categoría.
@@ -427,7 +451,7 @@ Agregue una antes para poder editar."""
 
 					else:
 						dlg.Destroy()
-		elif id == 6:
+		elif id == 11:
 			if nombreCategoria == "No hay categorías":
 				msg = \
 """No tiene ninguna categoría.
@@ -578,10 +602,10 @@ Esta acción no es reversible.
 		if ret == wx.ID_YES:
 			msg.Destroy
 			wildcard = "Archivo copia de seguridad zUtilidades (*.zut-zl)|*.zut-zl"
-			dlg = wx.FileDialog(None, message="Seleccione un archivo de copia de seguridad", defaultDir=os.getcwd(), defaultFile="", wildcard=wildcard, style=wx.FD_OPEN | wx.FD_CHANGE_DIR | wx.FD_FILE_MUST_EXIST | wx.FD_PREVIEW)
-			if dlg.ShowModal() == wx.ID_OK:
+			dlgF = wx.FileDialog(None, message="Seleccione un archivo de copia de seguridad", defaultDir=os.getcwd(), defaultFile="", wildcard=wildcard, style=wx.FD_OPEN | wx.FD_CHANGE_DIR | wx.FD_FILE_MUST_EXIST | wx.FD_PREVIEW)
+			if dlgF.ShowModal() == wx.ID_OK:
 				path = dlg.GetPath()
-				dlg.Destroy()
+				dlgF.Destroy()
 				dlg = BackupDialogo("Restaurando copia de seguridad…", path, True)
 				result = dlg.ShowModal()
 				if result == 0:
@@ -594,6 +618,9 @@ Esta acción no es reversible.
 					gui.mainFrame.postPopup()
 				else:
 					dlg.Destroy()
+			else:
+				dlgF.Destroy()
+				getattr(self, ajustes.focoActual).SetFocus()
 		else:
 			msg.Destroy
 
