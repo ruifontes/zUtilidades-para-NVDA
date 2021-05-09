@@ -9,6 +9,82 @@ import random
 import wx
 from datetime import datetime
 
+class disable_file_system_redirection:
+
+	_disable = ctypes.windll.kernel32.Wow64DisableWow64FsRedirection
+	_revert = ctypes.windll.kernel32.Wow64RevertWow64FsRedirection
+
+	def __enter__(self):
+		self.old_value = ctypes.c_long()
+		self.success = self._disable(ctypes.byref(self.old_value))
+
+	def __exit__(self, type, value, traceback):
+		if self.success:
+			self._revert(self.old_value)
+
+def ejecutar(objeto, modo, aplicacion, parametros, directorio, ventana):
+# Explicación de los parámetros de esta función:
+#
+# modo: Este parámetro admite "edit" que sirve para editar un documento, "explore" que sirve para explorar una carpeta, "find" que sirve para buscar en una carpeta, "open" sirve para abrir archivos o carpetas también, "print" para imprimir un documento, "runas" para elevar a modo administrador.
+#
+# aplicacion: este parámetro es el que tenemos que pasar con la aplicación que queremos abrir o en el caso que el modo sea para carpeta la carpeta u objeto correspondientes si fuese imprimir o editar el archivo a editar.
+#
+# parametro: Si la aplicación o acción tiene parámetros podemos ponerlo aquí. Bien si no necesita tendremos que poner None.
+#
+# directorio: bien si queremos que una aplicación se ejecute su acción en un directorio especifico podemos pasarlo aquí o None si no queremos usar este parámetro.
+#
+# ventana: como queremos que se ejecute la ventana, lo normal es pasarle 10 pero te dejo la lista:
+#    HIDE = 0
+#    MAXIMIZE = 3
+#    MINIMIZE = 6
+#    RESTORE = 9
+#    SHOW = 5
+#    SHOWDEFAULT = 10
+#    SHOWMAXIMIZED = 3
+#    SHOWMINIMIZED = 2
+#    SHOWMINNOACTIVE = 7
+#    SHOWNA = 8
+#    SHOWNOACTIVATE = 4
+#    SHOWNORMAL = 1
+#
+# Bien esta función devolvera un número que puede comprender entre 0 y vete tu a saber. Pero lo importante es que tenemos que saber que si devuelve un valor menor de 32 es que algo salió mal y la acción dio error, si es mayor de 32 la acción se ejecutó correctamente y nos puede devolver cualquier número mayor de 32 dependiendo de que ejecutemos.
+#
+# Principales errores:
+#
+#    ZERO = 0
+#    FILE_NOT_FOUND = 2
+#    PATH_NOT_FOUND = 3
+#    BAD_FORMAT = 11
+#    ACCESS_DENIED = 5
+#    ASSOC_INCOMPLETE = 27
+#    DDE_BUSY = 30
+#    DDE_FAIL = 29
+#    DDE_TIMEOUT = 28
+#    DLL_NOT_FOUND = 32
+#    NO_ASSOC = 31
+#    OOM = 8
+#    SHARE = 26
+	p = ctypes.windll.shell32.ShellExecuteW(
+		None,
+		modo,
+		aplicacion,
+		parametros,
+		directorio,
+		ventana)
+	if p <= 32:
+		if p == 5:
+			pass
+		else:
+			msg = \
+"""Compruebe que los datos introducidos son correctos.
+
+Se produjo el error: {}
+
+Puede buscar información del error en:
+
+https://tinyurl.com/yhel7t8c""".format(p)
+			objeto.mensaje(msg, "Error", 1)
+
 def fecha():
 	fecha_hora = datetime.now()  # Obtiene fecha y hora actual
 	formato1 = "%d%m%Y%H%M%S"
@@ -42,37 +118,3 @@ def comprobar_archivo_db(n, lista):
 	else:
 		return False
 
-def ejecutaAdmin(objeto, aplicacion, parametros=False):
-	if parametros == False:
-		p = ctypes.windll.shell32.ShellExecuteW(None, 'runas', os.path.basename(aplicacion), None, os.path.dirname(aplicacion), 10)
-	else:
-		p = ctypes.windll.shell32.ShellExecuteW(None, 'runas', os.path.basename(aplicacion), parametros, os.path.dirname(aplicacion), 10)
-	if p <= 32:
-		if p == 5:
-			pass
-		else:
-			msg = \
-"""Compruebe que los datos introducidos son correctos.
-
-Se produjo el error: {}
-
-Puede buscar información del error en:
-
-https://tinyurl.com/yhel7t8c""".format(p)
-			objeto.mensaje(msg, "Error", 1)
-
-def ejecutaNormal(objeto, aplicacion, parametros=False):
-	if parametros == False:
-		p = ctypes.windll.shell32.ShellExecuteW(None, 'open', os.path.basename(aplicacion), None, os.path.dirname(aplicacion), 10)
-	else:
-		p = ctypes.windll.shell32.ShellExecuteW(None, 'open', os.path.basename(aplicacion), parametros, os.path.dirname(aplicacion), 10)
-	if p <= 32:
-		msg = \
-"""Compruebe que los datos introducidos son correctos.
-
-Se produjo el error: {}
-
-Puede buscar información del error en:
-
-https://tinyurl.com/yhel7t8c""".format(p)
-		objeto.mensaje(msg, "Error", 1)

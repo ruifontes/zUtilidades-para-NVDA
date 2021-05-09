@@ -510,14 +510,14 @@ Va a borrar la aplicación:
 				self.onSalir(None)
 				if ajustes.aplicacionesLista[valor][5] == False:
 					if ajustes.aplicacionesLista[valor][3] == False:
-						funciones.ejecutaNormal(self, ajustes.aplicacionesLista[valor][2])
+						funciones.ejecutar(self, "open", ajustes.aplicacionesLista[valor][2], None, None, 10)
 					else:
-						funciones.ejecutaNormal(self, ajustes.aplicacionesLista[valor][2], ajustes.aplicacionesLista[valor][4])
+						funciones.ejecutar(self, "open", ajustes.aplicacionesLista[valor][2], ajustes.aplicacionesLista[valor][4], None, 10)
 				else:
 					if ajustes.aplicacionesLista[valor][3] == False:
-						funciones.ejecutaAdmin(self, ajustes.aplicacionesLista[valor][2])
+						funciones.ejecutar(self, "runas", ajustes.aplicacionesLista[valor][2], None, None, 10)
 					else:
-						funciones.ejecutaAdmin(self, ajustes.aplicacionesLista[valor][2], ajustes.aplicacionesLista[valor][4])
+						funciones.ejecutar(self, "runas", ajustes.aplicacionesLista[valor][2], ajustes.aplicacionesLista[valor][4], None, 10)
 			else:
 				indice = self.lstAplicaciones.GetSelection()
 				msg = \
