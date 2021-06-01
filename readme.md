@@ -48,21 +48,9 @@ También podremos con las combinaciones de teclas Alt + Flecha arriba y Flecha a
 
 En este área es donde se pondrán las aplicaciones correspondientes a la categoría que tengamos elegida.
 
-Tenemos 3 opciones que es agregar, editar o borrar aplicaciones.
+Tenemos 3 opciones que son Añadir acción, editar acción o borrar acción.
 
 Podemos obtener estas opciones como en la lista de categorías ya sea con la tecla aplicaciones o en su caso Shift+F10 o dirigirse al botón Menú (Alt+M) y buscar el submenú Aplicaciones.
-
-Si añadimos una aplicación hay dos campos que son obligatorios y es el nombre de la aplicación y el directorio donde se encuentre nuestra aplicación.
-
-Actualmente soporta aplicaciones exe, bat y com.
-
-Una vez rellenados los campos obligatorios podremos elegir si la aplicación requiere de parámetros adicionales o si la aplicación deseamos ejecutarla en modo administrador.
-
-Si deseamos ejecutar una aplicación en modo administrador se nos pedirá el permiso correspondiente cuando lancemos la aplicación.
-
-El dialogo de editar es exactamente el mismo que añadir pero nos permitirá modificar la entrada que elijamos.
-
-Si borramos una entrada tenemos que tener en cuenta que la acción no será reversible.
 
 En esta lista de aplicaciones podremos lanzar la aplicación que tenga el foco pulsando la tecla espaciadora.
 
@@ -70,14 +58,84 @@ También podremos con las combinaciones de teclas Alt + Flecha arriba y Flecha a
 
 En este área podremos rápidamente navegar por las distintas entradas pulsando la primera letra de esa manera podremos encontrar rápidamente la aplicación que deseamos ejecutar si tenemos muchas en la base de datos.
 
+#### Menú Añadir acción
+
+En este menú podremos elegir entre las siguientes opciones:
+
+* Añadir aplicación:
+
+Si añadimos una aplicación hay dos campos que son obligatorios y es el nombre de la aplicación y el directorio donde se encuentre nuestra aplicación.
+
+Actualmente soporta aplicaciones exe, bat y com.
+
+Una vez rellenados los campos obligatorios podremos elegir si la aplicación requiere de parámetros adicionales o si la aplicación deseamos ejecutarla en modo administrador.
+
+Si deseamos ejecutar una aplicación en modo administrador se nos pedirá el permiso correspondiente cuando lancemos la aplicación. 
+
+* Añadir comando CMD
+
+En este dialogo podremos agregar comandos de consola.
+
+Los campos nombre para identificar el comando y el campo comandos son obligatorios.
+
+Bien varias apreciaciones, aparte de lanzar comandos cmd si dominamos Windows PowerShell si ponemos en la línea de comandos PowerShell y seguido de lo que queremos ejecutaremos también comandos PowerShell.
+
+Igualmente si son comandos CMD añado que podemos ejecutar varias líneas las cuales tienen que ir separadas por el símbolo (et) que se consigue haciéndolo con Shift+6.
+
+Pongo un ejemplo de la línea de comandos para reiniciar el explorador de Windows, comprobareis que uso el símbolo (et) para separar una línea de comandos por otra.
+
+taskkill /f /im explorer.exe & start explorer
+
+También en este dialogo podemos poner una pausa para que no se cierre la consola y a si poder ver los resultados.
+
+También podemos ejecutar como administrador.
+
+* Añadir accesos a carpetas
+
+En este dialogo tendremos que elegir un nombre para identificar el acceso a la carpeta y elegir una carpeta.
+
+Esto nos permitirá abrir rápidamente carpetas de nuestro sistema desde cualquier parte.
+
+
+* Añadir ejecutar accesos directos de Windows
+
+En este dialogo podremos elegir un acceso directo para lanzarlo. También podremos elegir si lo queremos lanzar como administrador.
+
+Los campos para identificar el nombre del acceso directo y la ruta son obligatorios.
+
+* Añadir aplicación instalada
+
+En este dialogo se obtendrán todas las aplicaciones instaladas en nuestro ordenador ya sea por el usuario o aplicaciones que ya vienen con Windows.
+
+También en esta pantalla podremos elegir las aplicaciones instaladas desde la tienda de Windows.
+
+Advertencia esto no es válido para Windows 7.
+
+Bien una vez añadida una aplicación desde este dialogo comentar que no puede ser editado, teniendo que borrar la entrada si queremos añadirlo de nuevo.
+
+La opción administrador en este dialogo no funcionara para todas las aplicaciones. Funcionando solo para aquellas que permita elevar privilegios de administrador.
+
+Avisar también que en este dialogo en el cuadro combinado también saldrán aquellos accesos instalados por las aplicaciones, podremos elegirlos pero puede que alguno no permita abrirse dando error.
+
+Comentar también que hay que tener cuidado por que en este listado saldrán aplicaciones que pueden ser para administrar o aplicaciones de gestión que si no sabemos para que son es mejor no tocarlas.
+
+#### Editar acción
+
+El dialogo de editar es exactamente el mismo que Añadir acción pero nos permitirá modificar la entrada que elijamos.
+
+Nos permitirá modificar todos los elementos menos los añadidos por la opción Añadir aplicación instalada, los diálogos serán los mismos que en las opciones para añadir.
+
+#### Borrar acción
+
+Si borramos una entrada tenemos que tener en cuenta que la acción no será reversible.
 
 ### Botón Menú
 
 Este botón será accesible desde cualquier parte de la interface pulsando la combinación Alt+M.
 
-En este menú encontraremos 3 submenús que son Categoría, Aplicaciones y Hacer o restaurar copias de seguridad y una opción para salir.
+En este menú encontraremos cuatro submenús que son Categoría, Acciones, Hacer o restaurar copias de seguridad,  Opciones y una opción para salir.
 
-Bien Categorías y aplicaciones ya lo explique por lo que explicare el submenú Hacer y restaurar copias de seguridad.
+Bien Categorías y Acciones ya lo explique por lo que explicare el submenú Hacer y restaurar copias de seguridad y Opciones.
 
 Bien si elegimos hacer una copia de seguridad se abrirá una ventana de guardar de Windows donde tendremos que elegir donde guardar nuestra copia de seguridad de la base de datos.
 
@@ -97,6 +155,11 @@ Una vez elegido se restaurara la copia de seguridad y cuando aceptemos se cerrar
 Comentar que los archivos *.zut-zl son realmente archivos comprimidos pero cuidado con modificarlos por que si son modificados no coincidirá la firma y no dejara restaurarlos.
 
 Con esto quiero decir que dichos archivos traen una firma que si no coincide a la hora de restaurar dará fallo y cada firma es diferente para cada archivo.
+
+En el submenú de Opciones ahora solo está el Volver a valores por defecto el lanzador de aplicaciones.
+
+Si elegimos esta opción se borrara toda la base de datos dejando el complemento como si fuese recién instalado.
+
 
 ## Teclas rápidas
 
@@ -130,7 +193,31 @@ Por poner un ejemplo si el foco esta en el botón menú y cerramos el Lanzador d
 
 Estas características solo son validas durante la sesión de NVDA, esto quiere decir que si reiniciamos NVDA empezaremos con el foco en el área de categorías.
 
+Este complemento esta echo para usarse con Windows 10, por lo que si está usando versiones anteriores y tiene algún problema coméntelo pero seguramente no podre hacer nada ya que algunas características solo se encuentran en Windows 10.
+
 #Registro de cambios.
+##Versión 0.1.5.
+
+* Restructurados los menús.
+
+Agregado la posibilidad de añadir:
+
+* Añadir comando CMD
+
+* Añadir accesos a carpetas
+
+* Añadir ejecutar accesos directos de Windows
+
+* Añadir aplicación instalada
+
+* Se agrego en el botón menú la posibilidad en Opciones de regresar a valores por defecto el lanzador de aplicaciones.
+
+* Se corrigieron distintos errores con la base de datos.
+
+* Se corrigieron errores internos.
+
+* Se preparo el complemento para ser traducido.
+
 ##Versión 0.1.
 
 * Agregado modulo Lanzador de aplicaciones

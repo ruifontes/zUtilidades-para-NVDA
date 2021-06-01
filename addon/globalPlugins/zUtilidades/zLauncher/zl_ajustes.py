@@ -15,7 +15,10 @@ addonHandler.initTranslation()
 dbDir =os.path.join(globalVars.appArgs.configPath, "zUtilidades", "zLauncher")
 dirRestaura = os.path.join(globalVars.appArgs.configPath, "zUtilidades")
 if os.path.exists(dbDir) == False:
-	os.mkdir(os.path.join(globalVars.appArgs.configPath, "zUtilidades"))
+	try:
+		os.mkdir(os.path.join(globalVars.appArgs.configPath, "zUtilidades"))
+	except:
+		pass
 	os.mkdir(dbDir)
 
 
@@ -84,6 +87,7 @@ aplicacionesLista = []
 IS_WinON = False # Bandera para saber si esta abierta una ventana del complemento
 focoActual = "lstCategorias"
 posicion = [0, 0]
+
 def guardaCategorias():
 	dbOBJ.nombreCategoria = nombreCategoria
 	dbOBJ.archivoCategoria = archivoCategoria

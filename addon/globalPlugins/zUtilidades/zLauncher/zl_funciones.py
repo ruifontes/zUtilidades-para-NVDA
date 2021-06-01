@@ -2,12 +2,17 @@
 # Copyright (C) 2021 Héctor J. Benítez Corredera <xebolax@gmail.com>
 # This file is covered by the GNU General Public License.
 
+import addonHandler
 import os, sys
 import ctypes
 import string
 import random
 import wx
 from datetime import datetime
+import subprocess
+
+# For translation
+addonHandler.initTranslation()
 
 class disable_file_system_redirection:
 
@@ -22,6 +27,20 @@ class disable_file_system_redirection:
 		if self.success:
 			self._revert(self.old_value)
 
+class chk32(object):
+	def __init__(self, func):
+
+		self.func = func
+
+	def __call__(self, *args, **kwargs):
+		try:
+			os.environ['PROGRAMFILES(X86)']
+			with disable_file_system_redirection():
+				self.func(*args)
+		except:
+			self.func(*args)
+
+@chk32
 def ejecutar(objeto, modo, aplicacion, parametros, directorio, ventana):
 # Explicación de los parámetros de esta función:
 #
@@ -33,7 +52,7 @@ def ejecutar(objeto, modo, aplicacion, parametros, directorio, ventana):
 #
 # directorio: bien si queremos que una aplicación se ejecute su acción en un directorio especifico podemos pasarlo aquí o None si no queremos usar este parámetro.
 #
-# ventana: como queremos que se ejecute la ventana, lo normal es pasarle 10 pero te dejo la lista:
+# ventana: como queremos que se ejecute la ventana, lo normal es pasarle 10 pero dejo la lista:
 #    HIDE = 0
 #    MAXIMIZE = 3
 #    MINIMIZE = 6
@@ -76,14 +95,33 @@ def ejecutar(objeto, modo, aplicacion, parametros, directorio, ventana):
 			pass
 		else:
 			msg = \
-"""Compruebe que los datos introducidos son correctos.
+_("""Compruebe que los datos introducidos son correctos.
 
 Se produjo el error: {}
 
 Puede buscar información del error en:
 
-https://tinyurl.com/yhel7t8c""".format(p)
-			objeto.mensaje(msg, "Error", 1)
+https://tinyurl.com/yhel7t8c""").format(p)
+			objeto.mensaje(msg, _("Error"), 1)
+
+def obtenApps():
+	si = subprocess.STARTUPINFO()
+	si.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+	try:
+		os.environ['PROGRAMFILES(X86)']
+		with disable_file_system_redirection():
+			p = subprocess.Popen('PowerShell get-StartApps'.split(' '), stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding='CP437', startupinfo=si, creationflags = 0x08000000, universal_newlines=True)
+	except:
+		p = subprocess.Popen('PowerShell get-StartApps'.split(' '), stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding='CP437', startupinfo=si, creationflags = 0x08000000, universal_newlines=True)
+	result_string = str(p.communicate()[0])
+	lines = [s.strip() for s in result_string.split('\n') if s]
+	nuevo = lines[2:]
+	lista_final = []
+	for x in nuevo:
+		y = ' '.join(x.split())
+		z = y.rsplit(' ', 1)
+		lista_final.append(z)
+	return lista_final
 
 def fecha():
 	fecha_hora = datetime.now()  # Obtiene fecha y hora actual
