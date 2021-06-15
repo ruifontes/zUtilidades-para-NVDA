@@ -1,0 +1,912 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'zUtilidades' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'zUtilidades' '0.1.5'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2021-06-01 20:31+0200\n"
+"PO-Revision-Date: 2021-06-03 12:55+0100\n"
+"Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes e Rui Fontes\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pt_PT\n"
+
+#. add-on Name/identifier, internal for NVDA
+#: buildVars.py:19 addon\globalPlugins\zUtilidades\__init__.py:43
+msgid "zUtilidades"
+msgstr "zUtilidades"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
+msgid "zUtilidades para NVDA"
+msgstr "zUtilidades para o NVDA"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid "Conjunto de utilidades para Windows"
+msgstr "Conjunto de utilidades para Windows"
+
+#. Translators: Nombre del submenú para el lanzador de aplicaciones
+#: addon\globalPlugins\zUtilidades\__init__.py:31
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:41
+msgid "Lanzador de Aplicaciones"
+msgstr "Lançador de aplicações"
+
+#. Translators: Nombre del menú zUtilidades
+#: addon\globalPlugins\zUtilidades\__init__.py:34
+msgid "&zUtilidades"
+msgstr "&zUtilidades"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:43
+msgid "Muestra la ventana del lanzador de aplicaciones"
+msgstr "Apresenta a janela do lançador de aplicações"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_funciones.py:98
+msgid ""
+"Compruebe que los datos introducidos son correctos.\n"
+"\n"
+"Se produjo el error: {}\n"
+"\n"
+"Puede buscar información del error en:\n"
+"\n"
+"https://tinyurl.com/yhel7t8c"
+msgstr ""
+"Verifique se os dados introduzidos estão correctos.\n"
+"\n"
+"Ocorreu um Erro: {}\n"
+"\n"
+"Pode consultar informação sobre erros:\n"
+"\n"
+"https://tinyurl.com/yhel7t8c"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_funciones.py:105
+msgid "Error"
+msgstr "Erro"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:31
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:860
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:935
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1031
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1182
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1325
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1441
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1554
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1666
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1783
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1916
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2071
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2284
+msgid "&Aceptar"
+msgstr "&Aceitar"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:49
+msgid "&Categorías:"
+msgstr "&Categorias:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:55
+msgid "&Lista aplicaciones:"
+msgstr "&Lista de aplicações:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:60
+msgid "&Menú"
+msgstr "&Menu"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:135
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:141
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:249
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:263
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:298
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:318
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:331
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:341
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:366
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:384
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:419
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:437
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:455
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:473
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:491
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:509
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:550
+msgid "No hay categorías"
+msgstr "Sem categorias"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:142
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:157
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:169
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:516
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:557
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:588
+msgid "Sin acciones"
+msgstr "Sem acções"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:179
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:230
+msgid "&Añadir categoría"
+msgstr "&Adicionar categoria"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:181
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:232
+msgid "&Editar categoría"
+msgstr "&Editar Categoria"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:183
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:234
+msgid "&Borrar categoría"
+msgstr "&apagar Categoria"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:185
+msgid "&Categorías"
+msgstr "&Categorias"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:190
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:394
+msgid "Añadir &aplicación"
+msgstr "Adicionar &aplicação"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:192
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:396
+msgid "Añadir comando &CMD"
+msgstr "Adicionar comando &CMD"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:194
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:398
+msgid "Añadir accesos a car&petas"
+msgstr "Adicionar acessos a &pastas"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:196
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:400
+msgid "Añadir ejecutar accesos directos de &Windows"
+msgstr "Adicionar acessos directos a &Windows"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:198
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:402
+msgid "Añadir aplicación &instalada"
+msgstr "Adicionar aplicação &instalada"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:200
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:405
+msgid "&Añadir acción"
+msgstr "&Adicionar acção"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:202
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:407
+msgid "&Editar acción"
+msgstr "&Editar acção"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:204
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:409
+msgid "&Borrar acción"
+msgstr "&Apagar acção"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:206
+msgid "&Acciones"
+msgstr "&Acções"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:209
+msgid "&Hacer copia de seguridad"
+msgstr "&Fazer cópia de segurança"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:211
+msgid "&Restaurar copia de seguridad"
+msgstr "&Restaurar cópia de segurança"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:213
+msgid "&Hacer o restaurar copias de seguridad"
+msgstr "&Fazer ou restaurar cópias de segurança"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:216
+msgid "&Volver a valores por defecto el lanzador de aplicaciones"
+msgstr "&retornar o lançador de aplicações a valores padrão"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:218
+msgid "&Opciones"
+msgstr "&Opções"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:220
+msgid "&Salir"
+msgstr "&Sair"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:251
+msgid ""
+"No tiene ninguna categoría para Editar.\n"
+"\n"
+"Agregue antes una para llevar a cabo esta acción."
+msgstr ""
+"Não tem categorias para editar.\n"
+"\n"
+"Adicionar uma primeiro para realizar esta acção."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:254
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:268
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:424
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:442
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:460
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:478
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:496
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:514
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:521
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:528
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:555
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:562
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:890
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:899
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:965
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:980
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1101
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1109
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1121
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1252
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1260
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1368
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1376
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1388
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1485
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1493
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1512
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1598
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1606
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1618
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1710
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1718
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1842
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1850
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1862
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1975
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1983
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2120
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2128
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2140
+msgid "Información"
+msgstr "Informação"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:265
+msgid ""
+"No tiene ninguna categoría para Borrar.\n"
+"\n"
+"Agregue antes una para llevar a cabo esta acción."
+msgstr ""
+"Não tem categorias para apagar.\n"
+"\n"
+"Adicione uma, primeiro, para realizar esta acção."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:271
+msgid ""
+"ADVERTENCIA:\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"Va a borrar la categoría:\n"
+"\n"
+"{}\n"
+"\n"
+"Tenga en cuenta que al borrar la categoría se eliminaran las aplicaciones "
+"que estuvieran en dicha categoría.\n"
+"\n"
+"¿Esta seguro que desea continuar?"
+msgstr ""
+"ADVERTÊNCIA:\n"
+"\n"
+"Esta acção não é reversível.\n"
+"\n"
+"Apagará a categoria:\n"
+"\n"
+"{}\n"
+"\n"
+"Note-se que o apagamento da categoria irá eliminar os pedidos que se "
+"encontravam nessa categoria.\n"
+"\n"
+"Tem a certeza de que quer continuar?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:282
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:574
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:775
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:813
+msgid "Pregunta"
+msgstr "Pergunta"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:421
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:439
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:457
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:475
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:493
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:511
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:552
+msgid ""
+"No tiene ninguna categoría.\n"
+"\n"
+"Agregue una categoría antes para poder añadir una acción."
+msgstr ""
+"Não tem qualquer categoria.\n"
+"\n"
+"Adicione primeiro uma categoria para que possa adicionar uma acção."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:518
+msgid ""
+"No tiene ninguna acción.\n"
+"\n"
+"Agregue una antes para poder editar."
+msgstr ""
+"Não tem qualquer acção.\n"
+"\n"
+"Adicione uma antes para poder editar."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:525
+msgid ""
+"Esta acción no es editable.\n"
+"\n"
+"Si lo desea puede eliminarla y volver a añadir otra."
+msgstr ""
+"Esta acção não é editável.\n"
+"\n"
+"Se desejar, pode apagá-la e adicionar outra."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:559
+msgid ""
+"No tiene ninguna acción.\n"
+"\n"
+"Agregue una antes para poder borrar."
+msgstr ""
+"Não tem qualquer acção.\n"
+"\n"
+"Adicione uma antes para poder apagar."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:565
+msgid ""
+"ADVERTENCIA:\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"Va a borrar la acción:\n"
+"\n"
+"{}\n"
+"\n"
+"¿Esta seguro que desea continuar?"
+msgstr ""
+"ADVERTÊNCIA:\n"
+"\n"
+"Esta acção não é reversível.\n"
+"\n"
+"Irá apagar a acção:\n"
+"\n"
+"{}\n"
+"\n"
+"Tem a certeza de que quer continuar?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:643
+msgid ""
+"La ruta a la aplicación {}, no se encontró.\n"
+"\n"
+"¿Desea editar la entrada de la aplicación para corregir el problema?"
+msgstr ""
+"O Caminho para a aplicação {}, não foi encontrado.\n"
+"\n"
+"Deseja editar a entrada da aplicação para corrigir o problema?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:646
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:688
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:720
+msgid "Aviso"
+msgstr "Aviso"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:683
+msgid ""
+"La ruta a la carpeta no se encontró.\n"
+"\n"
+"{}\n"
+"\n"
+"¿Desea editar la entrada de la aplicación para corregir el problema?"
+msgstr ""
+"O caminho para a pasta não foi encontrado.\n"
+"\n"
+"{}\n"
+"\n"
+"Deseja editar a entrada da aplicação para corrigir o problema?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:715
+msgid ""
+"La ruta al acceso directo no se encontró.\n"
+"\n"
+"{}\n"
+"\n"
+"¿Desea editar la entrada de la aplicación para corregir el problema?"
+msgstr ""
+"O caminho para o atalho não foi encontrado.\n"
+"\n"
+"{}\n"
+"\n"
+"Deseja editar a entrada da aplicação para corrigir o problema?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:745
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:779
+msgid "Archivo copia de seguridad zUtilidades (*.zut-zl)|*.zut-zl"
+msgstr "Ficheiro de cópia de segurança do zUtilities (*.zut-zl)|*.zut-zl"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:746
+msgid "Guardar en..."
+msgstr "Guardar em..."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:751
+msgid "Haciendo copia de seguridad..."
+msgstr "A fazer cópia de segurança"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:764
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"Esto borrara toda la base de datos del lanzador de aplicaciones\n"
+"\n"
+"Toda la base de datos será sustituida por la copia de seguridad.\n"
+"\n"
+"El complemento restaurara la copia de seguridad y se cerrara.\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"¿Desea continuar con el proceso?"
+msgstr ""
+"*** ADVERTÊNCIA ***\n"
+"\n"
+"Isto irá apagar toda a base de dados do lançador de aplicações\n"
+"\n"
+"A base de dados inteira será substituída pela cópia de segurança.\n"
+"\n"
+"O plugin irá restaurar a cópia de segurança e fechar.\n"
+"\n"
+"Esta acção não é reversível.\n"
+"\n"
+"Quer continuar com o processo?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:780
+msgid "Seleccione un archivo de copia de seguridad"
+msgstr "Seleccione um ficheiro de cópia de segurança"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:784
+msgid "Restaurando copia de seguridad..."
+msgstr "A restaurar a cópia de segurança"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:804
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"Esto borrara toda la base de datos del lanzador de aplicaciones\n"
+"\n"
+"El complemento borrara la base de datos y se cerrara.\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"¿Desea continuar con el proceso?"
+msgstr ""
+"*** ADVERTÊNCIA ***\n"
+"\n"
+"Isto irá apagar toda a base de dados do lançador de aplicações\n"
+"\n"
+"O plugin irá apagar a base de dados e fechar.\n"
+"\n"
+"Esta acção não é reversível.\n"
+"\n"
+"Quer continuar com o processo?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:851
+msgid "Añadir categoría"
+msgstr "Adicionar categoria"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:856
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:930
+msgid "&Introduzca el nombre de la categoría:"
+msgstr "&Introduza o nome da categoria:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:863
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:938
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1034
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1185
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1328
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1444
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1557
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1669
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1786
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1919
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2074
+msgid "&Cancelar"
+msgstr "&Cancelar"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:887
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:962
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para añadir una categoría."
+msgstr ""
+"O campo não pode ser deixado em branco.\n"
+"\n"
+"Introduza um nome para adicionar uma categoria."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:896
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:977
+msgid ""
+"No puede duplicar el nombre de una categoría.\n"
+"\n"
+"Modifique el nombre para poder continuar."
+msgstr ""
+"Não se pode duplicar o nome de uma categoria.\n"
+"\n"
+"Altere o nome para continuar."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:925
+msgid "Editar categoría"
+msgstr "Editar Categoria"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1006
+msgid "Añadir aplicación"
+msgstr "Adicionar aplicação"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1015
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1158
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2064
+msgid "Introduzca el nombre de la aplicación:"
+msgstr "Introduza o nome da aplicação:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1018
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1162
+msgid "Ruta de la aplicación:"
+msgstr "Caminho da aplicação:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1020
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1164
+msgid "&Seleccionar archivo"
+msgstr "&Seleccionar ficheiro"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1023
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1168
+msgid "Usar parámetros adicionales"
+msgstr "Utilizar parâmetros adicionais"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1024
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1170
+msgid "Introduzca los parámetros para la aplicación:"
+msgstr "Introduza os parâmetros para a aplicação:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1028
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1178
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1322
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1436
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1780
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1911
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2068
+msgid "Ejecutar como administrador"
+msgstr "Executar como administrador"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1080
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1231
+msgid "Todos los archivos ejecutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|"
+msgstr ""
+"Todos os ficheiros executáveis (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1081
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1232
+msgid "Seleccione un archivo"
+msgstr "Seleccione um ficheiro"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1098
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1249
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para añadir una aplicación."
+msgstr ""
+"O campo não pode ser deixado em branco.\n"
+"\n"
+"Introduza um nome para adicionar uma aplicação."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1106
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1257
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Seleccione una aplicación para poder continuar."
+msgstr ""
+"O campo não pode ser deixado em branco.\n"
+"\n"
+"Seleccione uma aplicação para continuar."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1118
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1276
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1385
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1509
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1615
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1734
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1859
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1999
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2137
+msgid ""
+"No puede duplicar el nombre de una acción.\n"
+"\n"
+"Modifique el nombre para poder continuar."
+msgstr ""
+"Não se pode duplicar o nome de uma acção.\n"
+"\n"
+"Altere o nome para continuar."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1148
+msgid "Editar aplicación"
+msgstr "Editar aplicação"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1306
+msgid "Añadir CMD"
+msgstr "Adicionar CMD"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1315
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1425
+msgid "Introduzca un nombre para identificar el comando CMD:"
+msgstr "Introduza um nome para identificar o comando CMD:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1318
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1429
+msgid ""
+"Introduzca los comandos de CMD. Puede usar el símbolo (et = Shift+6) para "
+"usar más de una línea de comandos:"
+msgstr ""
+"Introduza os comandos CMD. Pode usar-se o símbolo (et = Shift+6) para usar "
+"mais do que uma linha de comando:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1321
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1433
+msgid ""
+"Pausar la consola de CMD al finalizar el comando. Evitara que se cierre al "
+"terminar"
+msgstr ""
+"Pausar a consola CMD no final do comando. Isto impedirá o seu fecho quando "
+"estiver terminado"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1365
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1482
+msgid ""
+"El campo (Introduzca un nombre para identificar el comando CMD) no puede "
+"quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para poder identificar el comando."
+msgstr ""
+"O campo (Insira um nome para identificar o comando CMD) não pode ser deixado "
+"em branco.\n"
+"\n"
+"Introduza um nome para identificar o comando."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1373
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1490
+msgid ""
+"El campo (Introduzca los comandos de CMD. Puede usar el símbolo (et = Shift"
+"+6) para usar más de una línea de comandos) no puede quedar en blanco.\n"
+"\n"
+"Escriba una línea de comandos para continuar."
+msgstr ""
+"O campo (Insira os comandos CMD. Pode usar o símbolo (et = Shift+6) para "
+"usar mais do que uma linha de comando) não pode estar em branco.\n"
+"\n"
+"Digite uma linha de comando para continuar."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1415
+msgid "Editar CMD"
+msgstr "Editar CMD"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1539
+msgid "Añadir carpeta"
+msgstr "Adicionar pasta"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1546
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1653
+msgid "Introduzca el nombre de la carpeta:"
+msgstr "Introduza o nome da pasta:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1549
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1657
+msgid "Ruta de la carpeta:"
+msgstr "Caminho da pasta:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1551
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1659
+msgid "&Seleccionar carpeta"
+msgstr "&Seleccionar pasta"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1582
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1694
+msgid "Seleccione una carpeta:"
+msgstr "Seleccione uma pasta:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1595
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1707
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para identificar una carpeta."
+msgstr ""
+"O campo não pode ser deixado em branco.\n"
+"\n"
+"Introduza um nome para identificar uma pasta."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1603
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1715
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Seleccione una carpeta para poder continuar."
+msgstr ""
+"O campo não pode ser deixado em branco.\n"
+"\n"
+"Seleccione uma pasta para continuar."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1645
+msgid "Editar carpeta"
+msgstr "Editar pasta"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1764
+msgid "Añadir acceso directo"
+msgstr "Adicionar atalho"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1772
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1898
+msgid "Introduzca el nombre del acceso directo:"
+msgstr "Introduza o nome do atalho:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1775
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1902
+msgid "Ruta del acceso directo:"
+msgstr "Caminho do atalho"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1777
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1904
+msgid "&Seleccionar acceso directo"
+msgstr "&Seleccionar atalho"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1821
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1954
+msgid "Accesos directos (*.lnk)|*.lnk|"
+msgstr "Atalhos (*.lnk|*.lnk|)"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1822
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1955
+msgid "Seleccione un acceso directo"
+msgstr "Seleccione um atalho"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1839
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1972
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para identificar un acceso directo."
+msgstr ""
+"O campo não pode ser deixado em branco.\n"
+"\n"
+"Introduza um nome para identificar um atalho."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1847
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1980
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Seleccione un acceso directo para poder continuar."
+msgstr ""
+"O campo não pode ser deixado em branco.\n"
+"\n"
+"Seleccione um atalho para continuar."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1889
+msgid "Editar acceso directo"
+msgstr "Editar atalho"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2029
+msgid "Añadir aplicación instalada"
+msgstr "Adicionar aplicação instalada"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2040
+msgid ""
+"En el siguiente campo combinado tendrá todas las aplicaciones instaladas.\n"
+"\n"
+"Esto incluye las aplicaciones instaladas desde la tienda, por el usuario y "
+"aquellos accesos que las aplicaciones instalan junto a la aplicación en sí.\n"
+"\n"
+"También tiene aplicaciones del sistema las cuales también se pueden añadir.\n"
+"\n"
+"Advertencia:\n"
+"\n"
+"Las aplicaciones añadidas desde este apartado no pueden ser editadas en el "
+"lanzador, por lo que si sufren cambios tendrá que eliminar la entrada en el "
+"lanzador y volver a elegir de nuevo la aplicación y añadirla.\n"
+"\n"
+"Igualmente si la aplicación ha sido desinstalada tendrá que borrar el acceso "
+"en el lanzador."
+msgstr ""
+"Na próxima caixa combinada, terá todas as aplicações instaladas.\n"
+"\n"
+"Isto inclui aplicações instaladas a partir da loja, pelo utilizador e os "
+"acessos que as aplicações instalam juntamente com a própria aplicação.\n"
+"\n"
+"Também tem aplicações de sistema que também podem ser adicionadas.\n"
+"\n"
+"Advertência:\n"
+"\n"
+"Os pedidos adicionados a partir desta secção não podem ser editados no "
+"lançador, por isso se sofrerem alterações terá de apagar a entrada no "
+"lançador e depois escolher novamente o pedido e adicioná-lo.\n"
+"\n"
+"Do mesmo modo, se a aplicação tiver sido desinstalada, terá de apagar o "
+"acesso no lançador."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2051
+msgid "Información importante:"
+msgstr "Informação importante:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2060
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2100
+msgid "Seleccione algo para añadir al lanzador."
+msgstr "Seleccione algo a acrescentar ao lançador."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2119
+msgid ""
+"Tiene que elegir una aplicación del cuadro combinado para poder añadirla."
+msgstr ""
+"Tem de escolher uma aplicação da caixa combinada antes de a poder adicionar."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2125
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para identificar un acceso."
+msgstr ""
+"O campo não pode ser deixado em branco.\n"
+"\n"
+"Introduza um nome para identificar um acesso."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2189
+#, python-format
+msgid "Comprimiendo el archivo: %s"
+msgstr "A Comprimir o ficheiro: %s"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2203
+#, python-format
+msgid "Descomprimiendo el archivo: %s"
+msgstr "A Descompactar o ficheiro: %s"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2245
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2254
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2259
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2266
+msgid "Algo salió mal.\n"
+msgstr "Alguma coisa correu mal.\n"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2245
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2254
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2259
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2266
+msgid "Inténtelo de nuevo.\n"
+msgstr "Por favor, tente novamente.\n"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2245
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2248
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2254
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2259
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2264
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2266
+msgid "Ya puede cerrar esta ventana."
+msgstr "Pode fechar esta janela agora."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2248
+msgid "La copia de seguridad fue un éxito.\n"
+msgstr "A cópia de segurança foi feita com sucesso.\n"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2264
+msgid "Se completo la restauración correctamente.\n"
+msgstr "A restauração foi concluída com sucesso.\n"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2288
+msgid "&Cerrar"
+msgstr "&Fechar"

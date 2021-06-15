@@ -878,6 +878,8 @@ class AñadirCategoria(wx.Dialog):
 
 		self.Panel.SetSizer(sizeV)
 
+		self.CenterOnScreen()
+
 	def onPass(self, event):
 		pass
 
@@ -952,6 +954,8 @@ class EditarCategoria(wx.Dialog):
 		sizeV.Add(sizeH, 0, wx.EXPAND)
 
 		self.Panel.SetSizer(sizeV)
+
+		self.CenterOnScreen()
 
 	def onPass(self, event):
 		pass
@@ -1059,6 +1063,8 @@ class AñadirAplicacion(wx.Dialog):
 		sizeV.Add(sizeH, 0, wx.EXPAND)
 
 		self.Panel.SetSizer(sizeV)
+
+		self.CenterOnScreen()
 
 	def onChecked(self, event):
 		# Con la siguiente linea lo que hacemos es capturar toda la información del evento chk para actualizar luego las variables.
@@ -1211,6 +1217,8 @@ class EditarAplicacion(wx.Dialog):
 
 		self.Panel.SetSizer(sizeV)
 
+		self.CenterOnScreen()
+
 	def onChecked(self, event):
 		# Con la siguiente linea lo que hacemos es capturar toda la información del evento chk para actualizar luego las variables.
 		chk = event.GetEventObject()
@@ -1348,6 +1356,8 @@ class AñadirCMD(wx.Dialog):
 
 		self.Panel.SetSizer(sizeV)
 
+		self.CenterOnScreen()
+
 	def onChecked(self, event):
 		# Con la siguiente linea lo que hacemos es capturar toda la información del evento chk para actualizar luego las variables.
 		chk = event.GetEventObject()
@@ -1465,6 +1475,8 @@ class EditarCMD(wx.Dialog):
 
 		self.Panel.SetSizer(sizeV)
 
+		self.CenterOnScreen()
+
 	def onChecked(self, event):
 		# Con la siguiente linea lo que hacemos es capturar toda la información del evento chk para actualizar luego las variables.
 		chk = event.GetEventObject()
@@ -1578,6 +1590,8 @@ class AñadirCarpeta(wx.Dialog):
 
 		self.Panel.SetSizer(sizeV)
 
+		self.CenterOnScreen()
+
 	def carpetaPulsar(self, event):
 		dlg = wx.DirDialog(self, _("Seleccione una carpeta:"),
 			style=wx.DD_DEFAULT_STYLE
@@ -1689,6 +1703,8 @@ class EditarCarpeta(wx.Dialog):
 		sizeV.Add(sizeH, 0, wx.EXPAND)
 
 		self.Panel.SetSizer(sizeV)
+
+		self.CenterOnScreen()
 
 	def carpetaPulsar(self, event):
 		dlg = wx.DirDialog(self, _("Seleccione una carpeta:"),
@@ -1808,6 +1824,8 @@ class AñadirAcceso(wx.Dialog):
 		sizeV.Add(sizeH, 0, wx.EXPAND)
 
 		self.Panel.SetSizer(sizeV)
+
+		self.CenterOnScreen()
 
 	def onChecked(self, event):
 		# Con la siguiente linea lo que hacemos es capturar toda la información del evento chk para actualizar luego las variables.
@@ -1941,6 +1959,8 @@ class EditarAcceso(wx.Dialog):
 		sizeV.Add(sizeH, 0, wx.EXPAND)
 
 		self.Panel.SetSizer(sizeV)
+
+		self.CenterOnScreen()
 
 	def onChecked(self, event):
 		# Con la siguiente linea lo que hacemos es capturar toda la información del evento chk para actualizar luego las variables.
@@ -2095,6 +2115,8 @@ Igualmente si la aplicación ha sido desinstalada tendrá que borrar el acceso e
 		sizeV.Add(sizeH, 0, wx.EXPAND)
 
 		self.Panel.SetSizer(sizeV)
+
+		self.CenterOnScreen()
 
 	def onChoiceApp(self, event):
 		if self.choiceApps.GetString(self.choiceApps.GetSelection()) == _("Seleccione algo para añadir al lanzador."):
