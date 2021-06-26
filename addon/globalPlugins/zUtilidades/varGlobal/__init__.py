@@ -94,7 +94,10 @@ def ejecutar(objeto, modo, aplicacion, parametros, directorio, ventana):
 		if p == 5:
 			pass
 		else:
-			msg = \
+			if objeto == None:
+				pass
+			else:
+				msg = \
 _("""Compruebe que los datos introducidos son correctos.
 
 Se produjo el error: {}
@@ -102,7 +105,7 @@ Se produjo el error: {}
 Puede buscar información del error en:
 
 https://tinyurl.com/yhel7t8c""").format(p)
-			objeto.mensaje(msg, _("Error"), 1)
+				objeto.mensaje(msg, _("Error"), 1)
 
 def obtenApps():
 	si = subprocess.STARTUPINFO()
@@ -156,3 +159,5 @@ def comprobar_archivo_db(n, lista):
 	else:
 		return False
 
+# variables Globales
+IS_WinON = False # Bandera para saber si esta abierta una ventana del complemento

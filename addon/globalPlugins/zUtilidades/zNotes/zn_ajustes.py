@@ -13,7 +13,7 @@ import addonHandler
 addonHandler.initTranslation()
 
 # Directorios
-dbDir =os.path.join(globalVars.appArgs.configPath, "zUtilidades", "zLauncher")
+dbDir =os.path.join(globalVars.appArgs.configPath, "zUtilidades", "zNotes")
 dirRestaura = os.path.join(globalVars.appArgs.configPath, "zUtilidades")
 if os.path.exists(dbDir) == False:
 	try:
@@ -67,30 +67,29 @@ class dbCategorias():
 			dbCategorias.GuardaDatos(self)
 			dbCategorias.CargaDatos(self)
 
-class dbAplicaciones():
+class dbNotas():
 	def __init__(self, archivo):
-		self.archivoAplicacion = os.path.join(dbDir, archivo)
+		self.archivoNota = os.path.join(dbDir, archivo)
 		self.version = 1.0
 		self.versionTemp = None
-		self.aplicacion = []
+		self.notas = []
 
 	def GuardaDatos(self):
-		p = open(	self.archivoAplicacion, "wb")
+		p = open(	self.archivoNota, "wb")
 		pickle.dump(self.version, p)
-		pickle.dump(self.aplicacion, p)
+		pickle.dump(self.notas, p)
 		p.close()
 
 	def CargaDatos(self):
-		if os.path.isfile(self.archivoAplicacion):
-			p = open(	self.archivoAplicacion, 'rb')
+		if os.path.isfile(self.archivoNota):
+			p = open(	self.archivoNota, 'rb')
 			self.versionTemp = pickle.load(p)
 			if self.versionTemp == 1.0:
-				self.aplicacion = pickle.load(p)
+				self.notas = pickle.load(p)
 			p.close()
 		else:
-			dbAplicaciones.GuardaDatos(self)
-			dbAplicaciones.CargaDatos(self)
-
+			dbNotas.GuardaDatos(self)
+			dbNotas.CargaDatos(self)
 
 # Cargamos Categorías
 dbOBJ = dbCategorias()
@@ -98,8 +97,8 @@ dbOBJ.CargaDatos()
 # Variables Categorías
 nombreCategoria = dbOBJ.nombreCategoria
 archivoCategoria = dbOBJ.archivoCategoria
-# Variables Aplicaciones
-aplicacionesLista = []
+# Variables Notas
+notasLista = []
 # Variables Generales
 focoActual = "lstCategorias"
 posicion = [0, 0]
@@ -122,8 +121,7 @@ def refrescaCategoriasBackup():
 	archivoCategoria = dbOBJ.archivoCategoria
 	dbOBJ.GuardaDatos()
 
-
-def guardaAplicaciones(frame):
-	frame.aplicacion = aplicacionesLista
+def guardaNotas(frame):
+	frame.notas = notasLista
 	frame.GuardaDatos()
 

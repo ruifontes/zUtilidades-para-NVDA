@@ -15,6 +15,7 @@ Por lo tanto podremos lanzar los módulos o bien hiendo al menú de Herramientas
 Actualmente esta formado por los siguientes módulos:
 
 * Lanzador de aplicaciones.
+* Notas rápidas.
 
 # Modulo Lanzador de aplicaciones
 
@@ -193,12 +194,95 @@ Estas características solo son validas durante la sesión de NVDA, esto quiere 
 
 Este complemento esta echo para usarse con Windows 10, por lo que si está usando versiones anteriores y tiene algún problema coméntelo pero seguramente no podre hacer nada ya que algunas características solo se encuentran en Windows 10.
 
+# Modulo Notas rápidas
+
+Este módulo nos servirá para tener a mano pequeñas notas las cuales podremos consultar, editar, borrar.
+
+Este modulo tiene el mismo manejo que el Lanzador de aplicaciones pero varia en algunas teclas explicadas a continuación.
+
+No voy a volver a explicar el menú con el cual podremos hacer copias de seguridad, restaurarlas, volver a valores por defecto el complemento, manejar categorías y notas.
+
+Tampoco voy a volver a explicar el recorrido de la interface principal ya que es exactamente lo mismo.
+
+Podremos añadir una nota rápida y en el dialogo que se abre podremos poner el titulo de la nota y si tabulamos el contenido.
+
+El dialogo de editar nota es exactamente lo mismo, poner un titulo o modificar el que ya esta y poder editar la nota.
+
+Este modulo se diferencia con el de lanzador de aplicaciones en que usa algunas nuevas combinaciones de teclas.
+
+* F1: Cuando estemos encima de una nota si presionamos F1 nos leerá el contenido de la nota.
+* Shift+C: Nos copiara la nota enfocada al portapapeles para que podamos copiarla en cualquier sitio.
+* Shift+V: Esta combinación nos cerrara la ventana de notas rápidas y pegara el contenido de la nota que tuviésemos enfocado en el foco.
+
+Esto significa que si llamamos a notas rápidas desde el bloc de notas o un asunto de un email cuando presionemos esta combinación el texto se pegara donde teníamos el foco.
+
+Cuidado si estamos en el escritorio o algún sitio donde no se pueda pegar directamente no hará nada.
+
+También sigue funcionando tanto en el área de categorías como en el área de lista de notas el poder ordenar dichas áreas con Alt+Flechas arriba y abajo para mover lo que tengamos seleccionado.
+
+Si pulsamos espacio se abrirá una ventana donde podremos solo visualizar nuestra nota.
+
+Decir que este modulo viene sin tecla rápida definida, por lo que tendremos que agregársela en Gestos de entrada.
+
+# Agregar una nota rápida desde cualquier lugar
+
+También el modulo de Notas rápidas tiene una característica para agregar notas rápidas desde cualquier sitio sin necesidad de abrir el complemento para añadir.
+
+En el gestor de gestos de entradas ahora podremos configurar una nueva combinación de teclas que encontrareis en:
+
+NVDA / Preferencias / Gestos de entrada / zUtilidades / Agregar una nota rápida del texto seleccionado
+
+Cuando tengamos ya una combinación asignada solo tendremos que seleccionar un texto en cualquier parte y pulsar la combinación de teclas.
+
+Se abrirá una ventana en la cual lo primero que tendremos que elegir es en que categoría queremos guardar nuestra nota, solo nos aparecerán las categorías que tengamos añadidas.
+
+Si tabulamos caeremos en el campo para poner el titulo de la nota y si volvemos a tabular tendremos el texto que habíamos seleccionado.
+
+Si aceptamos se guardara y ya tendremos nuestra nota en nuestra categoría que hallamos elegido.
+
+# Menús Virtuales para el Lanzador de aplicaciones y para Notas rápidas
+
+Bien estos menús vienen a potenciar a zUtilidades haciendo que ahora sea mucho más productivo y más rápido.
+
+Bien los gestos que tengamos asignados al lanzador de aplicaciones y a notas rápidas ahora tienen una doble pulsación.
+
+Si pulsamos una sola vez dicha combinación nos saldrá la interface gráfica, si pulsamos dos veces nos saldrá el menú virtual.
+
+Bien en dicho menú nos podremos mover con flechas izquierda y derecha entre categorías y con flechas arriba y abajo entre ítems de dicha categoría si los hay.
+
+Bien existen algunas diferencias entre el menú del lanzador de aplicaciones y el de notas rápidas.
+
+En el menú virtual de lanzador de aplicaciones con las flechas nos movemos y con intro ejecutamos el item que tengamos seleccionado haciendo la acción que corresponda.
+
+Si es un comando cmd pues lo ejecutara, si es un acceso rápido lo mismo y así como si fuese la interface grafica.
+
+Bien con Escape saldremos del menú si no queremos hacer nada.
+
+También nos podemos mover por las categorías pulsando las teclas de inicio del nombre salvo la ñ que no la admite este menú todas las demás nos llevara rápidamente a la categoría.
+
+Bien también si dicha letra no tiene una categoría nos dará el mensaje de ayuda al igual que si pulsamos cualquier otra tecla que sea diferente a las mencionadas.
+
+Decir que mientras el menú este activo todas las demás combinaciones de teclas de NVDA no funcionarán hasta que no salgamos del menú.
+
+En el menú de notas rápidas la tecla espaciadora no vale para nada y si tiene diferencias con el del lanzador de aplicaciones.
+
+Cuando estemos encima de un item si pulsamos F1 nos hablara el contenido de la nota, con Shift+C nos pegara la nota al portapapeles y con Shift+V nos pegara el contenido de la nota donde tengamos el foco.
+
+Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que no salgamos en el teclado.
+
 ## Traductores y colaboradores:
 
 * Francés: Rémy Ruiz
 * Portugués: Ângelo Miguel Abrantes
-
+* Javi Domínguez: Mil gracias por enseñarme a programar el menú. Mejor dicho por explicarlo para tontos como yo.
 # Registro de cambios.
+## Versión 0.2.
+
+* Se corrigieron muchos errores internos.
+* Se estabilizo el modulo Lanzador de aplicaciones.
+* Se agrego un nuevo módulo de Notas rápidas.
+* Se agregaron menús virtuales para los dos módulos.
+
 ## Versión 0.1.6.
 
 * Agregado idioma Francés y  Portugués (Portugal / Brasil).

@@ -14,9 +14,9 @@ from threading import Thread
 import winsound
 import os
 import sys
+import varGlobal
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import zl_ajustes as ajustes
-import zl_funciones as funciones
 
 # For translation
 addonHandler.initTranslation()
@@ -36,14 +36,13 @@ class zLanzador(wx.Dialog):
 
 		WIDTH = 1200
 		HEIGHT = 850
-		pos = funciones._calculatePosition(WIDTH, HEIGHT)
+		pos = varGlobal._calculatePosition(WIDTH, HEIGHT)
 
 		super(zLanzador,self).__init__(parent, -1, title=_("Lanzador de Aplicaciones"), pos = pos, size = (WIDTH, HEIGHT))
 
 		self.archivoAplicaciones = None
 		self.dbAplicaciones = None
-		ajustes.IS_WinON = True
-
+		varGlobal.IS_WinON = True
 		self.Panel = wx.Panel(self, 0)
 
 		lbCategoria = wx.StaticText(self.Panel, wx.ID_ANY, label=_("&Categorías:"))
@@ -307,7 +306,7 @@ Tenga en cuenta que al borrar la categoría se eliminaran las aplicaciones que e
 		ajustes.nombreCategoria.append(valor)
 		nombre_archivo_db = False
 		while nombre_archivo_db == False:
-			nombre_archivo_db =  funciones.comprobar_archivo_db(15, ajustes.archivoCategoria)
+			nombre_archivo_db =  varGlobal.comprobar_archivo_db(15, ajustes.archivoCategoria)
 			pass
 		archivo = os.path.join(ajustes.dbDir, nombre_archivo_db)
 		ajustes.dbAplicaciones(archivo).GuardaDatos()
@@ -629,14 +628,14 @@ Va a borrar la acción:
 				self.onSalir(None)
 				if ajustes.aplicacionesLista[valor][5] == False:
 					if ajustes.aplicacionesLista[valor][3] == False:
-						funciones.ejecutar(self, "open", ajustes.aplicacionesLista[valor][2], None, os.path.dirname(ajustes.aplicacionesLista[valor][2]), 10)
+						varGlobal.ejecutar(self, "open", ajustes.aplicacionesLista[valor][2], None, os.path.dirname(ajustes.aplicacionesLista[valor][2]), 10)
 					else:
-						funciones.ejecutar(self, "open", ajustes.aplicacionesLista[valor][2], ajustes.aplicacionesLista[valor][4], os.path.dirname(ajustes.aplicacionesLista[valor][2]), 10)
+						varGlobal.ejecutar(self, "open", ajustes.aplicacionesLista[valor][2], ajustes.aplicacionesLista[valor][4], os.path.dirname(ajustes.aplicacionesLista[valor][2]), 10)
 				else:
 					if ajustes.aplicacionesLista[valor][3] == False:
-						funciones.ejecutar(self, "runas", ajustes.aplicacionesLista[valor][2], None, os.path.dirname(ajustes.aplicacionesLista[valor][2]), 10)
+						varGlobal.ejecutar(self, "runas", ajustes.aplicacionesLista[valor][2], None, os.path.dirname(ajustes.aplicacionesLista[valor][2]), 10)
 					else:
-						funciones.ejecutar(self, "runas", ajustes.aplicacionesLista[valor][2], ajustes.aplicacionesLista[valor][4], os.path.dirname(ajustes.aplicacionesLista[valor][2]), 10)
+						varGlobal.ejecutar(self, "runas", ajustes.aplicacionesLista[valor][2], ajustes.aplicacionesLista[valor][4], os.path.dirname(ajustes.aplicacionesLista[valor][2]), 10)
 			else:
 				indice = self.lstAplicaciones.GetSelection()
 				msg = \
@@ -664,19 +663,19 @@ _("""La ruta a la aplicación {}, no se encontró.
 			self.onSalir(None)
 			if ajustes.aplicacionesLista[valor][4] == False:
 				if ajustes.aplicacionesLista[valor][3] == False:
-					funciones.ejecutar(self, "open", "cmd.exe", "/c" + ajustes.aplicacionesLista[valor][2], None, 10)
+					varGlobal.ejecutar(self, "open", "cmd.exe", "/c" + ajustes.aplicacionesLista[valor][2], None, 10)
 				else:
-					funciones.ejecutar(self, "open", "cmd.exe", "/c" + ajustes.aplicacionesLista[valor][2] + "&pause", None, 10)
+					varGlobal.ejecutar(self, "open", "cmd.exe", "/c" + ajustes.aplicacionesLista[valor][2] + "&pause", None, 10)
 			else:
 				if ajustes.aplicacionesLista[valor][3] == False:
-					funciones.ejecutar(self, "runas", "cmd.exe", "/c" + ajustes.aplicacionesLista[valor][2], None, 10)
+					varGlobal.ejecutar(self, "runas", "cmd.exe", "/c" + ajustes.aplicacionesLista[valor][2], None, 10)
 				else:
-					funciones.ejecutar(self, "runas", "cmd.exe", "/c" + ajustes.aplicacionesLista[valor][2] + "&pause", None, 10)
+					varGlobal.ejecutar(self, "runas", "cmd.exe", "/c" + ajustes.aplicacionesLista[valor][2] + "&pause", None, 10)
 
 		elif ajustes.aplicacionesLista[valor][0] == "fol":
 			if os.path.isdir(ajustes.aplicacionesLista[valor][2]):
 				self.onSalir(None)
-				funciones.ejecutar(self, "explore", ajustes.aplicacionesLista[valor][2], None, None, 10)
+				varGlobal.ejecutar(self, "explore", ajustes.aplicacionesLista[valor][2], None, None, 10)
 			else:
 				indice = self.lstAplicaciones.GetSelection()
 				msg = \
@@ -706,9 +705,9 @@ _("""La ruta a la carpeta no se encontró.
 			if os.path.isfile(ajustes.aplicacionesLista[valor][2]):
 				self.onSalir(None)
 				if ajustes.aplicacionesLista[valor][3] == False:
-					funciones.ejecutar(self, "open", ajustes.aplicacionesLista[valor][2], None, None, 10)
+					varGlobal.ejecutar(self, "open", ajustes.aplicacionesLista[valor][2], None, None, 10)
 				else:
-					funciones.ejecutar(self, "runas", ajustes.aplicacionesLista[valor][2], None, None, 10)
+					varGlobal.ejecutar(self, "runas", ajustes.aplicacionesLista[valor][2], None, None, 10)
 			else:
 				indice = self.lstAplicaciones.GetSelection()
 				msg = \
@@ -737,13 +736,13 @@ _("""La ruta al acceso directo no se encontró.
 		elif ajustes.aplicacionesLista[valor][0] == "sap":
 			self.onSalir(None)
 			if ajustes.aplicacionesLista[valor][3] == False:
-				funciones.ejecutar(self, "open", "explorer.exe", "shell:appsfolder\{}".format(ajustes.aplicacionesLista[valor][2]), None, 10)
+				varGlobal.ejecutar(self, "open", "explorer.exe", "shell:appsfolder\{}".format(ajustes.aplicacionesLista[valor][2]), None, 10)
 			else:
-				funciones.ejecutar(self, "runas", "explorer.exe", "shell:appsfolder\{}".format(ajustes.aplicacionesLista[valor][2]), None, 10)
+				varGlobal.ejecutar(self, "runas", "explorer.exe", "shell:appsfolder\{}".format(ajustes.aplicacionesLista[valor][2]), None, 10)
 
 	def HacerBackup(self, event):
 		wildcard = _("Archivo copia de seguridad zUtilidades (*.zut-zl)|*.zut-zl")
-		dlg = wx.FileDialog(self, message=_("Guardar en..."), defaultDir=os.getcwd(), defaultFile=funciones.fecha(), wildcard=wildcard, style=wx.FD_SAVE | wx.FD_OVERWRITE_PROMPT)
+		dlg = wx.FileDialog(self, message=_("Guardar en..."), defaultDir=os.getcwd(), defaultFile=varGlobal.fecha(), wildcard=wildcard, style=wx.FD_SAVE | wx.FD_OVERWRITE_PROMPT)
 		if dlg.ShowModal() == wx.ID_OK:
 			pathbackup = dlg.GetPath()
 			fichero_final = os.path.basename(pathbackup)
@@ -787,7 +786,7 @@ Esta acción no es reversible.
 					dlg.Destroy()
 					ajustes.refrescaCategoriasBackup()
 					ajustes.posicion = [0, 0]
-					ajustes.IS_WinON = False
+					varGlobal.IS_WinON = False
 					ajustes.focoActual = "lstCategorias"
 					self.Destroy()
 					gui.mainFrame.postPopup()
@@ -822,8 +821,10 @@ Esta acción no es reversible.
 					pass
 				os.mkdir(ajustes.dbDir)
 			ajustes.refrescaCategoriasBackup()
+			del ajustes.nombreCategoria[:]
+			del ajustes.archivoCategoria[:]
 			ajustes.posicion = [0, 0]
-			ajustes.IS_WinON = False
+			varGlobal.IS_WinON = False
 			ajustes.focoActual = "lstCategorias"
 			self.Destroy()
 			gui.mainFrame.postPopup()
@@ -833,7 +834,7 @@ Esta acción no es reversible.
 	def onkeyVentanaDialogo(self, event):
 		if event.GetKeyCode() == 27: # Pulsamos ESC y cerramos la ventana
 			self.onPosicion()
-			ajustes.IS_WinON = False
+			varGlobal.IS_WinON = False
 			self.Destroy()
 			gui.mainFrame.postPopup()
 		else:
@@ -841,7 +842,7 @@ Esta acción no es reversible.
 
 	def onSalir(self, event):
 		self.onPosicion()
-		ajustes.IS_WinON = False
+		varGlobal.IS_WinON = False
 		self.Destroy()
 		gui.mainFrame.postPopup()
 
@@ -892,7 +893,7 @@ Introduzca un nombre para añadir una categoría.""")
 			self.frame.mensaje(msg, _("Información"), 0)
 			self.texto.SetFocus()
 		else:
-			p = funciones.estaenlistado(ajustes.nombreCategoria, self.texto.GetValue())
+			p = varGlobal.estaenlistado(ajustes.nombreCategoria, self.texto.GetValue())
 			if p == True:
 				msg = \
 _("""No puede duplicar el nombre de una categoría.
@@ -975,7 +976,7 @@ Introduzca un nombre para añadir una categoría.""")
 				else:
 					self.Close()
 			else:
-				p = funciones.estaenlistado(ajustes.nombreCategoria, self.texto.GetValue())
+				p = varGlobal.estaenlistado(ajustes.nombreCategoria, self.texto.GetValue())
 				if p == True:
 					msg = \
 _("""No puede duplicar el nombre de una categoría.
@@ -1083,7 +1084,7 @@ class AñadirAplicacion(wx.Dialog):
 			self.administrador = temp
 
 	def archivo_pulsar(self, event):
-		wildcard = _("Todos los archivos ejecutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|")
+		wildcard = _("Todos los archivos ejecutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|Todos los ficheros (*.*)|*.*")
 		dlg = wx.FileDialog(None, message=_("Seleccione un archivo"), defaultDir=os.getcwd(), defaultFile="", wildcard=wildcard, style=wx.FD_OPEN | wx.FD_CHANGE_DIR | wx.FD_FILE_MUST_EXIST | wx.FD_PREVIEW)
 		if dlg.ShowModal() == wx.ID_OK:
 			paths = dlg.GetPaths()
@@ -1118,7 +1119,7 @@ Seleccione una aplicación para poder continuar.""")
 				listaTemporal = []
 				for i in range(0, len(ajustes.aplicacionesLista)):
 					listaTemporal.append(ajustes.aplicacionesLista[i][1])
-				p = funciones.estaenlistado(listaTemporal, self.textoNombre.GetValue())
+				p = varGlobal.estaenlistado(listaTemporal, self.textoNombre.GetValue())
 				if p == True:
 					msg = \
 _("""No puede duplicar el nombre de una acción.
@@ -1236,7 +1237,7 @@ class EditarAplicacion(wx.Dialog):
 			self.administrador = temp
 
 	def archivo_pulsar(self, event):
-		wildcard = _("Todos los archivos ejecutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|")
+		wildcard = _("Todos los archivos ejecutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|Todos los ficheros (*.*)|*.*")
 		dlg = wx.FileDialog(None, message=_("Seleccione un archivo"), defaultDir=os.getcwd(), defaultFile="", wildcard=wildcard, style=wx.FD_OPEN | wx.FD_CHANGE_DIR | wx.FD_FILE_MUST_EXIST | wx.FD_PREVIEW)
 		if dlg.ShowModal() == wx.ID_OK:
 			paths = dlg.GetPaths()
@@ -1278,7 +1279,7 @@ Seleccione una aplicación para poder continuar.""")
 					listaTemporal = []
 					for i in range(0, len(ajustes.aplicacionesLista)):
 						listaTemporal.append(ajustes.aplicacionesLista[i][1])
-					p = funciones.estaenlistado(listaTemporal, self.textoNombre.GetValue())
+					p = varGlobal.estaenlistado(listaTemporal, self.textoNombre.GetValue())
 					if p == True:
 						msg = \
 _("""No puede duplicar el nombre de una acción.
@@ -1389,7 +1390,7 @@ Escriba una línea de comandos para continuar.""")
 				listaTemporal = []
 				for i in range(0, len(ajustes.aplicacionesLista)):
 					listaTemporal.append(ajustes.aplicacionesLista[i][1])
-				p = funciones.estaenlistado(listaTemporal, self.textoNombre.GetValue())
+				p = varGlobal.estaenlistado(listaTemporal, self.textoNombre.GetValue())
 				if p == True:
 					msg = \
 _("""No puede duplicar el nombre de una acción.
@@ -1515,7 +1516,7 @@ Escriba una línea de comandos para continuar.""")
 					listaTemporal = []
 					for i in range(0, len(ajustes.aplicacionesLista)):
 						listaTemporal.append(ajustes.aplicacionesLista[i][1])
-					p = funciones.estaenlistado(listaTemporal, self.textoNombre.GetValue())
+					p = varGlobal.estaenlistado(listaTemporal, self.textoNombre.GetValue())
 					if p == True:
 						msg = \
 _("""No puede duplicar el nombre de una acción.
@@ -1623,7 +1624,7 @@ Seleccione una carpeta para poder continuar.""")
 				listaTemporal = []
 				for i in range(0, len(ajustes.aplicacionesLista)):
 					listaTemporal.append(ajustes.aplicacionesLista[i][1])
-				p = funciones.estaenlistado(listaTemporal, self.textoNombre.GetValue())
+				p = varGlobal.estaenlistado(listaTemporal, self.textoNombre.GetValue())
 				if p == True:
 					msg = \
 _("""No puede duplicar el nombre de una acción.
@@ -1744,7 +1745,7 @@ Seleccione una carpeta para poder continuar.""")
 					listaTemporal = []
 					for i in range(0, len(ajustes.aplicacionesLista)):
 						listaTemporal.append(ajustes.aplicacionesLista[i][1])
-					p = funciones.estaenlistado(listaTemporal, self.textoNombre.GetValue())
+					p = varGlobal.estaenlistado(listaTemporal, self.textoNombre.GetValue())
 					if p == True:
 						msg = \
 _("""No puede duplicar el nombre de una acción.
@@ -1871,7 +1872,7 @@ Seleccione un acceso directo para poder continuar.""")
 				listaTemporal = []
 				for i in range(0, len(ajustes.aplicacionesLista)):
 					listaTemporal.append(ajustes.aplicacionesLista[i][1])
-				p = funciones.estaenlistado(listaTemporal, self.textoNombre.GetValue())
+				p = varGlobal.estaenlistado(listaTemporal, self.textoNombre.GetValue())
 				if p == True:
 					msg = \
 _("""No puede duplicar el nombre de una acción.
@@ -2013,7 +2014,7 @@ Seleccione un acceso directo para poder continuar.""")
 					listaTemporal = []
 					for i in range(0, len(ajustes.aplicacionesLista)):
 						listaTemporal.append(ajustes.aplicacionesLista[i][1])
-					p = funciones.estaenlistado(listaTemporal, self.textoNombre.GetValue())
+					p = varGlobal.estaenlistado(listaTemporal, self.textoNombre.GetValue())
 					if p == True:
 						msg = \
 _("""No puede duplicar el nombre de una acción.
@@ -2051,7 +2052,7 @@ class AñadirInstalada(wx.Dialog):
 		self.frame = frame
 		self.lista = []
 		self.administrador = False
-		self.lista_Apps = funciones.obtenApps()
+		self.lista_Apps = varGlobal.obtenApps()
 		self.choiceSelection = 0
 
 		self.Panel = wx.Panel(self)
@@ -2153,7 +2154,7 @@ Introduzca un nombre para identificar un acceso.""")
 				listaTemporal = []
 				for i in range(0, len(ajustes.aplicacionesLista)):
 					listaTemporal.append(ajustes.aplicacionesLista[i][1])
-				p = funciones.estaenlistado(listaTemporal, self.textoNombre.GetValue())
+				p = varGlobal.estaenlistado(listaTemporal, self.textoNombre.GetValue())
 				if p == True:
 					msg = \
 _("""No puede duplicar el nombre de una acción.
