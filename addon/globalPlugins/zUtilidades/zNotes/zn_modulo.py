@@ -486,12 +486,13 @@ Va a borrar la Nota:
 			else:
 				if event.GetKeyCode() == 32: # 13 Intro 32 Espacio
 					self.visualiza(self.lstNotas.GetSelection())
-				elif (event.ShiftDown(), event.GetKeyCode()) == (True, 86): # Shift+v pega en la app
-					self.onPegar(event, self.lstNotas.GetSelection())
-				elif (event.ShiftDown(), event.GetKeyCode()) == (True, 67): # Shift+c copia al portapapeles
-					self.onPortapapeles(self.lstNotas.GetSelection())
 				elif event.GetKeyCode() == 340: # F1 verbaliza nota
 					self.onVerbaliza(self.lstNotas.GetSelection())
+				elif event.GetKeyCode() == 341: # F2 copia al portapapeles
+					self.onPortapapeles(self.lstNotas.GetSelection())
+				elif event.GetKeyCode() == 342: # Shift+v pega en la app
+					self.onPegar(event, self.lstNotas.GetSelection())
+
 				elif (event.AltDown(), event.GetKeyCode()) == (True, 315):
 					self.mueveAplicacion("arriba")
 				elif (event.AltDown(), event.GetKeyCode()) == (True, 317):
@@ -647,9 +648,9 @@ Esta acción no es reversible.
 				except:
 					pass
 				os.mkdir(ajustes.dbDir)
-			ajustes.refrescaCategoriasBackup()
 			del ajustes.nombreCategoria[:]
 			del ajustes.archivoCategoria[:]
+			ajustes.refrescaCategoriasBackup()
 			ajustes.posicion = [0, 0]
 			varGlobal.IS_WinON = False
 			ajustes.focoActual = "lstCategorias"

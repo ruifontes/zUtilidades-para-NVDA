@@ -17,6 +17,7 @@ import ui
 import api
 import watchdog
 import core
+import textInfos
 import time
 import wx
 from threading import Thread
@@ -63,21 +64,24 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 ##### Para el lanzador y notas
 		self.categorias = []
 		self.archivoCategorias = []
-		self.catTotal = None
 		self.temporal = []
 		self.nombreAccion = []
 ##### Fin para el lanzador y notas
 ##### Inicio indices de categoría y item
-		self.catIndex = 0
-		self.itemIndex = 0
+		self.catIndexzl = 0
+		self.catIndexzn = 0
+		self.itemIndexzl = 0
+		self.itemIndexzn = 0
+		self.catTotalzl = 0
+		self.catTotalzn = 0
+		self.firstTimezl = True
+		self.firstTimezn = True
 ##### Fin indices de categoría y item
 ##### Inicio banderas
 		# Aqui guardaremos los enlaces a los gestos originales para restaurarlos despues
 		self.oldGestureBindings = {}
 		# Este flag nos indica si la capa de teclado esta activa o no
 		self.toggling = False
-		# Este otro flag indica si es la primera vez que se lanza el menú.
-		self.firstTime = True
 # Para obtener la doble pulsación.
 		self.doblePulsacion = False
 # Para saber que modulo se activa.
@@ -224,15 +228,25 @@ No es posible tener dos instancias a la vez.""")
 
 ########## Inicio menú virtual
 	def leerCategoriaDAT(self):
+		indiceLauncher = varGlobal.dbDatos(os.path.join(zl.ajustes.dbDir, "index.dat")).CargaDatosIndex()
+		indiceNotes = varGlobal.dbDatos(os.path.join(zn.ajustes.dbDir, "index.dat")).CargaDatosIndex()
+
 		self.categorias = []
 		self.archivoCategorias = []
 		if self.lanzador == "zl":
-			self.categorias = zl.ajustes.nombreCategoria
-			self.archivoCategorias = zl.ajustes.archivoCategoria
+			self.categorias =  varGlobal.AnalizaDatos(indiceLauncher).GetCategoria()
+			self.archivoCategorias = varGlobal.AnalizaDatos(indiceLauncher).GetArchivosCat()
+			self.catTotalzl = len(self.categorias)
 		elif self.lanzador == "zn":
-			self.categorias = zn.ajustes.nombreCategoria
-			self.archivoCategorias = zn.ajustes.archivoCategoria
-		if self.firstTime:
+			self.categorias =  varGlobal.AnalizaDatos(indiceNotes).GetCategoria()
+			self.archivoCategorias = varGlobal.AnalizaDatos(indiceNotes).GetArchivosCat()
+			self.catTotalzn = len(self.categorias)
+
+		if self.lanzador == "zl":
+			firstTimeTemporal = self.firstTimezl
+		if self.lanzador == "zn":
+			firstTimeTemporal = self.firstTimezn
+		if firstTimeTemporal:
 			if len(self.categorias) == 0:
 				pass
 			else:
@@ -241,27 +255,29 @@ No es posible tener dos instancias a la vez.""")
 			if len(self.categorias) == 0:
 				pass
 			else:
-				self.leerArchivosDAT(self.catIndex)
+				if self.lanzador == "zl":
+					self.leerArchivosDAT(self.catIndexzl)
+				elif self.lanzador == "zn":
+					self.leerArchivosDAT(self.catIndexzn)
 
 	def leerArchivosDAT(self, valor):
 		if self.lanzador == "zl":
-			self.archivoAplicaciones = os.path.join(zl.ajustes.dbDir, self.archivoCategorias[valor])
-			self.dbAplicaciones = zl.ajustes.dbAplicaciones(self.archivoAplicaciones)
-			self.dbAplicaciones.CargaDatos()
-			del self.temporal[:]
-			del self.nombreAccion[:]
-			self.temporal = self.dbAplicaciones.aplicacion
-			for x in self.temporal:
-				self.nombreAccion.append(x[1])
+			if self.catIndexzl > len(self.categorias)-1:
+				valor = 0
 		elif self.lanzador == "zn":
-			self.archivoNotas = os.path.join(zn.ajustes.dbDir, self.archivoCategorias[valor])
-			self.dbNotas = zn.ajustes.dbNotas(self.archivoNotas)
-			self.dbNotas.CargaDatos()
+			if self.catIndexzn > len(self.categorias)-1:
+				valor = 0
+
+		if self.lanzador == "zl":
 			del self.temporal[:]
 			del self.nombreAccion[:]
-			self.temporal = self.dbNotas.notas
-			for x in self.temporal:
-				self.nombreAccion.append(x[1])
+			self.temporal = varGlobal.dbDatos(os.path.join(zl.ajustes.dbDir, self.archivoCategorias[valor])).CargaDatosDB()
+			self.nombreAccion = varGlobal.AnalizaDatos(self.temporal).GetNombreDB()
+		elif self.lanzador == "zn":
+			del self.temporal[:]
+			del self.nombreAccion[:]
+			self.temporal = varGlobal.dbDatos(os.path.join(zn.ajustes.dbDir, self.archivoCategorias[valor])).CargaDatosDB()
+			self.nombreAccion = varGlobal.AnalizaDatos(self.temporal).GetNombreDB()
 
 	def getScript(self, gesture):
 		if not self.toggling:
@@ -293,13 +309,23 @@ No es posible tener dos instancias a la vez.""")
 			return
 
 		varGlobal.IS_WinON = True
-
-		if self.catTotal == len(self.categorias):
+		if self.lanzador == "zl":
+			catTotalTemporal = self.catTotalzl
+		elif self.lanzador == "zn":
+			catTotalTemporal = self.catTotalzn
+		if catTotalTemporal == len(self.categorias):
 			pass
 		else:
-			self.catIndex = 0
-			self.itemIndex = -1
-			self.leerArchivosDAT(0)
+			if self.lanzador == "zl":
+				self.catIndexzl = 0
+				self.itemIndexzl = -1
+			elif self.lanzador == "zn":
+				self.catIndexzn = 0
+				self.itemIndexzn = -1
+			if len(self.categorias) == 0:
+				ui.message(_("No hay categorías"))
+				varGlobal.IS_WinON = False
+				return
 
 		if self.toggling:
 			self.script_exit(gesture)
@@ -328,55 +354,115 @@ No es posible tener dos instancias a la vez.""")
 
 		if self.lanzador == "zn":
 			self.bindGesture("kb:F1", "viewNote")
+			self.bindGesture("kb:F2", "copyPP")
+			self.bindGesture("kb:F3", "pastePP")
 
 		self.toggling = True
 		ui.message(_("Menú activado"))
-		if self.firstTime:
+
+		if self.lanzador == "zl":
+			firstTimeTemporal = self.firstTimezl
+		if self.lanzador == "zn":
+			firstTimeTemporal = self.firstTimezn
+		if firstTimeTemporal:
 			self.script_speechHelp(None)
-			self.firstTime = False
+			if self.lanzador == "zl":
+				self.firstTimezl = False
+			elif self.lanzador == "zn":
+				self.firstTimezn = False
 			self.leerArchivosDAT(0)
 			ui.message(self.categorias[0])
-			self.catTotal = len(self.categorias)
+			if self.lanzador == "zl":
+				self.catTotalzl = len(self.categorias)
+			elif self.lanzador == "zn":
+				self.catTotalzn = len(self.categorias)
 		else:
-			ui.message(self.categorias[self.catIndex])
+			if self.lanzador == "zl":
+				try:
+					ui.message(self.categorias[self.catIndexzl])
+				except:
+					ui.message(self.categorias[0])
+			elif self.lanzador == "zn":
+				try:
+					ui.message(self.categorias[self.catIndexzn])
+				except:
+					ui.message(self.categorias[0])
 
 	def script_nextCategory(self, gesture):
-		self.catIndex = self.catIndex+1 if self.catIndex < len(self.categorias)-1 else 0
-		self.leerArchivosDAT(self.catIndex)
-		ui.message(self.categorias[self.catIndex])
-		self.itemIndex = -1
+		if self.lanzador == "zl":
+			self.catIndexzl = self.catIndexzl+1 if self.catIndexzl < len(self.categorias)-1 else 0
+			self.leerArchivosDAT(self.catIndexzl)
+			ui.message(self.categorias[self.catIndexzl])
+			self.itemIndexzl = -1
+		elif self.lanzador == "zn":
+			self.catIndexzn = self.catIndexzn+1 if self.catIndexzn < len(self.categorias)-1 else 0
+
+			self.leerArchivosDAT(self.catIndexzn)
+			ui.message(self.categorias[self.catIndexzn])
+			self.itemIndexzn = -1
 
 	def script_previousCategory(self, gesture):
-		self.catIndex = self.catIndex -1 if self.catIndex > 0 else len(self.categorias)-1
-		self.leerArchivosDAT(self.catIndex)
-		ui.message(self.categorias[self.catIndex])
-		self.itemIndex = -1
+		if self.lanzador == "zl":
+			self.catIndexzl = self.catIndexzl -1 if self.catIndexzl > 0 else len(self.categorias)-1
+			self.leerArchivosDAT(self.catIndexzl)
+			ui.message(self.categorias[self.catIndexzl])
+			self.itemIndexzl = -1
+		elif self.lanzador == "zn":
+			self.catIndexzn = self.catIndexzn -1 if self.catIndexzn > 0 else len(self.categorias)-1
+			self.leerArchivosDAT(self.catIndexzn)
+			ui.message(self.categorias[self.catIndexzn])
+			self.itemIndexzn = -1
 
 	def script_skipToCategory(self, gesture):
-		categories = (self.categorias[self.catIndex+1:] if self.catIndex+1 < len(self.categorias) else []) + (self.categorias[:self.catIndex])
-		try:
-			self.catIndex = self.categorias.index(filter(lambda i: i[0].lower() == gesture.mainKeyName, categories).__next__())-1
-		except AttributeError:
+		if self.lanzador == "zl":
+			categories = (self.categorias[self.catIndexzl+1:] if self.catIndexzl+1 < len(self.categorias) else []) + (self.categorias[:self.catIndexzl])
 			try:
-				self.catIndex = self.categorias.index(filter(lambda i: i[0].lower() == gesture.mainKeyName, categories)[0])-1
-				self.script_nextCategory(None)
-			except IndexError:
-				if self.categorias[self.catIndex][0].lower() == gesture.mainKeyName:
-					ui.message(self.categorias[self.catIndex])
+				self.catIndexzl = self.categorias.index(filter(lambda i: i[0].lower() == gesture.mainKeyName, categories).__next__())-1
+			except AttributeError:
+				try:
+					self.catIndexzl = self.categorias.index(filter(lambda i: i[0].lower() == gesture.mainKeyName, categories)[0])-1
+					self.script_nextCategory(None)
+				except IndexError:
+					if self.categorias[self.catIndexzl][0].lower() == gesture.mainKeyName:
+						ui.message(self.categorias[self.catIndexzl])
+					else:
+						tones.beep(200, 30)
+			except StopIteration:
+				if self.categorias[self.catIndexzl][0].lower() == gesture.mainKeyName:
+					ui.message(self.categorias[self.catIndexzl])
 				else:
 					tones.beep(200, 30)
-		except StopIteration:
-			if self.categorias[self.catIndex][0].lower() == gesture.mainKeyName:
-				ui.message(self.categorias[self.catIndex])
 			else:
-				tones.beep(200, 30)
-		else:
-			self.script_nextCategory(None)
+				self.script_nextCategory(None)
+		elif self.lanzador == "zn":
+			categories = (self.categorias[self.catIndexzn+1:] if self.catIndexzn+1 < len(self.categorias) else []) + (self.categorias[:self.catIndexzn])
+			try:
+				self.catIndexzn = self.categorias.index(filter(lambda i: i[0].lower() == gesture.mainKeyName, categories).__next__())-1
+			except AttributeError:
+				try:
+					self.catIndexzn = self.categorias.index(filter(lambda i: i[0].lower() == gesture.mainKeyName, categories)[0])-1
+					self.script_nextCategory(None)
+				except IndexError:
+					if self.categorias[self.catIndexzn][0].lower() == gesture.mainKeyName:
+						ui.message(self.categorias[self.catIndexzn])
+					else:
+						tones.beep(200, 30)
+			except StopIteration:
+				if self.categorias[self.catIndexzn][0].lower() == gesture.mainKeyName:
+					ui.message(self.categorias[self.catIndexzn])
+				else:
+					tones.beep(200, 30)
+			else:
+				self.script_nextCategory(None)
 
 	def script_nextItem(self, gesture):
 		try:
-			self.itemIndex = self.itemIndex + 1 if self.itemIndex < len(self.nombreAccion)-1 else 0
-			ui.message(self.nombreAccion[self.itemIndex])
+			if self.lanzador == "zl":
+				self.itemIndexzl = self.itemIndexzl + 1 if self.itemIndexzl < len(self.nombreAccion)-1 else 0
+				ui.message(self.nombreAccion[self.itemIndexzl])
+			elif self.lanzador == "zn":
+				self.itemIndexzn = self.itemIndexzn + 1 if self.itemIndexzn < len(self.nombreAccion)-1 else 0
+				ui.message(self.nombreAccion[self.itemIndexzn])
 		except:
 			if self.lanzador == "zl":
 				ui.message(_("Sin acción"))
@@ -385,8 +471,12 @@ No es posible tener dos instancias a la vez.""")
 
 	def script_previousItem(self, gesture):
 		try:
-			self.itemIndex = self.itemIndex-1 if self.itemIndex > 0 else len(self.nombreAccion)-1
-			ui.message(self.nombreAccion[self.itemIndex])
+			if self.lanzador == "zl":
+				self.itemIndexzl = self.itemIndexzl-1 if self.itemIndexzl > 0 else len(self.nombreAccion)-1
+				ui.message(self.nombreAccion[self.itemIndexzl])
+			elif self.lanzador == "zn":
+				self.itemIndexzn = self.itemIndexzn-1 if self.itemIndexzn > 0 else len(self.nombreAccion)-1
+				ui.message(self.nombreAccion[self.itemIndexzn])
 		except:
 			if self.lanzador == "zl":
 				ui.message(_("Sin acción"))
@@ -394,7 +484,7 @@ No es posible tener dos instancias a la vez.""")
 				ui.message(_("Sin notas"))
 
 	def script_executeCommand(self, gesture):
-		if self.itemIndex < 0:
+		if self.itemIndexzl < 0:
 			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, enter para activarlo o escape para salir"))
 			return
 
@@ -404,7 +494,7 @@ No es posible tener dos instancias a la vez.""")
 		else:
 			ui.message(_("Ejecutando acción"))
 			self.script_exit(None)
-			valor = self.itemIndex
+			valor = self.itemIndexzl
 			if self.temporal[valor][0] == "app":
 				if os.path.isfile(self.temporal[valor][2]):
 					self.finish()
@@ -478,28 +568,28 @@ Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").
 					varGlobal.ejecutar(None, "runas", "explorer.exe", "shell:appsfolder\{}".format(self.temporal[valor][2]), None, 10)
 
 	def script_viewNote(self, gesture):
-		if self.itemIndex < 0:
-			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, Shif+C para copiar al portapapeles, Shift+V para pegar en el foco, F1 para escuchar el contenido de la nota o escape para salir"))
+		if self.itemIndexzn < 0:
+			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
 			return
 
 		if len(self.temporal) == 0:
 			ui.message(_("Esta categoría no tiene notas"))
 			return
 		else:
-			valor = self.itemIndex
+			valor = self.itemIndexzn
 			if self.temporal[valor][0] == "txt":
 				ui.message(self.temporal[valor][2])
 
 	def script_copyPP(self, gesture):
-		if self.itemIndex < 0:
-			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, Shif+C para copiar al portapapeles, Shift+V para pegar en el foco, F1 para escuchar el contenido de la nota o escape para salir"))
+		if self.itemIndexzn < 0:
+			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
 			return
 
 		if len(self.temporal) == 0:
 			ui.message(_("Esta categoría no tiene notas"))
 			return
 		else:
-			valor = self.itemIndex
+			valor = self.itemIndexzn
 			self.dataObj = wx.TextDataObject()
 			self.dataObj.SetText(self.temporal[valor][2])
 			if wx.TheClipboard.Open():
@@ -512,15 +602,15 @@ Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").
 			self.finish()
 
 	def script_pastePP(self, gesture):
-		if self.itemIndex < 0:
-			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, Shif+C para copiar al portapapeles, Shift+V para pegar en el foco, F1 para escuchar el contenido de la nota o escape para salir"))
+		if self.itemIndexzn < 0:
+			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
 			return
 
 		if len(self.temporal) == 0:
 			ui.message(_("Esta categoría no tiene notas"))
 			return
 		else:
-			valor = self.itemIndex
+			valor = self.itemIndexzn
 			if self.temporal[valor][0] == "txt":
 				self.script_exit(None)
 				self.finish()
@@ -545,14 +635,17 @@ Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").
 		if self.lanzador == "zl":
 			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, enter para activarlo o escape para salir"))
 		elif self.lanzador == "zn":
-			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, Shif+C para copiar al portapapeles, Shift+V para pegar en el foco, F1 para escuchar el contenido de la nota o escape para salir"))
+			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
 
 	def script_exit(self, gesture):
 		ui.message(_("Saliendo del menú"))
 
 	def finish(self):
 		varGlobal.IS_WinON = False
-		self.catTotal = len(self.categorias)
+		if self.lanzador == "zl":
+			self.catTotalzl = len(self.categorias)
+		elif self.lanzador == "zn":
+			self.catTotalzn = len(self.categorias)
 		self.toggling = False
 		self.clearGestureBindings()
 #		self.bindGestures(self.__gestures)
@@ -575,8 +668,6 @@ Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").
 	"kb:leftArrow": "previousCategory",
 	"kb:downArrow": "nextItem",
 	"kb:upArrow": "previousItem",
-	"kb:shift+c": "copyPP",
-	"kb:shift+v": "pastePP",
 	}
 ##########Fin menú virtual
 

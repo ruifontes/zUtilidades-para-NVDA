@@ -10,9 +10,56 @@ import random
 import wx
 from datetime import datetime
 import subprocess
+import pickle
 
 # For translation
 addonHandler.initTranslation()
+
+class dbDatos():
+	def __init__(self, baseDir):
+
+		self.archivoIndex = baseDir
+
+	def CargaDatosIndex(self):
+		if os.path.isfile(self.archivoIndex):
+			p = open(self.archivoIndex, 'rb')
+			self.versionTemp = pickle.load(p)
+			if self.versionTemp == 1.0:
+				self.nombreCategoria = pickle.load(p)
+				self.archivoCategoria = pickle.load(p)
+			p.close()
+			return list(zip(self.nombreCategoria, self.archivoCategoria))
+		else:
+			return False
+
+	def CargaDatosDB(self):
+		if os.path.isfile(self.archivoIndex):
+			p = open(	self.archivoIndex, 'rb')
+			self.versionTemp = pickle.load(p)
+			if self.versionTemp == 1.0:
+				self.aplicacion = pickle.load(p)
+			p.close()
+			return self.aplicacion
+		else:
+			return False
+
+class AnalizaDatos():
+	def __init__(self, datos):
+
+		self.datos = datos
+
+	def GetCategoria(self):
+			return self.datos if self.datos == False else [x[0] for x in self.datos]
+
+	def GetArchivosCat(self):
+		return self.datos if self.datos == False else [x[1] for x in self.datos]
+
+	def GetNombreDB(self):
+		return self.datos if self.datos == False else [x[1] for x in self.datos]
+
+	def chkDatos(self, lista):
+		compare = lambda a,b: len(a)==len(b) and len(a)==sum([1 for i,j in zip(a,b) if i==j])
+		return compare(self.datos, lista)
 
 class disable_file_system_redirection:
 

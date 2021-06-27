@@ -211,8 +211,8 @@ El dialogo de editar nota es exactamente lo mismo, poner un titulo o modificar e
 Este modulo se diferencia con el de lanzador de aplicaciones en que usa algunas nuevas combinaciones de teclas.
 
 * F1: Cuando estemos encima de una nota si presionamos F1 nos leerá el contenido de la nota.
-* Shift+C: Nos copiara la nota enfocada al portapapeles para que podamos copiarla en cualquier sitio.
-* Shift+V: Esta combinación nos cerrara la ventana de notas rápidas y pegara el contenido de la nota que tuviésemos enfocado en el foco.
+* F2: Nos copiara la nota enfocada al portapapeles para que podamos copiarla en cualquier sitio.
+* F3: Esta combinación nos cerrara la ventana de notas rápidas y pegara el contenido de la nota que tuviésemos enfocado en el foco.
 
 Esto significa que si llamamos a notas rápidas desde el bloc de notas o un asunto de un email cuando presionemos esta combinación el texto se pegara donde teníamos el foco.
 
@@ -266,7 +266,7 @@ Decir que mientras el menú este activo todas las demás combinaciones de teclas
 
 En el menú de notas rápidas la tecla espaciadora no vale para nada y si tiene diferencias con el del lanzador de aplicaciones.
 
-Cuando estemos encima de un item si pulsamos F1 nos hablara el contenido de la nota, con Shift+C nos pegara la nota al portapapeles y con Shift+V nos pegara el contenido de la nota donde tengamos el foco.
+Cuando estemos encima de un item si pulsamos F1 nos hablara el contenido de la nota, con F2 nos pegara la nota al portapapeles y con F3 nos pegara el contenido de la nota donde tengamos el foco.
 
 Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que no salgamos en el teclado.
 

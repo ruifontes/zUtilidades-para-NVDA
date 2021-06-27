@@ -820,9 +820,9 @@ Esta acción no es reversible.
 				except:
 					pass
 				os.mkdir(ajustes.dbDir)
-			ajustes.refrescaCategoriasBackup()
 			del ajustes.nombreCategoria[:]
 			del ajustes.archivoCategoria[:]
+			ajustes.refrescaCategoriasBackup()
 			ajustes.posicion = [0, 0]
 			varGlobal.IS_WinON = False
 			ajustes.focoActual = "lstCategorias"
