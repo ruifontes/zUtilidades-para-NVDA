@@ -1,5 +1,41 @@
 # Manual de zUtilidades
 
+* Autor: Héctor J. Benítez Corredera
+* Compatibilidad con NVDA: de 2019.3 a 2021.1
+* [Descarga del complemento:](https://nvda.es/files/get.php?file=zUtilidades)
+* [Proyecto en GitHub:](https://github.com/hxebolax/zUtilidades-para-NVDA)
+
+---
+
+Índice<a id="Índice"></a>
+-------------
+- [Introducción](#mark0)
+- [Modulo Lanzador de aplicaciones](#mark1)
+- [Pantalla principal](#mark2)
+- [Lista de categorías](#mark3)
+- [Lista de aplicaciones](#mark4)
+- [Menú Añadir acción](#mark5)
+- [Editar acción](#mark6)
+- [Borrar acción](#mark7)
+- [Botón Menú](#mark8)
+- [Teclas rápidas](#mark9)
+- [Observaciones del autor](#mark10)
+- [Modulo Notas rápidas](#mark11)
+- [Agregar una nota rápida desde cualquier lugar](#mark12)
+- [Menús Virtuales para el Lanzador de aplicaciones y para Notas rápidas](#mark13)
+- [Traductores y colaboradores](#mark14)
+- [Registro de cambios](#mark15)
+- [Versión 0.2.2](#mark0.2.2)
+- [Versión 0.2.1](#mark0.2.1)
+- [Versión 0.2](#mark0.2)
+- [Versión 0.1.6](#mark0.1.6)
+- [Versión 0.1.5](#mark0.1.5)
+- [Versión 0.1](#mark0.1)
+
+---
+
+# Introducción<a id="mark0"></a>
+
 zUtilidades pretende ser un conjunto de pequeñas aplicaciones para NVDA.
 
 Se intentara agregar aplicaciones que puedan ser de interés para que podamos consultarlas rápidamente y que a su vez sean de fácil manejo y claras en su interface.
@@ -17,17 +53,17 @@ Actualmente esta formado por los siguientes módulos:
 * Lanzador de aplicaciones.
 * Notas rápidas.
 
-# Modulo Lanzador de aplicaciones
+# Modulo Lanzador de aplicaciones<a id="mark1"></a>
 
 Este módulo nos permitirá de manera rápida y desde cualquier parte de nuestro ordenador lanzar una aplicación ya sea portable o bien que se encuentre instalada.
 
-## Pantalla principal
+## Pantalla principal<a id="mark2"></a>
 
 La pantalla principal consta de una lista de categorías, una lista de aplicaciones y un botón Menú.
 
 Si tabulamos iremos recorriendo las distintas áreas.
 
-### Lista de categorías
+### Lista de categorías<a id="mark3"></a>
 
 En este área podremos añadir, editar o borrar una categoría pudiendo ordenar a nuestro gusto y en categorías nuestras aplicaciones.
 
@@ -45,7 +81,7 @@ Comentar que Editar y Borrar siempre será sobre la categoría que tenga el foco
 
 También podremos con las combinaciones de teclas Alt + Flecha arriba y Flecha abajo mover la categoría para poder ordenarlas.
 
-### Lista de aplicaciones
+### Lista de aplicaciones<a id="mark4"></a>
 
 En este área es donde se pondrán las aplicaciones correspondientes a la categoría que tengamos elegida.
 
@@ -59,7 +95,7 @@ También podremos con las combinaciones de teclas Alt + Flecha arriba y Flecha a
 
 En este área podremos rápidamente navegar por las distintas entradas pulsando la primera letra de esa manera podremos encontrar rápidamente la aplicación que deseamos ejecutar si tenemos muchas en la base de datos.
 
-#### Menú Añadir acción
+#### Menú Añadir acción<a id="mark5"></a>
 
 En este menú podremos elegir entre las siguientes opciones:
 
@@ -119,17 +155,17 @@ Avisar también que en este dialogo en el cuadro combinado también saldrán aqu
 
 Comentar también que hay que tener cuidado por que en este listado saldrán aplicaciones que pueden ser para administrar o aplicaciones de gestión que si no sabemos para que son es mejor no tocarlas.
 
-#### Editar acción
+#### Editar acción<a id="mark6"></a>
 
 El dialogo de Editar es exactamente el mismo que Añadir acción pero nos permitirá modificar la entrada que elijamos.
 
 Nos permitirá modificar todos los elementos menos los añadidos por la opción Añadir aplicación instalada, los diálogos serán los mismos que en las opciones para añadir.
 
-#### Borrar acción
+#### Borrar acción<a id="mark7"></a>
 
 Si borramos una entrada tenemos que tener en cuenta que la acción no será reversible.
 
-### Botón Menú
+### Botón Menú<a id="mark8"></a>
 
 Este botón será accesible desde cualquier parte de la interface pulsando la combinación Alt+M.
 
@@ -160,7 +196,7 @@ En el submenú de Opciones ahora solo está la opción Volver a valores por defe
 
 Si elegimos esta opción se borrara toda la base de datos dejando el complemento como si fuese recién instalado.
 
-## Teclas rápidas
+## Teclas rápidas<a id="mark9"></a>
 
 En las dos áreas tanto en la de Categorías como en la de Aplicaciones, podremos ordenar las entradas con:
 
@@ -180,7 +216,7 @@ Cuando una categoría o aplicación llegue al principio o final se nos anunciara
 
 * Escape: Cierra todos los diálogos que la aplicación puede abrir incluso la pantalla principal del Lanzador de aplicaciones, dejándonos el foco desde donde fue llamado.
 
-## Observaciones del autor
+## Observaciones del autor<a id="mark10"></a>
 
 Comentar varias cosas, la primera que el Lanzador de aplicaciones se cerrara cuando ejecutemos una aplicación, teniendo que llamarlo de nuevo cuando deseemos ejecutar otra.
 
@@ -194,7 +230,7 @@ Estas características solo son validas durante la sesión de NVDA, esto quiere 
 
 Este complemento esta echo para usarse con Windows 10, por lo que si está usando versiones anteriores y tiene algún problema coméntelo pero seguramente no podre hacer nada ya que algunas características solo se encuentran en Windows 10.
 
-# Modulo Notas rápidas
+# Modulo Notas rápidas<a id="mark11"></a>
 
 Este módulo nos servirá para tener a mano pequeñas notas las cuales podremos consultar, editar, borrar.
 
@@ -211,10 +247,12 @@ El dialogo de editar nota es exactamente lo mismo, poner un titulo o modificar e
 Este modulo se diferencia con el de lanzador de aplicaciones en que usa algunas nuevas combinaciones de teclas.
 
 * F1: Cuando estemos encima de una nota si presionamos F1 nos leerá el contenido de la nota.
-* F2: Nos copiara la nota enfocada al portapapeles para que podamos copiarla en cualquier sitio.
-* F3: Esta combinación nos cerrara la ventana de notas rápidas y pegara el contenido de la nota que tuviésemos enfocado en el foco.
+* F2: Nos copiara la nota enfocada al portapapeles para que podamos copiarla en cualquier sitio siempre y cuando la aplicación que admita escritura tiene que estar enfocada, si no pues no pasara nada.
+* F3: Esta combinación nos cerrara la ventana de notas rápidas y pegara el contenido de la nota que tuviésemos enfocado en el foco, es decir pega la nota en la aplicación que tenga abierta siempre que permita pegar texto dicha aplicación, por ejemplo, el Bloc de notas, el campo de un correo, en Word, etc.
 
-Esto significa que si llamamos a notas rápidas desde el bloc de notas o un asunto de un email cuando presionemos esta combinación el texto se pegara donde teníamos el foco.
+Esto significa que si llamamos al modulo  Notas rápidas desde el Bloc de notas o un asunto de un email cuando presionemos esta combinación el texto se pegara donde teníamos el foco.
+
+Por ejemplo si lanzamos el modulo Notas rápidas desde el escritorio y pulsamos F3 encima de una nota no pasara nada, si abrimos el Bloc de notas y pulsamos F3 pegara el contenido de la nota en el Bloc de notas.
 
 Cuidado si estamos en el escritorio o algún sitio donde no se pueda pegar directamente no hará nada.
 
@@ -224,13 +262,13 @@ Si pulsamos espacio se abrirá una ventana donde podremos solo visualizar nuestr
 
 Decir que este modulo viene sin tecla rápida definida, por lo que tendremos que agregársela en Gestos de entrada.
 
-# Agregar una nota rápida desde cualquier lugar
+# Agregar una nota rápida desde cualquier lugar<a id="mark12"></a>
 
 También el modulo de Notas rápidas tiene una característica para agregar notas rápidas desde cualquier sitio sin necesidad de abrir el complemento para añadir.
 
-En el gestor de gestos de entradas ahora podremos configurar una nueva combinación de teclas que encontrareis en:
+En el diálogo Gestos de Entrada ahora podremos configurar una nueva combinación de teclas que encontrareis en:
 
-NVDA / Preferencias / Gestos de entrada / zUtilidades / Agregar una nota rápida del texto seleccionado
+NVDA / Preferencias / Gestos de entrada / zUtilidades / Con una pulsación agrega una nota rápida del texto seleccionado, con doble pulsación agrega una nueva nota rápida
 
 Cuando tengamos ya una combinación asignada solo tendremos que seleccionar un texto en cualquier parte y pulsar la combinación de teclas.
 
@@ -238,9 +276,11 @@ Se abrirá una ventana en la cual lo primero que tendremos que elegir es en que 
 
 Si tabulamos caeremos en el campo para poner el titulo de la nota y si volvemos a tabular tendremos el texto que habíamos seleccionado.
 
-Si aceptamos se guardara y ya tendremos nuestra nota en nuestra categoría que hallamos elegido.
+Si pulsamos en Aceptar se guardara y ya tendremos nuestra nota en nuestra categoría que hallamos elegido.
 
-# Menús Virtuales para el Lanzador de aplicaciones y para Notas rápidas
+Si pulsamos dicha combinación dos veces se abrirá la misma pantalla pero para añadir una nota desde cero. Tendremos que seleccionar en que categoría guardar la nota, el titulo de la nota y también el contenido de la nota.
+
+# Menús Virtuales para el Lanzador de aplicaciones y para Notas rápidas<a id="mark13"></a>
 
 Bien estos menús vienen a potenciar a zUtilidades haciendo que ahora sea mucho más productivo y más rápido.
 
@@ -248,7 +288,7 @@ Bien los gestos que tengamos asignados al lanzador de aplicaciones y a notas rá
 
 Si pulsamos una sola vez dicha combinación nos saldrá la interface gráfica, si pulsamos dos veces nos saldrá el menú virtual.
 
-Bien en dicho menú nos podremos mover con flechas izquierda y derecha entre categorías y con flechas arriba y abajo entre ítems de dicha categoría si los hay.
+Bien en dicho menú nos podremos mover con flechas derecha y izquierda entre categorías y con flechas arriba y abajo entre ítems de dicha categoría si los hay.
 
 Bien existen algunas diferencias entre el menú del lanzador de aplicaciones y el de notas rápidas.
 
@@ -266,28 +306,39 @@ Decir que mientras el menú este activo todas las demás combinaciones de teclas
 
 En el menú de notas rápidas la tecla espaciadora no vale para nada y si tiene diferencias con el del lanzador de aplicaciones.
 
-Cuando estemos encima de un item si pulsamos F1 nos hablara el contenido de la nota, con F2 nos pegara la nota al portapapeles y con F3 nos pegara el contenido de la nota donde tengamos el foco.
+Cuando estemos encima de un item si pulsamos F1 nos verbalizará el contenido de la nota, con F2 nos copiara la nota al portapapeles y con F3 nos pegara el contenido de la nota donde tengamos el foco.
 
-Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que no salgamos en el teclado.
+Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que pulsemos la tecla Escape para abandonar el menú restaurando la funcionalidad normal del teclado.
 
-## Traductores y colaboradores:
+## Traductores y colaboradores:<a id="mark14"></a>
 
 * Francés: Rémy Ruiz
 * Portugués: Ângelo Miguel Abrantes
 * Javi Domínguez: Mil gracias por enseñarme a programar el menú. Mejor dicho por explicarlo para tontos como yo.
-# Registro de cambios.
-## Versión 0.2.
+
+# Registro de cambios.<a id="mark15"></a>
+## Versión 0.2.2.<a id="mark0.2.2"></a>
+
+* Agregada la posibilidad de mover entre categorías tanto ítems del lanzador de aplicaciones como de notas.
+* Agregada doble pulsación para la tecla Agregar nota rápida del texto seleccionado. Ahora con doble pulsación nos dejara crear una nueva nota rápida desde cero.
+* Actualizada documentación en Francés.
+
+## Versión 0.2.1.<a id="mark0.2.1"></a>
+
+* Solucionado problema con el portapapeles vacío al querer pegar un texto.
+
+## Versión 0.2.<a id="mark0.2"></a>
 
 * Se corrigieron muchos errores internos.
 * Se estabilizo el modulo Lanzador de aplicaciones.
 * Se agrego un nuevo módulo de Notas rápidas.
 * Se agregaron menús virtuales para los dos módulos.
 
-## Versión 0.1.6.
+## Versión 0.1.6.<a id="mark0.1.6"></a>
 
 * Agregado idioma Francés y  Portugués (Portugal / Brasil).
 
-## Versión 0.1.5.
+## Versión 0.1.5.<a id="mark0.1.5"></a>
 
 * Restructurados los menús.
 
@@ -309,7 +360,7 @@ Agregado la posibilidad de añadir:
 
 * Se preparo el complemento para ser traducido.
 
-## Versión 0.1.
+## Versión 0.1.<a id="mark0.1"></a>
 
 * Agregado modulo Lanzador de aplicaciones
 

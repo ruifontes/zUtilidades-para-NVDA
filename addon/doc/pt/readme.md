@@ -1,4 +1,4 @@
-# Manual do ZUtilidades 
+﻿# Manual do ZUtilidades 
 
 O zUtilidades pretende ser um conjunto de pequenos aplicativos para o NVDA.
 
@@ -14,9 +14,11 @@ Portanto, podemos iniciar os módulos indo ao menu Ferramentas / zUtilidades ou 
 
 Actualmente é composto pelos seguintes módulos:
 
-* Lançador de aplicativos.
+* Iniciador de aplicações.
 
-# Módulo Lançador de aplicações
+* Notas rápidas.
+
+# Módulo Iniciador de aplicações
 
 Este módulo permite-nos lançar de forma rápida e a partir de qualquer parte do nosso computador uma aplicação, seja portátil ou instalada.
 
@@ -192,12 +194,93 @@ Estas características são válidas apenas durante a sessão do NVDA, isto sign
 
 Este add-on foi feito para ser usado com o Windows 10, por isso, se  estiver a usar versões anteriores e tiver um problema, comente, mas certamente  não se poderá fazer nada, já que alguns destes recursos só são encontrados no Windows 10.
 
+# Módulo Notas rápidas
+
+Este módulo ajudar-nos-á a ter pequenas notas à mão, as quais  podemos consultar, editar ou excluir.
+
+Este módulo tem o mesmo manuseio que o iniciador de aplicações, mas varia em algumas teclas explicadas abaixo.
+
+Não vou explicar o menu com o qual podemos fazer cópias de segurança, restaurá-las, retornar aos valores padrão do complemento, identificar categorias e notas.
+
+Também não vou explicar a interface principal, porque é exactamente a mesma.
+
+Podemos adicionar uma nota rápida e, no diálogo que é aberto, podemos colocar o título da nota e, se tabularmos, podemos escrever o seu conteúdo.
+
+O diálogo editar nota é exactamente o mesmo, permitindo modificar o título já existente ou modificar a nota.
+
+Este módulo difere do iniciador de aplicações, porque usa algumas novas combinações de teclas.
+
+* F1: Quando estamos no topo de uma nota se pressionarmos F1, leremos o conteúdo da nota.
+* F2: copiar a nota focada para  a área de transferência para que possamos colá-la em qualquer lugar.
+* F3: Esta combinação fecha a janela de notas rápidas e cola o conteúdo da nota que estava sob o foco.
+
+Isto significa que, se activarmos as notas rápidas no bloco de notas ou num cliente de de -mail quando pressionarmos essa combinação, o texto será colado onde tivermos o foco.
+
+Tenha cuidado: Se estiver numa zona onde não seja permitida a escrita, esta funcionalidade não fará nada.
+
+Também continua a funcionar, tanto na área de categorias quanto na área de listas, para ser capaz de ordenar as referidas áreas com ALT + Setas para cima e para baixo para mover o que selecionarmos.
+
+Se pressionarmos a barra de espaço, será aberta uma janela, na qual só podemos ler a referida nota.
+
+Este módulo vem sem atalho definido, pelo que, se o desejarmos, podemos adicioná-lo em "definições de comandos".
+
+# Adicionar uma nota rápida desde qualquer lugar
+
+Além disso, o módulo de notas rápidas passa a ter um recurso para adicionar notas rápidas de qualquer lugar sem a necessidade de abrir o extra para esse procedimento.
+
+Na caixa de diálogo definir comandos, podemos configurar uma nova combinação de teclas, que encontrará em:
+
+NVDA / Preferências / definir comandos/ Zutilidades / pressionando uma vez, adiciona uma nota rápida do texto selecionado, duas vezes, Adiciona uma nova nota rápida 
+
+Quando já tivermos uma combinação de teclas atribuída, só teremos que seleccionar um texto, em qualquer lugar, e pressionar a combinação de teclas.
+Teremos que seleccionar em que categoria queremos adicionar a nota. Só aparecerão as categorias que tenhamos criado.
+com "tab", vamos para um campo para escrever e, com outro "tab, ficamos no texto que tínhamos seleccionado".
+Se activarmos "aceitar", ficaremos com a nota, dentro da categoria que anteriormente escolhemos.
+
+Se pressionarmos duas vezes a combinação de teclas das notas rápidas, criaremos uma nota em branco, para a qual devemos escolher a categoria, escrever o título e a nota, nos respectivos campos.   
+
+# Menus virtuais para o iniciador de aplicações e para notas rápidas
+
+Estes menus permitirão que o extra seja mais rápido e rpodutivo.
+
+Os atalhos que tivermos adicionado ao iniciador de aplicações e às notas rápidas podem, agora, pressionar-se duas vezes:
+
+Se forem pressionados uma só vez, ficaremos na interface gráfica; Se forem pressionados duas vezes, abrir-se-á o menu virtual.
+
+Neste menu, podemos mover-nos com setas esquerda e direita entre categorias e com as setas para cima e para baixo entre os itens dessa categoria, se os houver.
+
+Há algumas diferenças entre o menu do iniciador de aplicações e o das notas rápidas.
+
+No menu virtual do iniciador de aplicações, com as setas, movemos e introduzimos o item que selecionamos fazendo a ação correspondente.
+
+Se for um comando cmd, eu vou executá-lo, se for um acesso rápido, acontecerá o mesmo como se fosse na interface gráfica.
+
+Pressionar escape, para deixar o menu.
+
+O pressionar das letras permite-nos navegar através do menu.
+
+Diga-se que, enquanto este menu estiver activo, todas as outras combinações de teclas do NVDA não funcionarão, até sairmos do menu.
+
+No menu de notas rápidas, a tecla ""espaço" não é válida.
+
+Quando estamos sobre um item, se pressionarmos F1, ouviremos o conteúdo da nota, com F2 copiaremos a nota para a área de transferência e com F3 colaremos o conteúdo da nota onde tivermos o foco.
+
 ## Tradutores e colaboradores:
 
 * Francês: Rémy Ruiz
-* Português: Ângelo Miguel Abrantes
+* Português: Equipa Portuguesa do NVDA
+* Javi Domínguez: Mil gracias por enseñarme a programar el menú. Mejor dicho por explicarlo para tontos como yo.
 
 # Modificações.
+
+## Versão 0.2.
+
+* Adicionada a possibilidade de mover ítens entre categorias, tanto no lançador de aplicações como nas notas rápidas.
+* Foram corrigidos muitos erros internos;
+* Estabilizou-se o iniciador de aplicações
+* Adicionou-se o módulo de notas rápidas
+* Adicionaram-se menus virtuais para os dois módulos
+
 ## Versão 0.1.6.
 
 * Adicionada tradução francês, português.
@@ -226,6 +309,6 @@ Adicionada a capacidade de adicionar:
 
 ## Versão 0.1.
 
-* Módulo do lançador de aplicações adicionado
+* Módulo do iniciador  de aplicações adicionado
 
 * Versão inicial

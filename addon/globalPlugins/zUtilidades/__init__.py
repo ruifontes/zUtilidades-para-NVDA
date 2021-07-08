@@ -13,7 +13,6 @@ import inputCore
 from string import ascii_uppercase
 from functools import wraps
 import tones
-import ui
 import api
 import watchdog
 import core
@@ -21,6 +20,7 @@ import textInfos
 import time
 import wx
 from threading import Thread
+import re
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import varGlobal
@@ -114,7 +114,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 _("""Ya hay una instancia de zUtilidades abierta.
 
 No es posible tener dos instancias a la vez.""")
-				ui.message(msg)
+				varGlobal.mensaje(msg)
 		else:
 			pass
 
@@ -129,7 +129,7 @@ No es posible tener dos instancias a la vez.""")
 _("""Ya hay una instancia de zUtilidades abierta.
 
 No es posible tener dos instancias a la vez.""")
-				ui.message(msg)
+				varGlobal.mensaje(msg)
 				self.doblePulsacion = False
 		else:
 			self.doblePulsacion = False
@@ -153,7 +153,7 @@ No es posible tener dos instancias a la vez.""")
 _("""Ya hay una instancia de zUtilidades abierta.
 
 No es posible tener dos instancias a la vez.""")
-				ui.message(msg)
+				varGlobal.mensaje(msg)
 		else:
 			pass
 
@@ -168,63 +168,101 @@ No es posible tener dos instancias a la vez.""")
 _("""Ya hay una instancia de zUtilidades abierta.
 
 No es posible tener dos instancias a la vez.""")
-				ui.message(msg)
+				varGlobal.mensaje(msg)
 				self.doblePulsacion = False
 		else:
 			self.doblePulsacion = False
 			pass
 
-	@script(gesture=None, description= _("Agregar una nota rápida del texto seleccionado"), category= _("zUtilidades"))
+	@script(gesture=None, description= _("Con una pulsación agrega una nota rápida del texto seleccionado, con doble pulsación agrega una nueva nota rápida"), category= _("zUtilidades"))
 	def script_zNotesCopy(self, gesture):
-		# Inicio código obtenido de Buscador de definiciones de la RAE (DLEChecker) de Antonio Cascales
-		obj = api.getFocusObject()
-		selectedText = ""
-		if hasattr(obj.treeInterceptor, 'TextInfo') and not obj.treeInterceptor.passThrough:
-			try:
-				info = obj.treeInterceptor.makeTextInfo(textInfos.POSITION_SELECTION)
-			except (RuntimeError, NotImplementedError):
-				info = None
+		if getLastScriptRepeatCount() == 0:
+			core.callLater(200, lambda: self.selectNewNote(None))
+		elif getLastScriptRepeatCount() == 1:
+			self.doblePulsacion = True
+			core.callLater(100, lambda: self.newNote(None))
 
-			if not info or info.isCollapsed:
-				ui.message(_("Seleccione un texto para poder agregar a una nota rápida"))
-				return
-			else:
-				selectedText = info.text
-		else:
-			try:
-				selectedText = obj.selection.text
-			except (RuntimeError, NotImplementedError):
-				ui.message(_("Seleccione un texto para poder agregar a una nota rápida"))
-				return
-			if obj.selection.text == "":
-				ui.message(_("Seleccione un texto para poder agregar a una nota rápida"))
-				return
-		# Fin código obtenido de Buscador de definiciones de la RAE (DLEChecker) de Antonio Cascales
-		self.lanzador = "zn"
-		self.categorias = []
-		self.archivoCategorias = []
-		self.categorias = zn.ajustes.nombreCategoria
-		self.archivoCategorias = zn.ajustes.archivoCategoria
-		if len(self.categorias) == 0:
-			msg = \
+	def selectNewNote(self, event):
+		if self.doblePulsacion == False:
+			if varGlobal.IS_WinON == False:
+				# Inicio código obtenido de Buscador de definiciones de la RAE (DLEChecker) de Antonio Cascales
+				obj = api.getFocusObject()
+				selectedText = ""
+				if hasattr(obj.treeInterceptor, 'TextInfo') and not obj.treeInterceptor.passThrough:
+					try:
+						info = obj.treeInterceptor.makeTextInfo(textInfos.POSITION_SELECTION)
+					except (RuntimeError, NotImplementedError):
+						info = None
+
+					if not info or info.isCollapsed:
+						varGlobal.mensaje(_("Seleccione un texto para poder agregar a una nota rápida"))
+						return
+					else:
+						selectedText = info.text
+				else:
+					try:
+						selectedText = obj.selection.text
+					except (RuntimeError, NotImplementedError):
+						varGlobal.mensaje(_("Seleccione un texto para poder agregar a una nota rápida"))
+						return
+					if obj.selection.text == "":
+						varGlobal.mensaje(_("Seleccione un texto para poder agregar a una nota rápida"))
+						return
+				# Fin código obtenido de Buscador de definiciones de la RAE (DLEChecker) de Antonio Cascales
+				self.lanzador = "zn"
+				indiceNotes = varGlobal.dbDatos(os.path.join(zn.ajustes.dbDir, "index.dat")).CargaDatosIndex()
+				self.NewCategorias =  varGlobal.AnalizaDatos(indiceNotes).GetCategoria()
+				self.newArchivoCategorias = varGlobal.AnalizaDatos(indiceNotes).GetArchivosCat()
+				if len(self.NewCategorias) == 0:
+					msg = \
 _("""No hay categorías para añadir una nota rápida.
 
 Agregue una categoría antes para poder copiar un texto a una nota rápida.""")
-			ui.message(msg)
-			return
-		else:
-			self.leerArchivosDAT(0)
+					varGlobal.mensaje(msg)
+					return
 
-		if varGlobal.IS_WinON == False:
-			self.windowsApp = AñadirNotaCopia(gui.mainFrame, self.categorias, self.archivoCategorias, selectedText)
-			gui.mainFrame.prePopup()
-			self.windowsApp.Show()
-		else:
-			msg = \
+				self.windowsApp = AñadirNotaCopia(gui.mainFrame, self.NewCategorias, self.newArchivoCategorias, selectedText, 0)
+				gui.mainFrame.prePopup()
+				self.windowsApp.Show()
+			else:
+				msg = \
 _("""Ya hay una instancia de zUtilidades abierta.
 
 No es posible tener dos instancias a la vez.""")
-			ui.message(msg)
+				varGlobal.mensaje(msg)
+		else:
+			pass
+
+
+	def newNote(self, event):
+		if self.doblePulsacion == True:
+			if varGlobal.IS_WinON == False:
+				self.lanzador = "zn"
+				indiceNotes = varGlobal.dbDatos(os.path.join(zn.ajustes.dbDir, "index.dat")).CargaDatosIndex()
+				self.NewCategorias =  varGlobal.AnalizaDatos(indiceNotes).GetCategoria()
+				self.newArchivoCategorias = varGlobal.AnalizaDatos(indiceNotes).GetArchivosCat()
+				if len(self.NewCategorias) == 0:
+					msg = \
+_("""No hay categorías para añadir una nota rápida.
+
+Agregue una categoría antes para poder crear una nota rápida.""")
+					varGlobal.mensaje(msg)
+					self.doblePulsacion = False
+					return
+				self.windowsApp = AñadirNotaCopia(gui.mainFrame, self.NewCategorias, self.newArchivoCategorias, None, 1)
+				gui.mainFrame.prePopup()
+				self.windowsApp.Show()
+				self.doblePulsacion = False
+			else:
+				msg = \
+_("""Ya hay una instancia de zUtilidades abierta.
+
+No es posible tener dos instancias a la vez.""")
+				varGlobal.mensaje(msg)
+				self.doblePulsacion = False
+		else:
+			self.doblePulsacion = False
+			pass
 
 ########## Inicio menú virtual
 	def leerCategoriaDAT(self):
@@ -282,7 +320,12 @@ No es posible tener dos instancias a la vez.""")
 	def getScript(self, gesture):
 		if not self.toggling:
 			return globalPluginHandler.GlobalPlugin.getScript(self, gesture)
+
+		if not self.toggling or re.match("br(\(.+\))?", gesture.normalizedIdentifiers[0]):
+			return globalPluginHandler.GlobalPlugin.getScript(self, gesture)
+
 		script = globalPluginHandler.GlobalPlugin.getScript(self, gesture)
+
 		if not script:
 			if "kb:"+str("escape") in gesture.identifiers:
 				script = finally_(self.script_exit, self.finish)
@@ -300,12 +343,12 @@ No es posible tener dos instancias a la vez.""")
 _("""Ya hay una instancia de zUtilidades abierta.
 
 No es posible tener dos instancias a la vez.""")
-			ui.message(msg)
+			varGlobal.mensaje(msg)
 			return
 
 		self.leerCategoriaDAT()
 		if len(self.categorias) == 0:
-			ui.message(_("No hay categorías"))
+			varGlobal.mensaje(_("No hay categorías"))
 			return
 
 		varGlobal.IS_WinON = True
@@ -323,7 +366,7 @@ No es posible tener dos instancias a la vez.""")
 				self.catIndexzn = 0
 				self.itemIndexzn = -1
 			if len(self.categorias) == 0:
-				ui.message(_("No hay categorías"))
+				varGlobal.mensaje(_("No hay categorías"))
 				varGlobal.IS_WinON = False
 				return
 
@@ -358,7 +401,7 @@ No es posible tener dos instancias a la vez.""")
 			self.bindGesture("kb:F3", "pastePP")
 
 		self.toggling = True
-		ui.message(_("Menú activado"))
+		varGlobal.mensaje(_("Menú activado"))
 
 		if self.lanzador == "zl":
 			firstTimeTemporal = self.firstTimezl
@@ -371,7 +414,7 @@ No es posible tener dos instancias a la vez.""")
 			elif self.lanzador == "zn":
 				self.firstTimezn = False
 			self.leerArchivosDAT(0)
-			ui.message(self.categorias[0])
+			varGlobal.mensaje(self.categorias[0])
 			if self.lanzador == "zl":
 				self.catTotalzl = len(self.categorias)
 			elif self.lanzador == "zn":
@@ -379,38 +422,38 @@ No es posible tener dos instancias a la vez.""")
 		else:
 			if self.lanzador == "zl":
 				try:
-					ui.message(self.categorias[self.catIndexzl])
+					varGlobal.mensaje(self.categorias[self.catIndexzl])
 				except:
-					ui.message(self.categorias[0])
+					varGlobal.mensaje(self.categorias[0])
 			elif self.lanzador == "zn":
 				try:
-					ui.message(self.categorias[self.catIndexzn])
+					varGlobal.mensaje(self.categorias[self.catIndexzn])
 				except:
-					ui.message(self.categorias[0])
+					varGlobal.mensaje(self.categorias[0])
 
 	def script_nextCategory(self, gesture):
 		if self.lanzador == "zl":
 			self.catIndexzl = self.catIndexzl+1 if self.catIndexzl < len(self.categorias)-1 else 0
 			self.leerArchivosDAT(self.catIndexzl)
-			ui.message(self.categorias[self.catIndexzl])
+			varGlobal.mensaje(self.categorias[self.catIndexzl])
 			self.itemIndexzl = -1
 		elif self.lanzador == "zn":
 			self.catIndexzn = self.catIndexzn+1 if self.catIndexzn < len(self.categorias)-1 else 0
 
 			self.leerArchivosDAT(self.catIndexzn)
-			ui.message(self.categorias[self.catIndexzn])
+			varGlobal.mensaje(self.categorias[self.catIndexzn])
 			self.itemIndexzn = -1
 
 	def script_previousCategory(self, gesture):
 		if self.lanzador == "zl":
 			self.catIndexzl = self.catIndexzl -1 if self.catIndexzl > 0 else len(self.categorias)-1
 			self.leerArchivosDAT(self.catIndexzl)
-			ui.message(self.categorias[self.catIndexzl])
+			varGlobal.mensaje(self.categorias[self.catIndexzl])
 			self.itemIndexzl = -1
 		elif self.lanzador == "zn":
 			self.catIndexzn = self.catIndexzn -1 if self.catIndexzn > 0 else len(self.categorias)-1
 			self.leerArchivosDAT(self.catIndexzn)
-			ui.message(self.categorias[self.catIndexzn])
+			varGlobal.mensaje(self.categorias[self.catIndexzn])
 			self.itemIndexzn = -1
 
 	def script_skipToCategory(self, gesture):
@@ -424,12 +467,12 @@ No es posible tener dos instancias a la vez.""")
 					self.script_nextCategory(None)
 				except IndexError:
 					if self.categorias[self.catIndexzl][0].lower() == gesture.mainKeyName:
-						ui.message(self.categorias[self.catIndexzl])
+						varGlobal.mensaje(self.categorias[self.catIndexzl])
 					else:
 						tones.beep(200, 30)
 			except StopIteration:
 				if self.categorias[self.catIndexzl][0].lower() == gesture.mainKeyName:
-					ui.message(self.categorias[self.catIndexzl])
+					varGlobal.mensaje(self.categorias[self.catIndexzl])
 				else:
 					tones.beep(200, 30)
 			else:
@@ -444,12 +487,12 @@ No es posible tener dos instancias a la vez.""")
 					self.script_nextCategory(None)
 				except IndexError:
 					if self.categorias[self.catIndexzn][0].lower() == gesture.mainKeyName:
-						ui.message(self.categorias[self.catIndexzn])
+						varGlobal.mensaje(self.categorias[self.catIndexzn])
 					else:
 						tones.beep(200, 30)
 			except StopIteration:
 				if self.categorias[self.catIndexzn][0].lower() == gesture.mainKeyName:
-					ui.message(self.categorias[self.catIndexzn])
+					varGlobal.mensaje(self.categorias[self.catIndexzn])
 				else:
 					tones.beep(200, 30)
 			else:
@@ -459,40 +502,40 @@ No es posible tener dos instancias a la vez.""")
 		try:
 			if self.lanzador == "zl":
 				self.itemIndexzl = self.itemIndexzl + 1 if self.itemIndexzl < len(self.nombreAccion)-1 else 0
-				ui.message(self.nombreAccion[self.itemIndexzl])
+				varGlobal.mensaje(self.nombreAccion[self.itemIndexzl])
 			elif self.lanzador == "zn":
 				self.itemIndexzn = self.itemIndexzn + 1 if self.itemIndexzn < len(self.nombreAccion)-1 else 0
-				ui.message(self.nombreAccion[self.itemIndexzn])
+				varGlobal.mensaje(self.nombreAccion[self.itemIndexzn])
 		except:
 			if self.lanzador == "zl":
-				ui.message(_("Sin acción"))
+				varGlobal.mensaje(_("Sin acción"))
 			if self.lanzador == "zn":
-				ui.message(_("Sin notas"))
+				varGlobal.mensaje(_("Sin notas"))
 
 	def script_previousItem(self, gesture):
 		try:
 			if self.lanzador == "zl":
 				self.itemIndexzl = self.itemIndexzl-1 if self.itemIndexzl > 0 else len(self.nombreAccion)-1
-				ui.message(self.nombreAccion[self.itemIndexzl])
+				varGlobal.mensaje(self.nombreAccion[self.itemIndexzl])
 			elif self.lanzador == "zn":
 				self.itemIndexzn = self.itemIndexzn-1 if self.itemIndexzn > 0 else len(self.nombreAccion)-1
-				ui.message(self.nombreAccion[self.itemIndexzn])
+				varGlobal.mensaje(self.nombreAccion[self.itemIndexzn])
 		except:
 			if self.lanzador == "zl":
-				ui.message(_("Sin acción"))
+				varGlobal.mensaje(_("Sin acción"))
 			if self.lanzador == "zn":
-				ui.message(_("Sin notas"))
+				varGlobal.mensaje(_("Sin notas"))
 
 	def script_executeCommand(self, gesture):
 		if self.itemIndexzl < 0:
-			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, enter para activarlo o escape para salir"))
+			varGlobal.mensaje(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, enter para activarlo o escape para salir"))
 			return
 
 		if len(self.temporal) == 0:
-			ui.message(_("Esta categoría no tiene acciones"))
+			varGlobal.mensaje(_("Esta categoría no tiene acciones"))
 			return
 		else:
-			ui.message(_("Ejecutando acción"))
+			varGlobal.mensaje(_("Ejecutando acción"))
 			self.script_exit(None)
 			valor = self.itemIndexzl
 			if self.temporal[valor][0] == "app":
@@ -513,7 +556,7 @@ No es posible tener dos instancias a la vez.""")
 _("""La ruta a la aplicación {}, no se encontró.
 
 Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").format(self.temporal[valor][1])
-					ui.message(msg)
+					varGlobal.mensaje(msg)
 					self.finish()
 
 			elif self.temporal[valor][0] == "cmd":
@@ -540,7 +583,7 @@ _("""La ruta a la carpeta no se encontró.
 {}
 
 Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").format(self.temporal[valor][2])
-					ui.message(msg)
+					varGlobal.mensaje(msg)
 					self.finish()
 
 			elif self.temporal[valor][0] == "adr":
@@ -557,7 +600,7 @@ _("""La ruta al acceso directo no se encontró.
 {}
 
 Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").format(self.temporal[valor][2])
-					ui.message(msg)
+					varGlobal.mensaje(msg)
 					self.finish()
 
 			elif self.temporal[valor][0] == "sap":
@@ -569,24 +612,24 @@ Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").
 
 	def script_viewNote(self, gesture):
 		if self.itemIndexzn < 0:
-			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
+			varGlobal.mensaje(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
 			return
 
 		if len(self.temporal) == 0:
-			ui.message(_("Esta categoría no tiene notas"))
+			varGlobal.mensaje(_("Esta categoría no tiene notas"))
 			return
 		else:
 			valor = self.itemIndexzn
 			if self.temporal[valor][0] == "txt":
-				ui.message(self.temporal[valor][2])
+				varGlobal.mensaje(self.temporal[valor][2])
 
 	def script_copyPP(self, gesture):
 		if self.itemIndexzn < 0:
-			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
+			varGlobal.mensaje(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
 			return
 
 		if len(self.temporal) == 0:
-			ui.message(_("Esta categoría no tiene notas"))
+			varGlobal.mensaje(_("Esta categoría no tiene notas"))
 			return
 		else:
 			valor = self.itemIndexzn
@@ -595,19 +638,19 @@ Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").
 			if wx.TheClipboard.Open():
 				wx.TheClipboard.SetData(self.dataObj)
 				wx.TheClipboard.Flush()
-				ui.message(_("Se ha copiado la nota {} al portapapeles").format(self.temporal[valor][1]))
+				varGlobal.mensaje(_("Se ha copiado la nota {} al portapapeles").format(self.temporal[valor][1]))
 			else:
-				ui.message(_("No se pudo copiar la nota {} al portapapeles").format(self.temporal[valor][1]))
+				varGlobal.mensaje(_("No se pudo copiar la nota {} al portapapeles").format(self.temporal[valor][1]))
 			self.script_exit(None)
 			self.finish()
 
 	def script_pastePP(self, gesture):
 		if self.itemIndexzn < 0:
-			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
+			varGlobal.mensaje(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
 			return
 
 		if len(self.temporal) == 0:
-			ui.message(_("Esta categoría no tiene notas"))
+			varGlobal.mensaje(_("Esta categoría no tiene notas"))
 			return
 		else:
 			valor = self.itemIndexzn
@@ -616,7 +659,11 @@ Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").
 				self.finish()
 				paste = self.temporal[valor][2]
 				# Source code taken from: frequentText add-on for NVDA. Written by Rui Fontes and Ângelo Abrantes
-				clipboardBackup = api.getClipData()
+				try:
+					clipboardBackup = api.getClipData()
+				except:
+					pass
+
 				api.copyToClip(paste)
 				time.sleep(0.1)
 				api.processPendingEvents(False)
@@ -628,17 +675,20 @@ Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").
 				else:
 					time.sleep(0.1)
 					KeyboardInputGesture.fromName("Control+v").send()
-				ui.message(_("Nota pegada en el foco"))
-				core.callLater(300, lambda: api.copyToClip(clipboardBackup))
+				varGlobal.mensaje(_("Nota pegada en el foco"))
+				try:
+					core.callLater(300, lambda: api.copyToClip(clipboardBackup))
+				except:
+					pass
 
 	def script_speechHelp(self, gesture):
 		if self.lanzador == "zl":
-			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, enter para activarlo o escape para salir"))
+			varGlobal.mensaje(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, enter para activarlo o escape para salir"))
 		elif self.lanzador == "zn":
-			ui.message(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
+			varGlobal.mensaje(_("Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"))
 
 	def script_exit(self, gesture):
-		ui.message(_("Saliendo del menú"))
+		varGlobal.mensaje(_("Saliendo del menú"))
 
 	def finish(self):
 		varGlobal.IS_WinON = False
@@ -696,13 +746,16 @@ class AñadirNotaCopia(wx.Dialog):
 		obj.notas = notasLista
 		obj.GuardaDatos()
 
-	def __init__(self, parent, categorias, archivos, texto):
+	def __init__(self, parent, categorias, archivos, texto, opcion):
 
 		WIDTH = 1200
 		HEIGHT = 850
 		pos = varGlobal._calculatePosition(WIDTH, HEIGHT)
 
-		super(AñadirNotaCopia, self).__init__(parent, -1, title=_("Añadir Nota rápida"),pos = pos, size = (WIDTH, HEIGHT))
+		if opcion == 0:
+			super(AñadirNotaCopia, self).__init__(parent, -1, title=_("Agregar nota rápida del texto seleccionado"),pos = pos, size = (WIDTH, HEIGHT))
+		if opcion == 1:
+			super(AñadirNotaCopia, self).__init__(parent, -1, title=_("Añadir una nueva nota rápida"),pos = pos, size = (WIDTH, HEIGHT))
 
 		self.categorias = categorias
 		self.archivos = archivos
@@ -710,6 +763,7 @@ class AñadirNotaCopia(wx.Dialog):
 		self.indice = 0
 		self.listaNombres, self.temporal, self.guardar = self.leerArchivosDAT(self.indice)
 
+#		if opcion == 0:
 		varGlobal.IS_WinON = True
 
 		self.Panel = wx.Panel(self)
@@ -724,7 +778,8 @@ class AñadirNotaCopia(wx.Dialog):
 
 		label3 = wx.StaticText(self.Panel, wx.ID_ANY, label=_("Contenido de la Nota:"))
 		self.textoNota = wx.TextCtrl(self.Panel, wx.ID_ANY, style=wx.TE_MULTILINE)
-		self.textoNota.SetValue(self.texto)
+		if opcion == 0:
+			self.textoNota.SetValue(self.texto)
 
 		self.AceptarBTN = wx.Button(self.Panel, 0, label=_("&Aceptar"))
 		self.Bind(wx.EVT_BUTTON, self.onAceptar, id=self.AceptarBTN.GetId())
@@ -799,7 +854,6 @@ Modifique el nombre para poder continuar.""")
 		varGlobal.IS_WinON = False
 		self.Destroy()
 		gui.mainFrame.postPopup()
-		ui.message(_("Se cancelo la copia de nota rápida"))
 
 class HiloComplemento(Thread):
 	def __init__(self, opcion):

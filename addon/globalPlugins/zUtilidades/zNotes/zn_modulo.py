@@ -6,7 +6,6 @@ import addonHandler
 import gui
 import globalVars
 from tones import beep
-import ui
 import api
 import watchdog
 import core
@@ -198,6 +197,9 @@ class zNotas(wx.Dialog):
 		self.Bind(wx.EVT_MENU, self.onMenuNotas, itemEditar)
 		itemBorrar = self.notas.Append(11, _("&Borrar Nota"))
 		self.Bind(wx.EVT_MENU, self.onMenuNotas, itemBorrar)
+		itemMover = self.notas.Append(12, _("&Mover Nota"))
+		self.Bind(wx.EVT_MENU, self.onMenuNotas, itemMover)
+
 		self.menu.AppendSubMenu(self.notas, _("&Notas"))
 
 		self.copiaSeguridad = wx.Menu()
@@ -391,6 +393,9 @@ Tenga en cuenta que al borrar la categoría se eliminaran las notas que estuvier
 		self.Bind(wx.EVT_MENU, self.onMenuNotas, itemEditar)
 		itemBorrar = self.menu.Append(11, _("&Borrar Nota"))
 		self.Bind(wx.EVT_MENU, self.onMenuNotas, itemBorrar)
+		itemMover = self.menu.Append(12, _("&Mover Nota"))
+		self.Bind(wx.EVT_MENU, self.onMenuNotas, itemMover)
+
 		self.lstNotas.PopupMenu(self.menu)
 
 	def onMenuNotas(self, event):
@@ -476,6 +481,36 @@ Va a borrar la Nota:
 						self.onRefrescar(None)
 					else:
 						MsgBox.Destroy
+		elif id == 12:
+			if nombreCategoria == _("No hay categorías"):
+				msg = \
+_("""No tiene ninguna categoría.
+
+Agregue una categoría antes para poder mover una Nota.""")
+				self.mensaje(msg, _("Información"), 0)
+			else:
+				if nombreItem == _("Sin notas"):
+					msg = \
+_("""No tiene ninguna Nota.
+
+Agregue una antes para poder mover.""")
+					self.mensaje(msg, _("Información"), 0)
+				else:
+					if len(ajustes.nombreCategoria) == 1:
+						msg = \
+_("""No hay categorías suficientes.
+
+Para mover entre categorías es necesario al menos dos categorías.""")
+						self.mensaje(msg, _("Información"), 0)
+					else:
+						dlg = MoverNota(self)
+						res = dlg.ShowModal()
+						if res == 0:
+							dlg.Destroy()
+							ajustes.guardaNotas(self.dbNotas)
+							self.onRefrescar(None)
+						else:
+							dlg.Destroy()
 
 	def onTeclasNotas(self, event):
 		if self.lstNotas.GetSelection() == -1:
@@ -492,14 +527,13 @@ Va a borrar la Nota:
 					self.onPortapapeles(self.lstNotas.GetSelection())
 				elif event.GetKeyCode() == 342: # Shift+v pega en la app
 					self.onPegar(event, self.lstNotas.GetSelection())
-
 				elif (event.AltDown(), event.GetKeyCode()) == (True, 315):
-					self.mueveAplicacion("arriba")
+					self.MueveNota("arriba")
 				elif (event.AltDown(), event.GetKeyCode()) == (True, 317):
-					self.mueveAplicacion("abajo")
+					self.MueveNota("abajo")
 				event.Skip()
 
-	def mueveAplicacion(self, valor):
+	def MueveNota(self, valor):
 		indice = self.lstNotas.GetSelection()
 		if valor == "arriba":
 			totalLista = len(ajustes.notasLista) - 1
@@ -535,7 +569,7 @@ Va a borrar la Nota:
 			dlg.Destroy()
 
 	def onVerbaliza(self, valor):
-		ui.message(ajustes.notasLista[valor][2])
+		varGlobal.mensaje(ajustes.notasLista[valor][2])
 
 	def onPortapapeles(self, valor):
 		self.dataObj = wx.TextDataObject()
@@ -543,9 +577,9 @@ Va a borrar la Nota:
 		if wx.TheClipboard.Open():
 			wx.TheClipboard.SetData(self.dataObj)
 			wx.TheClipboard.Flush()
-			ui.message(_("Se a copiado la nota {} al portapapeles.").format(self.lstNotas.GetString(self.lstNotas.GetSelection())))
+			varGlobal.mensaje(_("Se a copiado la nota {} al portapapeles.").format(self.lstNotas.GetString(self.lstNotas.GetSelection())))
 		else:
-			ui.message(_("No se a podido copiar la nota {} al portapapeles.").format(self.lstNotas.GetString(self.lstNotas.GetSelection())))
+			varGlobal.mensaje(_("No se a podido copiar la nota {} al portapapeles.").format(self.lstNotas.GetString(self.lstNotas.GetSelection())))
 
 	def onPegar(self, event, valor):
 		if ajustes.notasLista[valor][0] == "txt":
@@ -553,7 +587,10 @@ Va a borrar la Nota:
 			event.Skip()
 			paste = ajustes.notasLista[valor][2]
 			# Source code taken from: frequentText add-on for NVDA. Written by Rui Fontes and Ângelo Abrantes
-			clipboardBackup = api.getClipData()
+			try:
+				clipboardBackup = api.getClipData()
+			except:
+				pass
 			api.copyToClip(paste)
 			time.sleep(0.1)
 			api.processPendingEvents(False)
@@ -563,9 +600,12 @@ Va a borrar la Nota:
 				WM_COMMAND = 0x0111
 				watchdog.cancellableSendMessage(focus.windowHandle, WM_COMMAND, 0xfff1, 0)
 			else:
+				varGlobal.mensaje("Nota pegada en el foco.")
 				KeyboardInputGesture.fromName("Control+v").send()
-			ui.message("Nota pegada en el foco.")
-			core.callLater(300, lambda: api.copyToClip(clipboardBackup))
+			try:
+				core.callLater(300, lambda: api.copyToClip(clipboardBackup))
+			except:
+				pass
 			self.onSalir(None)
 
 	def HacerBackup(self, event):
@@ -1071,6 +1111,147 @@ class VisualizarNota(wx.Dialog):
 
 	def CancelaFunciones(self, event):
 		pass
+
+	def onkeyVentanaDialogo(self, event):
+		if event.GetKeyCode() == 27: # Pulsamos ESC y cerramos la ventana
+			if self.IsModal():
+				self.EndModal(1)
+			else:
+				self.Close()
+		else:
+			event.Skip()
+
+	def onCancelar(self, event):
+		if self.IsModal():
+			self.EndModal(event.EventObject.Id)
+		else:
+			self.Close()
+
+class MoverNota(wx.Dialog):
+	def leerArchivosDAT(self, valor):
+		self.archivoNotas = os.path.join(ajustes.dbDir, valor)
+		self.dbNotas = ajustes.dbNotas(self.archivoNotas)
+		self.dbNotas.CargaDatos()
+		temporal = self.dbNotas.notas
+		nombresNotas = []
+		for x in temporal:
+			nombresNotas.append(x[1])
+		return nombresNotas, temporal, self.dbNotas
+
+	def guardaNotas(self, notasLista, obj):
+		obj.notas = notasLista
+		obj.GuardaDatos()
+
+	def __init__(self, frame):
+
+		WIDTH = 600
+		HEIGHT = 425
+		pos = varGlobal._calculatePosition(WIDTH, HEIGHT)
+
+		super(MoverNota, self).__init__(None, -1, title=_("Mover la nota {} a otra categoría").format(frame.lstNotas.GetString(frame.lstNotas.GetSelection())), pos = pos, size = (WIDTH, HEIGHT))
+
+		self.frame = frame
+		self.indiceCategoria = self.frame.lstCategorias.GetSelection()
+		self.indiceNota = self.frame.lstNotas.GetSelection()
+		self.indiceChoice = 0
+		self.dictCategorias =  varGlobal.returnDict(ajustes.nombreCategoria, ajustes.archivoCategoria)
+		self.banderaTexto = False
+
+		self.Panel = wx.Panel(self)
+
+		tempListChoice = varGlobal.returnKeys(self.dictCategorias)
+		del tempListChoice[self.indiceCategoria]
+		label1 = wx.StaticText(self.Panel, wx.ID_ANY, label=_("Seleccione una categoría donde mover la nota:"))
+		self.choice = wx.Choice(self.Panel, wx.ID_ANY, choices = tempListChoice) 
+		self.choice.SetSelection(self.indiceChoice)
+		self.choice.Bind(wx.EVT_CHOICE, self.OnChoice)
+		self.nombreCategoriaDestino = self.choice.GetString(self.indiceChoice)
+
+		label2 = wx.StaticText(self.Panel, wx.ID_ANY, label=_("Introduzca un nuevo nombre a la nota:"))
+		self.textoNombre = wx.TextCtrl(self.Panel, wx.ID_ANY)
+		self.textoNombre.Disable()
+
+		self.AceptarBTN = wx.Button(self.Panel, 0, label=_("&Aceptar"))
+		self.Bind(wx.EVT_BUTTON, self.onAceptar, id=self.AceptarBTN.GetId())
+
+		self.CancelarBTN = wx.Button(self.Panel, 1, label=_("&Cancelar"))
+		self.Bind(wx.EVT_BUTTON, self.onCancelar, id=self.CancelarBTN.GetId())
+
+		self.Bind(wx.EVT_CHAR_HOOK, self.onkeyVentanaDialogo)
+
+		sizeV = wx.BoxSizer(wx.VERTICAL)
+		sizeH = wx.BoxSizer(wx.HORIZONTAL)
+
+		sizeV.Add(label1, 0, wx.EXPAND)
+		sizeV.Add(self.choice, 0, wx.EXPAND)
+
+		sizeV.Add(label2, 0, wx.EXPAND)
+		sizeV.Add(self.textoNombre, 0, wx.EXPAND)
+
+		sizeH.Add(self.AceptarBTN, 2, wx.EXPAND)
+		sizeH.Add(self.CancelarBTN, 2, wx.EXPAND)
+
+		sizeV.Add(sizeH, 0, wx.EXPAND)
+
+		self.Panel.SetSizer(sizeV)
+
+		self.CenterOnScreen()
+
+	def OnChoice(self, event):
+		self.indiceChoice = event.GetSelection()
+		self.nombreCategoriaDestino = self.choice.GetString(self.indiceChoice)
+		self.textoNombre.Clear()
+		self.textoNombre.Disable()
+		self.banderaTexto = False
+
+	def onAceptar(self, event):
+		notaNombreMover = self.frame.lstNotas.GetString(self.indiceNota)
+		nombresNotas, temporal, self.dbNotas = self.leerArchivosDAT(varGlobal.returnValue(self.dictCategorias, self.nombreCategoriaDestino))
+		if self.banderaTexto == False:
+			p = varGlobal.estaenlistado(nombresNotas, notaNombreMover)
+			if p == True:
+				msg = \
+_("""No puede duplicar el nombre de una Nota.
+
+Modifique el nombre para poder continuar.""")
+				self.frame.mensaje(msg, _("Información"), 0)
+				self.textoNombre.Enable()
+				self.banderaTexto = True
+				self.textoNombre.SetValue(notaNombreMover)
+				self.textoNombre.SetFocus()
+			else:
+				z = temporal
+				z.append(ajustes.notasLista[self.indiceNota])
+				self.guardaNotas(z, self.dbNotas)
+				del ajustes.notasLista[self.indiceNota]
+				if self.IsModal():
+					self.EndModal(event.EventObject.Id)
+				else:
+					self.Close()
+		else:
+			p = varGlobal.estaenlistado(nombresNotas, self.textoNombre.GetValue())
+			if p == True:
+				msg = \
+_("""No puede duplicar el nombre de una Nota.
+
+Modifique el nombre para poder continuar.""")
+				self.frame.mensaje(msg, _("Información"), 0)
+				self.textoNombre.Enable()
+				self.banderaTexto = True
+				self.textoNombre.SetValue(notaNombreMover)
+				self.textoNombre.SetFocus()
+			else:
+				z = temporal
+				x = ajustes.notasLista[self.indiceNota]
+				x.pop(1)
+				x.insert(1, self.textoNombre.GetValue())
+				z.append(x)
+				self.guardaNotas(z, self.dbNotas)
+				del ajustes.notasLista[self.indiceNota]
+				if self.IsModal():
+					self.EndModal(event.EventObject.Id)
+				else:
+					self.Close()
 
 	def onkeyVentanaDialogo(self, event):
 		if event.GetKeyCode() == 27: # Pulsamos ESC y cerramos la ventana

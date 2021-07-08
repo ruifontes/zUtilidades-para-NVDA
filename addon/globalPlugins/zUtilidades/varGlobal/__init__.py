@@ -3,6 +3,9 @@
 # This file is covered by the GNU General Public License.
 
 import addonHandler
+import braille
+import config
+import ui
 import os, sys
 import ctypes
 import string
@@ -205,6 +208,28 @@ def comprobar_archivo_db(n, lista):
 		return aleatorios
 	else:
 		return False
+
+def returnDict(a, b):
+	return dict(zip(a, b))
+
+def returnValue(diccionario, valor):
+	return diccionario.get(valor)
+
+def returnKeys(diccionario):
+	return list(diccionario.keys())
+
+def mensaje(msg): 
+	# Esto solo funciona si está el seguimiento de braille a la revisión, así que primero guardamos el ajuste original y luego lo cambiamos a revisión 
+	tether = braille.handler.TETHER_AUTO if config.conf["braille"]["autoTether"] else config.conf["braille"]["tetherTo"] 
+	braille.handler.setTether("review") 
+	# Ahora lanzamos el mensaje 
+	ui.message(msg) 
+	# ui.message llama internamente a braille.handler.message 
+	if braille.handler._messageCallLater : 
+		braille.handler._messageCallLater .Stop() 
+	# Con esto el mensaje quedaría estático en la línea hasta que se envíe otro mensaje o algún otroproceso quiera escribir en ella. 
+	# Devolvemos el ajuste original 
+	braille.handler.setTether(tether) 
 
 # variables Globales
 IS_WinON = False # Bandera para saber si esta abierta una ventana del complemento

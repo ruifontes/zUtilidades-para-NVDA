@@ -51,7 +51,7 @@ class zLanzador(wx.Dialog):
 		self.lstCategorias.Bind(wx.EVT_CONTEXT_MENU,self.menuCategoria)
 		self.lstCategorias.Bind(wx.EVT_KEY_UP, self.onTeclasCategoria)
 
-		lbAplicaciones = wx.StaticText(self.Panel, wx.ID_ANY, _("&Lista aplicaciones:"))
+		lbAplicaciones = wx.StaticText(self.Panel, wx.ID_ANY, _("&Lista acciones:"))
 		self.lstAplicaciones = wx.ListBox(self.Panel, 2, style = wx.LB_NO_SB)
 		self.lstAplicaciones.Bind(wx.EVT_CONTEXT_MENU,self.menuAplicaciones)
 		self.lstAplicaciones.Bind(wx.EVT_KEY_UP, self.onTeclasAplicaciones)
@@ -202,6 +202,8 @@ class zLanzador(wx.Dialog):
 		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemEditar)
 		itemBorrar = self.aplicacion.Append(11, _("&Borrar acción"))
 		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemBorrar)
+		itemMover = self.aplicacion.Append(12, _("&Mover acción"))
+		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemMover)
 		self.menu.AppendSubMenu(self.aplicacion, _("&Acciones"))
 
 		self.copiaSeguridad = wx.Menu()
@@ -407,6 +409,9 @@ Tenga en cuenta que al borrar la categoría se eliminaran las aplicaciones que e
 		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemEditar)
 		itemBorrar = self.menu.Append(11, _("&Borrar acción"))
 		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemBorrar)
+		itemMover = self.menu.Append(12, _("&Mover acción"))
+		self.Bind(wx.EVT_MENU, self.onMenuAplicacion, itemMover)
+
 		self.lstAplicaciones.PopupMenu(self.menu)
 
 	def onMenuAplicacion(self, event):
@@ -579,6 +584,36 @@ Va a borrar la acción:
 						self.onRefrescar(None)
 					else:
 						MsgBox.Destroy
+		elif id == 12:
+			if nombreCategoria == _("No hay categorías"):
+				msg = \
+_("""No tiene ninguna categoría.
+
+Agregue una categoría antes para poder mover una acción.""")
+				self.mensaje(msg, _("Información"), 0)
+			else:
+				if nombreItem == _("Sin acciones"):
+					msg = \
+_("""No tiene ninguna acción.
+
+Agregue una antes para poder mover.""")
+					self.mensaje(msg, _("Información"), 0)
+				else:
+					if len(ajustes.nombreCategoria) == 1:
+						msg = \
+_("""No hay categorías suficientes.
+
+Para mover entre categorías es necesario al menos dos categorías.""")
+						self.mensaje(msg, _("Información"), 0)
+					else:
+						dlg = MoverAccion(self)
+						res = dlg.ShowModal()
+						if res == 0:
+							dlg.Destroy()
+							ajustes.guardaAplicaciones(self.dbAplicaciones)
+							self.onRefrescar(None)
+						else:
+							dlg.Destroy()
 
 	def onTeclasAplicaciones(self, event):
 		if self.lstAplicaciones.GetSelection() == -1:
@@ -2168,6 +2203,147 @@ Modifique el nombre para poder continuar.""")
 						self.EndModal(event.EventObject.Id)
 					else:
 						self.Close()
+
+	def onkeyVentanaDialogo(self, event):
+		if event.GetKeyCode() == 27: # Pulsamos ESC y cerramos la ventana
+			if self.IsModal():
+				self.EndModal(1)
+			else:
+				self.Close()
+		else:
+			event.Skip()
+
+	def onCancelar(self, event):
+		if self.IsModal():
+			self.EndModal(event.EventObject.Id)
+		else:
+			self.Close()
+
+class MoverAccion(wx.Dialog):
+	def leerArchivosDAT(self, valor):
+		self.archivoAccion = os.path.join(ajustes.dbDir, valor)
+		self.dbAccion = ajustes.dbAplicaciones(self.archivoAccion)
+		self.dbAccion.CargaDatos()
+		temporal = self.dbAccion.aplicacion
+		nombresAccion = []
+		for x in temporal:
+			nombresAccion.append(x[1])
+		return nombresAccion, temporal, self.dbAccion
+
+	def guardaAccion(self, notasAccion, obj):
+		obj.aplicacion = notasAccion
+		obj.GuardaDatos()
+
+	def __init__(self, frame):
+
+		WIDTH = 600
+		HEIGHT = 425
+		pos = varGlobal._calculatePosition(WIDTH, HEIGHT)
+
+		super(MoverAccion, self).__init__(None, -1, title=_("Mover la acción  {} a otra categoría").format(frame.lstAplicaciones.GetString(frame.lstAplicaciones.GetSelection())), pos = pos, size = (WIDTH, HEIGHT))
+
+		self.frame = frame
+		self.indiceCategoria = self.frame.lstCategorias.GetSelection()
+		self.indiceAccion = self.frame.lstAplicaciones.GetSelection()
+		self.indiceChoice = 0
+		self.dictCategorias =  varGlobal.returnDict(ajustes.nombreCategoria, ajustes.archivoCategoria)
+		self.banderaTexto = False
+
+		self.Panel = wx.Panel(self)
+
+		tempListChoice = varGlobal.returnKeys(self.dictCategorias)
+		del tempListChoice[self.indiceCategoria]
+		label1 = wx.StaticText(self.Panel, wx.ID_ANY, label=_("Seleccione una categoría donde mover la acción:"))
+		self.choice = wx.Choice(self.Panel, wx.ID_ANY, choices = tempListChoice) 
+		self.choice.SetSelection(self.indiceChoice)
+		self.choice.Bind(wx.EVT_CHOICE, self.OnChoice)
+		self.nombreCategoriaDestino = self.choice.GetString(self.indiceChoice)
+
+		label2 = wx.StaticText(self.Panel, wx.ID_ANY, label=_("Introduzca un nuevo nombre a la acción:"))
+		self.textoNombre = wx.TextCtrl(self.Panel, wx.ID_ANY)
+		self.textoNombre.Disable()
+
+		self.AceptarBTN = wx.Button(self.Panel, 0, label=_("&Aceptar"))
+		self.Bind(wx.EVT_BUTTON, self.onAceptar, id=self.AceptarBTN.GetId())
+
+		self.CancelarBTN = wx.Button(self.Panel, 1, label=_("&Cancelar"))
+		self.Bind(wx.EVT_BUTTON, self.onCancelar, id=self.CancelarBTN.GetId())
+
+		self.Bind(wx.EVT_CHAR_HOOK, self.onkeyVentanaDialogo)
+
+		sizeV = wx.BoxSizer(wx.VERTICAL)
+		sizeH = wx.BoxSizer(wx.HORIZONTAL)
+
+		sizeV.Add(label1, 0, wx.EXPAND)
+		sizeV.Add(self.choice, 0, wx.EXPAND)
+
+		sizeV.Add(label2, 0, wx.EXPAND)
+		sizeV.Add(self.textoNombre, 0, wx.EXPAND)
+
+		sizeH.Add(self.AceptarBTN, 2, wx.EXPAND)
+		sizeH.Add(self.CancelarBTN, 2, wx.EXPAND)
+
+		sizeV.Add(sizeH, 0, wx.EXPAND)
+
+		self.Panel.SetSizer(sizeV)
+
+		self.CenterOnScreen()
+
+	def OnChoice(self, event):
+		self.indiceChoice = event.GetSelection()
+		self.nombreCategoriaDestino = self.choice.GetString(self.indiceChoice)
+		self.textoNombre.Clear()
+		self.textoNombre.Disable()
+		self.banderaTexto = False
+
+	def onAceptar(self, event):
+		accionNombreMover = self.frame.lstAplicaciones.GetString(self.indiceAccion)
+		nombresAccion, temporal, self.dbAccion = self.leerArchivosDAT(varGlobal.returnValue(self.dictCategorias, self.nombreCategoriaDestino))
+		if self.banderaTexto == False:
+			p = varGlobal.estaenlistado(nombresAccion, accionNombreMover)
+			if p == True:
+				msg = \
+_("""No puede duplicar el nombre de una acción.
+
+Modifique el nombre para poder continuar.""")
+				self.frame.mensaje(msg, _("Información"), 0)
+				self.textoNombre.Enable()
+				self.banderaTexto = True
+				self.textoNombre.SetValue(accionNombreMover)
+				self.textoNombre.SetFocus()
+			else:
+				z = temporal
+				z.append(ajustes.aplicacionesLista[self.indiceAccion])
+				self.guardaAccion(z, self.dbAccion)
+				del ajustes.aplicacionesLista[self.indiceAccion]
+				if self.IsModal():
+					self.EndModal(event.EventObject.Id)
+				else:
+					self.Close()
+		else:
+			p = varGlobal.estaenlistado(nombresAccion, self.textoNombre.GetValue())
+			if p == True:
+				msg = \
+_("""No puede duplicar el nombre de una acción.
+
+Modifique el nombre para poder continuar.""")
+				self.frame.mensaje(msg, _("Información"), 0)
+				self.textoNombre.Enable()
+				self.banderaTexto = True
+				self.textoNombre.SetValue(accionNombreMover)
+				self.textoNombre.SetFocus()
+			else:
+				z = temporal
+				x = ajustes.aplicacionesLista[self.indiceAccion]
+				x.pop(1)
+				x.insert(1, self.textoNombre.GetValue())
+				z.append(x)
+				self.guardaAccion(z, self.dbAccion)
+				del ajustes.aplicacionesLista[self.indiceAccion]
+				if self.IsModal():
+					self.EndModal(event.EventObject.Id)
+				else:
+					self.Close()
 
 	def onkeyVentanaDialogo(self, event):
 		if event.GetKeyCode() == 27: # Pulsamos ESC y cerramos la ventana
