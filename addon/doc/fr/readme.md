@@ -315,6 +315,7 @@ Lorsque nous sommes sur un élément, si nous appuyons sur F1 nous verbalisera l
 
 * Français: Rémy Ruiz
 * Portugais: Ângelo Miguel Abrantes
+* Italien: Alessio Lenzi
 * Javi Domínguez: Mille merci de m'avoir appris à programmer le menu. Mieux dit pour l'expliquer pour les imbéciles comme moi.
 
 # Journal des changements.<a id="mark15"></a>
@@ -323,6 +324,7 @@ Lorsque nous sommes sur un élément, si nous appuyons sur F1 nous verbalisera l
 * Ajouté la possibilité de déplacer entre les catégories tantôt pour les 'éléments du lanceur d'applications comme pour les notes.
 * Ajout d'un double appui pour la touche Ajouter une note rapide du texte sélectionné. Maintenant, avec deux appui nous laissera créer une nouvelle note rapide à partir de zéro.
 * Documentation française mise à jour.
+* eAjout de la langue italienne
 
 ## Version 0.2.1.<a id="mark0.2.1"></a>
 

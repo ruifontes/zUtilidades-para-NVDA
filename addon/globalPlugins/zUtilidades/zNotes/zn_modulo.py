@@ -525,7 +525,7 @@ Para mover entre categorías es necesario al menos dos categorías.""")
 					self.onVerbaliza(self.lstNotas.GetSelection())
 				elif event.GetKeyCode() == 341: # F2 copia al portapapeles
 					self.onPortapapeles(self.lstNotas.GetSelection())
-				elif event.GetKeyCode() == 342: # Shift+v pega en la app
+				elif event.GetKeyCode() == 342: # F3 pega en la app
 					self.onPegar(event, self.lstNotas.GetSelection())
 				elif (event.AltDown(), event.GetKeyCode()) == (True, 315):
 					self.MueveNota("arriba")

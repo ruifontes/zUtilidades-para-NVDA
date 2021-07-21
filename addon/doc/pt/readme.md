@@ -269,6 +269,7 @@ Quando estamos sobre um item, se pressionarmos F1, ouviremos o conteúdo da nota
 
 * Francês: Rémy Ruiz
 * Português: Equipa Portuguesa do NVDA
+* italiano: Alessio Lenzi
 * Javi Domínguez: Mil gracias por enseñarme a programar el menú. Mejor dicho por explicarlo para tontos como yo.
 
 # Modificações.

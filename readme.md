@@ -314,6 +314,7 @@ Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que puls
 
 * Francés: Rémy Ruiz
 * Portugués: Ângelo Miguel Abrantes
+* Italiano: Alessio Lenzi
 * Javi Domínguez: Mil gracias por enseñarme a programar el menú. Mejor dicho por explicarlo para tontos como yo.
 
 # Registro de cambios.<a id="mark15"></a>
@@ -322,6 +323,7 @@ Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que puls
 * Agregada la posibilidad de mover entre categorías tanto ítems del lanzador de aplicaciones como de notas.
 * Agregada doble pulsación para la tecla Agregar nota rápida del texto seleccionado. Ahora con doble pulsación nos dejara crear una nueva nota rápida desde cero.
 * Actualizada documentación en Francés.
+* Agregado idioma Italiano.
 
 ## Versión 0.2.1.<a id="mark0.2.1"></a>
 
