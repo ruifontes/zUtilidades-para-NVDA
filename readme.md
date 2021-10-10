@@ -262,6 +262,14 @@ Si pulsamos espacio se abrirá una ventana donde podremos solo visualizar nuestr
 
 Decir que este modulo viene sin tecla rápida definida, por lo que tendremos que agregársela en Gestos de entrada.
 
+Se agrego en el menú opciones un dialogo de opciones.
+
+Actualmente solo tiene una opción que es la siguiente:
+
+* Capturar el título de la ventana en las notas rápidas
+
+Si marcamos esta opción cuando pulsemos ya sea para añadir una nota rápida nueva o una nueva nota rápida con el texto seleccionado el título de la nota se rellenara con el título de la ventana que en ese momento este enfocada.
+
 # Agregar una nota rápida desde cualquier lugar<a id="mark12"></a>
 
 También el modulo de Notas rápidas tiene una característica para agregar notas rápidas desde cualquier sitio sin necesidad de abrir el complemento para añadir.

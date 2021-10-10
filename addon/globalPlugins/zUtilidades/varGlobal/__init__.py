@@ -231,5 +231,28 @@ def mensaje(msg):
 	# Devolvemos el ajuste original 
 	braille.handler.setTether(tether) 
 
+def initConfiguration():
+	confspec = {
+		"tituloCaptura": "boolean(default=False)",
+	}
+	config.conf.spec['zUtilidades'] = confspec
+
+def getConfig(key):
+	value = config.conf["zUtilidades"][key]
+	return value
+
+def setConfig(key, value):
+	try:
+		config.conf.profiles[0]["zUtilidades"][key] = value
+	except:
+		config.conf["zUtilidades"][key] = value
+
+initConfiguration()
 # variables Globales
 IS_WinON = False # Bandera para saber si esta abierta una ventana del complemento
+ID_TRUE = wx.NewIdRef() # para botón aceptar
+ID_FALSE = wx.NewIdRef() # para botón cancelar
+try:
+	tituloCaptura = getConfig("tituloCaptura")
+except:
+	tituloCaptura = False

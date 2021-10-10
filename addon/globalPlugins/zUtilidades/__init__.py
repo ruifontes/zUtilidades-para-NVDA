@@ -775,6 +775,11 @@ class AñadirNotaCopia(wx.Dialog):
 
 		label2 = wx.StaticText(self.Panel, wx.ID_ANY, label=_("Introduzca el nombre de la Nota:"))
 		self.textoNombre = wx.TextCtrl(self.Panel, wx.ID_ANY)
+		if varGlobal.tituloCaptura:
+			try:
+				self.textoNombre.SetValue(api.getForegroundObject().name)
+			except:
+				self.textoNombre.SetValue(_("No se pudo capturar el título"))
 
 		label3 = wx.StaticText(self.Panel, wx.ID_ANY, label=_("Contenido de la Nota:"))
 		self.textoNota = wx.TextCtrl(self.Panel, wx.ID_ANY, style=wx.TE_MULTILINE)

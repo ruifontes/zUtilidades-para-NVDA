@@ -210,6 +210,8 @@ class zNotas(wx.Dialog):
 		self.menu.AppendSubMenu(self.copiaSeguridad, _("&Hacer o restaurar copias de seguridad"))
 
 		self.opciones = wx.Menu()
+		itemopciones = self.opciones.Append(wx.ID_ANY, _("&Opciones"))
+		self.Bind(wx.EVT_MENU, self.onOpciones, itemopciones)
 		itemdefecto = self.opciones.Append(wx.ID_ANY, _("&Volver a valores por defecto Notas rápidas"))
 		self.Bind(wx.EVT_MENU, self.borrarValores, itemdefecto)
 		self.menu.AppendSubMenu(self.opciones, _("&Opciones"))
@@ -665,6 +667,15 @@ Esta acción no es reversible.
 				getattr(self, ajustes.focoActual).SetFocus()
 		else:
 			msg.Destroy
+	def onOpciones(self, event):
+		dlg = OpcionesDialogo()
+		result = dlg.ShowModal()
+		if result == varGlobal.ID_TRUE:
+			dlg.Destroy()
+			varGlobal.setConfig("tituloCaptura", dlg.chkSave)
+			varGlobal.tituloCaptura = dlg.chkSave
+		else:
+			dlg.Destroy()
 
 	def borrarValores(self, event):
 		xguiMsg = \
@@ -1454,5 +1465,64 @@ class BackupDialogo(wx.Dialog):
 	def onAceptarFALSE(self, event):
 		if self.IsModal():
 			self.EndModal(1)
+		else:
+			self.Close()
+
+class OpcionesDialogo(wx.Dialog):
+	def __init__(self):
+		super(OpcionesDialogo, self).__init__(None, -1, title=_("Opciones"), size=(600,350))
+
+		self.panel_1 = wx.Panel(self, wx.ID_ANY)
+
+		self.chkSave = varGlobal.tituloCaptura
+		self.chkTitulo = wx.CheckBox(self.panel_1, wx.ID_ANY, _("Capturar el título de la ventana en las notas rápidas"))
+		self.chkTitulo.SetValue(self.chkSave)
+
+		self.aceptarBTN = wx.Button(self.panel_1, 1, _("&Aceptar"))
+		self.cancelarBTN = wx.Button(self.panel_1, 2, _("&Cancelar"))
+
+		sizeV = wx.BoxSizer(wx.VERTICAL)
+		sizeH2 = wx.BoxSizer(wx.HORIZONTAL)
+
+		sizeV.Add(self.chkTitulo, 0, wx.EXPAND)
+
+		sizeH2.Add(self.aceptarBTN, 2, wx.CENTER)
+		sizeH2.Add(self.cancelarBTN, 2, wx.CENTER)
+
+		sizeV.Add(sizeH2, 0, wx.CENTER)
+
+		self.panel_1.SetSizer(sizeV)
+
+		self.Layout()
+		self.CenterOnScreen()
+		self.Bind(wx.EVT_CHECKBOX,self.onChecked) 
+		self.Bind(wx.EVT_BUTTON, self.onBoton)
+		self.Bind(wx.EVT_CLOSE, self.onCerrar)
+		self.Bind(wx.EVT_CHAR_HOOK, self.on_keyVentanaDialogo)
+
+	def onChecked(self, event):
+		chk = event.GetEventObject()
+		self.chkSave = chk.GetValue()
+
+	def onBoton(self, event):
+		botonID = event.GetId()
+		if botonID == 1:
+			if self.IsModal():
+				self.EndModal(varGlobal.ID_TRUE)
+			else:
+				self.Close()
+
+		elif botonID == 2:
+			self.onCerrar(None)
+
+	def on_keyVentanaDialogo(self, event):
+		if event.GetKeyCode() == 27: # Pulsamos ESC y cerramos la ventana
+			self.onCerrar(None)
+		else:
+			event.Skip()
+
+	def onCerrar(self, event):
+		if self.IsModal():
+			self.EndModal(varGlobal.ID_FALSE)
 		else:
 			self.Close()
