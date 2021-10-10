@@ -1470,12 +1470,12 @@ class BackupDialogo(wx.Dialog):
 
 class OpcionesDialogo(wx.Dialog):
 	def __init__(self):
-		super(OpcionesDialogo, self).__init__(None, -1, title=_("Opciones"), size=(600,350))
+		super(OpcionesDialogo, self).__init__(None, -1, title=_("Opciones"), size=(650,350))
 
 		self.panel_1 = wx.Panel(self, wx.ID_ANY)
 
 		self.chkSave = varGlobal.tituloCaptura
-		self.chkTitulo = wx.CheckBox(self.panel_1, wx.ID_ANY, _("Capturar el título de la ventana en las notas rápidas"))
+		self.chkTitulo = wx.CheckBox(self.panel_1, wx.ID_ANY, _("Capturar el título de la ventana en las notas rápidas (desde cualquier parte)"))
 		self.chkTitulo.SetValue(self.chkSave)
 
 		self.aceptarBTN = wx.Button(self.panel_1, 1, _("&Aceptar"))

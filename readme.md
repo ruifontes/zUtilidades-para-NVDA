@@ -267,7 +267,7 @@ Se agrego en el menú opciones un dialogo de opciones.
 
 Actualmente solo tiene una opción que es la siguiente:
 
-* Capturar el título de la ventana en las notas rápidas
+* Capturar el título de la ventana en las notas rápidas (desde cualquier parte)
 
 Si marcamos esta opción cuando pulsemos ya sea para añadir una nota rápida nueva o una nueva nota rápida con el texto seleccionado el título de la nota se rellenara con el título de la ventana que en ese momento este enfocada.
 
