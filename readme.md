@@ -25,6 +25,7 @@
 - [Menús Virtuales para el Lanzador de aplicaciones y para Notas rápidas](#mark13)
 - [Traductores y colaboradores](#mark14)
 - [Registro de cambios](#mark15)
+- [Versión 0.2.3](#mark0.2.3)
 - [Versión 0.2.2](#mark0.2.2)
 - [Versión 0.2.1](#mark0.2.1)
 - [Versión 0.2](#mark0.2)
@@ -326,6 +327,14 @@ Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que puls
 * Javi Domínguez: Mil gracias por enseñarme a programar el menú. Mejor dicho por explicarlo para tontos como yo.
 
 # Registro de cambios.<a id="mark15"></a>
+## Versión 0.2.3.<a id="mark0.2.3"></a>
+
+Se agrego la posibilidad de capturar el título de las ventanas en agregar una nueva nota rápida o Agregar nota rápida del texto seleccionado.
+
+Esta opción puede ser activada en el menú del modulo Notas rápidas en el apartado opciones / Opciones.
+
+Si la casilla se marca a partir de ese momento se capturara el título de las ventanas desde donde fue invocado el crear una nueva nota o agregar el texto seleccionado.
+
 ## Versión 0.2.2.<a id="mark0.2.2"></a>
 
 * Agregada la posibilidad de mover entre categorías tanto ítems del lanzador de aplicaciones como de notas.
