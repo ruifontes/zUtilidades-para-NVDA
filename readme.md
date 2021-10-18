@@ -114,7 +114,7 @@ Si deseamos ejecutar una aplicación en modo administrador se nos pedirá el per
 
 En este dialogo podremos agregar comandos de consola.
 
-	Los campos nombre para identificar el comando y el campo comandos son obligatorios.
+Los campos nombre para identificar el comando y el campo comandos son obligatorios.
 
 Bien varias apreciaciones, aparte de lanzar comandos cmd si dominamos Windows PowerShell si ponemos en la línea de comandos PowerShell y seguido de lo que queremos ejecutaremos también comandos PowerShell.
 
@@ -187,6 +187,7 @@ Una vez guardado podemos restaurarlo en caso que nuestra base de datos se corrom
 Pues elegimos Restaurar copias de seguridad y se nos abrirá una ventana clásica de Windows para abrir archivos.
 
 Tenemos que elegir la copia que guardamos que tendrá la extensión *.zut-zl ojo no cambiar la extensión porque si no encontrara el archivo.
+
 Una vez elegido se restaurara la copia de seguridad y cuando pulsamos en Aceptar  se cerrara el complemento y la próxima vez que lo abramos ya se tendrá nuestra copia restaurada.
 
 Comentar que los archivos *.zut-zl son realmente archivos comprimidos pero cuidado con modificarlos por que si son modificados no coincidirá la firma y no dejara restaurarlos.
@@ -263,13 +264,13 @@ Si pulsamos espacio se abrirá una ventana donde podremos solo visualizar nuestr
 
 Decir que este modulo viene sin tecla rápida definida, por lo que tendremos que agregársela en Gestos de entrada.
 
-Se agrego en el menú opciones un dialogo de opciones.
+Se agrego en el menú Opciones un dialogo de Opciones.
 
 Actualmente solo tiene una opción que es la siguiente:
 
 * Capturar el título de la ventana en las notas rápidas (desde cualquier parte)
 
-Si marcamos esta opción cuando pulsemos ya sea para añadir una nota rápida nueva o una nueva nota rápida con el texto seleccionado el título de la nota se rellenara con el título de la ventana que en ese momento este enfocada.
+Si marcamos esta opción cuando pulsemos ya sea en  Añadir una nueva nota rápida o en Agregar nota rápida del texto seleccionado el título de la nota se rellenara con el título de la ventana que en ese momento este enfocada.
 
 # Agregar una nota rápida desde cualquier lugar<a id="mark12"></a>
 
@@ -313,7 +314,7 @@ Bien también si dicha letra no tiene una categoría nos dará el mensaje de ayu
 
 Decir que mientras el menú este activo todas las demás combinaciones de teclas de NVDA no funcionarán hasta que no salgamos del menú.
 
-En el menú de notas rápidas la tecla espaciadora no vale para nada y si tiene diferencias con el del lanzador de aplicaciones.
+En el menú de Notas rápidas la tecla espaciadora no vale para nada y si tiene diferencias con el del lanzador de aplicaciones.
 
 Cuando estemos encima de un item si pulsamos F1 nos verbalizará el contenido de la nota, con F2 nos copiara la nota al portapapeles y con F3 nos pegara el contenido de la nota donde tengamos el foco.
 
@@ -329,11 +330,11 @@ Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que puls
 # Registro de cambios.<a id="mark15"></a>
 ## Versión 0.2.3.<a id="mark0.2.3"></a>
 
-Se agrego la posibilidad de capturar el título de las ventanas en agregar una nueva nota rápida o Agregar nota rápida del texto seleccionado.
+Se agrego la posibilidad de capturar el título de las ventanas en Añadir una nueva nota rápida o en Agregar nota rápida del texto seleccionado.
 
 Esta opción puede ser activada en el menú del modulo Notas rápidas en el apartado opciones / Opciones.
 
-Si la casilla se marca a partir de ese momento se capturara el título de las ventanas desde donde fue invocado el crear una nueva nota o agregar el texto seleccionado.
+Si la casilla se marca a partir de ese momento se capturara el título de las ventanas desde donde fue invocado ya sea las opciones Añadir una nueva nota rápida o Agregar nota rápida del texto seleccionado.
 
 ## Versión 0.2.2.<a id="mark0.2.2"></a>
 

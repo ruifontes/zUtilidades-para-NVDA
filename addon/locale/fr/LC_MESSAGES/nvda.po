@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'zUtilidades' '0.2.2'\n"
+"Project-Id-Version: 'zUtilidades' '0.2.3'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2021-07-07 22:12+0200\n"
-"PO-Revision-Date: 2021-07-07 23:09+0200\n"
+"POT-Creation-Date: 2021-10-13 22:15+0200\n"
+"PO-Revision-Date: 2021-10-14 12:04+0200\n"
 "Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -144,18 +144,18 @@ msgstr ""
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:588
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:140
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:146
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:246
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:260
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:295
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:315
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:328
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:338
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:363
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:381
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:407
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:425
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:451
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:485
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:248
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:262
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:297
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:317
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:330
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:340
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:365
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:383
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:409
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:427
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:453
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:487
 msgid "No hay categorías"
 msgstr "Pas de catégories"
 
@@ -173,10 +173,10 @@ msgstr "Sans action"
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:147
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:162
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:174
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:432
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:458
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:492
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:519
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:434
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:460
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:494
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:521
 msgid "Sin notas"
 msgstr "Sans notes"
 
@@ -275,7 +275,7 @@ msgid "Saliendo del menú"
 msgstr "Sortie en cours du menu"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:731
-#: addon\globalPlugins\zUtilidades\__init__.py:784
+#: addon\globalPlugins\zUtilidades\__init__.py:789
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:31
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:896
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:973
@@ -291,12 +291,13 @@ msgstr "Sortie en cours du menu"
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2266
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2483
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:36
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:729
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:806
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:896
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:995
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1174
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1391
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:740
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:817
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:907
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1006
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1185
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1402
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1481
 msgid "&Aceptar"
 msgstr "&OK"
 
@@ -313,18 +314,22 @@ msgid "Seleccione una categoría donde guardar la nota rápida:"
 msgstr "Sélectionner une catégorie où sauvegarder la note rapide:"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:776
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:890
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:987
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:901
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:998
 msgid "Introduzca el nombre de la Nota:"
 msgstr "Entrez le nom de la note:"
 
-#: addon\globalPlugins\zUtilidades\__init__.py:779
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:893
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1091
+#: addon\globalPlugins\zUtilidades\__init__.py:782
+msgid "No se pudo capturar el título"
+msgstr "Impossible de capturer le titre"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:784
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:904
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1102
 msgid "Contenido de la Nota:"
 msgstr "Contenu de la note:"
 
-#: addon\globalPlugins\zUtilidades\__init__.py:787
+#: addon\globalPlugins\zUtilidades\__init__.py:792
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:899
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:976
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1074
@@ -337,17 +342,18 @@ msgstr "Contenu de la note:"
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1973
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2130
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2269
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:732
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:809
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:899
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:998
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1177
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:743
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:820
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:910
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1009
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1188
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1482
 msgid "&Cancelar"
 msgstr "&Annuler"
 
-#: addon\globalPlugins\zUtilidades\__init__.py:820
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:925
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1024
+#: addon\globalPlugins\zUtilidades\__init__.py:825
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:936
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1035
 msgid ""
 "El campo no puede quedar en blanco.\n"
 "\n"
@@ -357,9 +363,9 @@ msgstr ""
 "\n"
 "Entrez un nom pour ajouter une note."
 
-#: addon\globalPlugins\zUtilidades\__init__.py:823
-#: addon\globalPlugins\zUtilidades\__init__.py:831
-#: addon\globalPlugins\zUtilidades\__init__.py:843
+#: addon\globalPlugins\zUtilidades\__init__.py:828
+#: addon\globalPlugins\zUtilidades\__init__.py:836
+#: addon\globalPlugins\zUtilidades\__init__.py:848
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:255
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:269
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:428
@@ -405,33 +411,33 @@ msgstr ""
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2198
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2309
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2330
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:251
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:265
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:412
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:430
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:437
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:456
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:463
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:490
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:497
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:504
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:761
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:770
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:838
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:853
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:928
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:936
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:948
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1027
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1035
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1217
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1238
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:253
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:267
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:414
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:432
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:439
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:458
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:465
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:492
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:499
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:506
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:772
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:781
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:849
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:864
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:939
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:947
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:959
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1038
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1046
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1228
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1249
 msgid "Información"
 msgstr "Information"
 
-#: addon\globalPlugins\zUtilidades\__init__.py:828
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:933
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1032
+#: addon\globalPlugins\zUtilidades\__init__.py:833
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:944
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1043
 msgid ""
 "El campo no puede quedar en blanco.\n"
 "\n"
@@ -441,11 +447,11 @@ msgstr ""
 "\n"
 "Entrez un texte pour sauvegarder la note."
 
-#: addon\globalPlugins\zUtilidades\__init__.py:840
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:945
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1051
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1214
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1235
+#: addon\globalPlugins\zUtilidades\__init__.py:845
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:956
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1062
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1225
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1246
 msgid ""
 "No puede duplicar el nombre de una Nota.\n"
 "\n"
@@ -504,21 +510,21 @@ msgstr "Sans actions"
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:178
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:231
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:184
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:227
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:229
 msgid "&Añadir categoría"
 msgstr "&Ajouter une catégorie"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:180
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:233
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:186
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:229
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:231
 msgid "&Editar categoría"
 msgstr "&Modifier une catégorie"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:182
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:235
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:188
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:231
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:233
 msgid "&Borrar categoría"
 msgstr "&Supprimer une catégorie"
 
@@ -596,17 +602,18 @@ msgid "&Volver a valores por defecto el lanzador de aplicaciones"
 msgstr "&Réinitialiser le lanceur d'applications aux valeurs par défaut"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:219
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:215
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:213
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:217
 msgid "&Opciones"
 msgstr "&Options"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:221
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:217
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:219
 msgid "&Salir"
 msgstr "&Quitter"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:252
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:248
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:250
 msgid ""
 "No tiene ninguna categoría para Editar.\n"
 "\n"
@@ -617,7 +624,7 @@ msgstr ""
 "Ajouter une avant d'effectuer cette action."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:266
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:262
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:264
 msgid ""
 "No tiene ninguna categoría para Borrar.\n"
 "\n"
@@ -659,10 +666,10 @@ msgstr ""
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:578
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:809
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:847
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:279
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:475
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:642
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:680
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:281
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:477
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:644
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:691
 msgid "Pregunta"
 msgstr "Question"
 
@@ -755,7 +762,7 @@ msgstr ""
 "Ajouter une avant de pouvoir déplacer."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:604
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:501
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:503
 msgid ""
 "No hay categorías suficientes.\n"
 "\n"
@@ -816,12 +823,12 @@ msgid "Archivo copia de seguridad zUtilidades (*.zut-zl)|*.zut-zl"
 msgstr "Fichier de sauvegarde zUtilidades (*.zut-zl)|*.zut-zl"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:780
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:613
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:615
 msgid "Guardar en..."
 msgstr "Enregistrer sous..."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:785
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:618
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:620
 msgid "Haciendo copia de seguridad..."
 msgstr "Faire une sauvegarde..."
 
@@ -852,12 +859,12 @@ msgstr ""
 "Voulez-vous continuer avec le processus?"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:814
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:647
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:649
 msgid "Seleccione un archivo de copia de seguridad"
 msgstr "Sélectionner un fichier de sauvegarde"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:818
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:651
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:653
 msgid "Restaurando copia de seguridad..."
 msgstr "Restauration de la sauvegarde..."
 
@@ -884,21 +891,21 @@ msgstr ""
 "Voulez-vous continuer avec le processus?"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:887
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:720
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:731
 msgid "Añadir categoría"
 msgstr "Ajouter une catégorie"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:892
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:968
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:725
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:801
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:736
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:812
 msgid "&Introduzca el nombre de la categoría:"
 msgstr "&Entrez le nom de la catégorie:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:925
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1002
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:758
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:835
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:769
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:846
 msgid ""
 "El campo no puede quedar en blanco.\n"
 "\n"
@@ -910,8 +917,8 @@ msgstr ""
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:934
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1017
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:767
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:850
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:778
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:861
 msgid ""
 "No puede duplicar el nombre de una categoría.\n"
 "\n"
@@ -922,7 +929,7 @@ msgstr ""
 "Modifier le nom pour continuer."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:963
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:796
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:807
 msgid "Editar categoría"
 msgstr "Modifier la catégorie"
 
@@ -1270,13 +1277,13 @@ msgid "Introduzca un nuevo nombre a la acción:"
 msgstr "Entrez un nouveau nom à l'action:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2388
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1296
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1307
 #, python-format
 msgid "Comprimiendo el archivo: %s"
 msgstr "Compression du fichier: %s"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2402
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1310
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1321
 #, python-format
 msgid "Descomprimiendo el archivo: %s"
 msgstr "Décompression du fichier: %s"
@@ -1285,10 +1292,10 @@ msgstr "Décompression du fichier: %s"
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2453
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2458
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2465
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1352
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1361
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1366
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1373
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1363
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1372
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1377
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1384
 msgid "Algo salió mal.\n"
 msgstr "Quelque chose a mal tourné.\n"
 
@@ -1296,10 +1303,10 @@ msgstr "Quelque chose a mal tourné.\n"
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2453
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2458
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2465
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1352
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1361
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1366
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1373
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1363
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1372
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1377
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1384
 msgid "Inténtelo de nuevo.\n"
 msgstr "Veuillez réessayer.\n"
 
@@ -1309,28 +1316,28 @@ msgstr "Veuillez réessayer.\n"
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2458
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2463
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2465
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1352
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1355
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1361
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1363
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1366
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1371
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1373
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1372
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1377
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1382
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1384
 msgid "Ya puede cerrar esta ventana."
 msgstr "Vous pouvez fermer cette fenêtre maintenant."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2447
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1355
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1366
 msgid "La copia de seguridad fue un éxito.\n"
 msgstr "La sauvegarde a été réalisée avec succès.\n"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2463
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1371
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1382
 msgid "Se completo la restauración correctamente.\n"
 msgstr "La restauration a été complétée avec succès.\n"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2487
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1097
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1395
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1108
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1406
 msgid "&Cerrar"
 msgstr "&Fermer"
 
@@ -1339,22 +1346,22 @@ msgid "&Lista notas:"
 msgstr "&Liste des notes:"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:194
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:390
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:392
 msgid "&Añadir Nota"
 msgstr "&Ajouter une Note"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:196
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:392
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:394
 msgid "&Editar Nota"
 msgstr "&Modifier une Note"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:198
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:394
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:396
 msgid "&Borrar Nota"
 msgstr "&Supprimer une Note"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:200
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:396
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:398
 msgid "&Mover Nota"
 msgstr "&Déplacer une note"
 
@@ -1362,11 +1369,11 @@ msgstr "&Déplacer une note"
 msgid "&Notas"
 msgstr "&Notes"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:213
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:215
 msgid "&Volver a valores por defecto Notas rápidas"
 msgstr "&Réinitialiser les Notes rapides aux valeurs par défaut"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:268
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:270
 msgid ""
 "ADVERTENCIA:\n"
 "\n"
@@ -1394,9 +1401,9 @@ msgstr ""
 "\n"
 "Êtes-vous sûr de vouloir continuer?"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:409
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:427
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:453
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:411
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:429
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:455
 msgid ""
 "No tiene ninguna categoría.\n"
 "\n"
@@ -1406,7 +1413,7 @@ msgstr ""
 "\n"
 "Ajoutez une catégorie avant de pouvoir ajouter une Note."
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:434
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:436
 msgid ""
 "No tiene ninguna Nota.\n"
 "\n"
@@ -1416,7 +1423,7 @@ msgstr ""
 "\n"
 "Ajoutez une avant de pouvoir modifier."
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:460
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:462
 msgid ""
 "No tiene ninguna Nota.\n"
 "\n"
@@ -1426,7 +1433,7 @@ msgstr ""
 "\n"
 "Ajoutez-en une avant de pouvoir supprimer."
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:466
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:468
 msgid ""
 "ADVERTENCIA:\n"
 "\n"
@@ -1448,7 +1455,7 @@ msgstr ""
 "\n"
 "Êtes-vous sûr de vouloir continuer?"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:487
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:489
 msgid ""
 "No tiene ninguna categoría.\n"
 "\n"
@@ -1458,7 +1465,7 @@ msgstr ""
 "\n"
 "Ajoutez une catégorie avant de pouvoir déplacer une Note."
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:494
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:496
 msgid ""
 "No tiene ninguna Nota.\n"
 "\n"
@@ -1468,20 +1475,20 @@ msgstr ""
 "\n"
 "Ajoutez-en une avant de pouvoir déplacer."
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:580
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:582
 msgid "Se a copiado la nota {} al portapapeles."
 msgstr "La note {} a été copiée dans le presse-papiers."
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:582
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:584
 msgid "No se a podido copiar la nota {} al portapapeles."
 msgstr "Impossible de copier la note {} dans le presse-papiers."
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:612
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:646
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:614
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:648
 msgid "Archivo copia de seguridad zUtilidades (*.zut-zn)|*.zut-zn"
 msgstr "Fichier de sauvegarde zUtilidades (*.zut-zn)|*.zut-zn"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:631
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:633
 msgid ""
 "*** ADVERTENCIA ***\n"
 "\n"
@@ -1507,7 +1514,7 @@ msgstr ""
 "\n"
 "Voulez-vous continuer avec le processus?"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:671
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:682
 msgid ""
 "*** ADVERTENCIA ***\n"
 "\n"
@@ -1529,29 +1536,39 @@ msgstr ""
 "\n"
 "Voulez-vous continuer avec le processus?"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:883
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:894
 msgid "Añadir Nota"
 msgstr "Ajouter une Note"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:979
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:990
 msgid "Editar Nota"
 msgstr "Modifier une Note"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:991
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1002
 msgid "Contenido de la nota:"
 msgstr "Contenu de la note:"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1151
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1162
 msgid "Mover la nota {} a otra categoría"
 msgstr "Déplacer la note {} dans une autre catégorie"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1164
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1175
 msgid "Seleccione una categoría donde mover la nota:"
 msgstr "Sélectionner une catégorie où déplacez la note:"
 
-#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1170
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1181
 msgid "Introduzca un nuevo nombre a la nota:"
 msgstr "Entrez un nouveau nom à la note:"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1473
+msgid "Opciones"
+msgstr "Options"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1478
+msgid ""
+"Capturar el título de la ventana en las notas rápidas (desde cualquier parte)"
+msgstr ""
+"Capturer le titre de la fenêtre dans les notes rapides (de n'importe où)"
 
 #~ msgid "&Lista aplicaciones:"
 #~ msgstr "&Liste des applications:"
