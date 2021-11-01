@@ -234,6 +234,7 @@ def mensaje(msg):
 def initConfiguration():
 	confspec = {
 		"tituloCaptura": "boolean(default=False)",
+		"urlCaptura": "boolean(default=False)",
 	}
 	config.conf.spec['zUtilidades'] = confspec
 
@@ -256,3 +257,7 @@ try:
 	tituloCaptura = getConfig("tituloCaptura")
 except:
 	tituloCaptura = False
+try:
+	urlCaptura = getConfig("urlCaptura")
+except:
+	urlCaptura = False

@@ -26,6 +26,16 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import varGlobal
 from zLauncher import zl_modulo as zl
 from zNotes import zn_modulo as zn
+from comtypes.gen.ISimpleDOM import ISimpleDOMDocument
+import controlTypes
+# controlTypes module compatibility with old versions of NVDA
+if not hasattr(controlTypes, "Role"):
+	setattr(controlTypes, "Role", type('Enum', (), dict(
+	[(x.split("ROLE_")[1], getattr(controlTypes, x)) for x in dir(controlTypes) if x.startswith("ROLE_")])))
+	setattr(controlTypes, "State", type('Enum', (), dict(
+	[(x.split("STATE_")[1], getattr(controlTypes, x)) for x in dir(controlTypes) if x.startswith("STATE_")])))
+	setattr(controlTypes, "role", type("role", (), {"roleLabels": controlTypes.role._roleLabels}))
+# End of compatibility fixes
 
 # For translationn
 addonHandler.initTranslation()
@@ -209,6 +219,9 @@ No es posible tener dos instancias a la vez.""")
 						varGlobal.mensaje(_("Seleccione un texto para poder agregar a una nota rápida"))
 						return
 				# Fin código obtenido de Buscador de definiciones de la RAE (DLEChecker) de Antonio Cascales
+				if varGlobal.urlCaptura:
+					url = self.getURL()
+					selectedText = "\n\n".join([selectedText, url]) if url else selectedText
 				self.lanzador = "zn"
 				indiceNotes = varGlobal.dbDatos(os.path.join(zn.ajustes.dbDir, "index.dat")).CargaDatosIndex()
 				self.NewCategorias =  varGlobal.AnalizaDatos(indiceNotes).GetCategoria()
@@ -233,6 +246,23 @@ No es posible tener dos instancias a la vez.""")
 		else:
 			pass
 
+
+	def getURL(self):
+		""" Si se ha seleccionado texto de  una página web se obtiene la URL del documento para anexarla a la nota. """
+		try:
+			if api.getFocusObject().treeInterceptor.passThrough == False:
+				from comtypes.gen.ISimpleDOM import ISimpleDOMDocument
+				for obj in globalVars.focusAncestors:
+					try:
+						if obj.role == controlTypes.Role.DOCUMENT:
+							# Thanks to Alberto Buffolino, who discovered this method. https://nvda-addons.groups.io/g/nvda-addons/message/12943
+							doc = obj.IAccessibleObject.QueryInterface(ISimpleDOMDocument)
+							return doc.url
+					except:
+						pass
+			return None
+		except AttributeError:
+			return None
 
 	def newNote(self, event):
 		if self.doblePulsacion == True:
