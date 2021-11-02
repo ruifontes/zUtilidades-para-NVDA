@@ -248,7 +248,7 @@ No es posible tener dos instancias a la vez.""")
 
 
 	def getURL(self):
-		""" Si se ha seleccionado texto de  una página web se obtiene la URL del documento para anexarla a la nota. """
+		""" Se obtiene la URL del documento para anexarla a la nota. """
 		try:
 			if api.getFocusObject().treeInterceptor.passThrough == False:
 				from comtypes.gen.ISimpleDOM import ISimpleDOMDocument
@@ -260,6 +260,16 @@ No es posible tener dos instancias a la vez.""")
 							return doc.url
 					except:
 						pass
+			# Si el flujo llega hasta aquí es que no se ha encontrado el objeto documento. Lo buscamos de otra forma: desde el objeto enfocado hacia arriba en el árbol.
+			obj = api.getFocusObject()
+			while obj:
+				try:
+					if obj.role == controlTypes.Role.DOCUMENT:
+						doc = obj.IAccessibleObject.QueryInterface(ISimpleDOMDocument)
+						return doc.url
+				except:
+					pass
+				obj = obj.parent
 			return None
 		except AttributeError:
 			return None
