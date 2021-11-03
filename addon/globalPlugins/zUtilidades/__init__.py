@@ -290,6 +290,8 @@ Agregue una categoría antes para poder crear una nota rápida.""")
 					self.doblePulsacion = False
 					return
 				self.windowsApp = AñadirNotaCopia(gui.mainFrame, self.NewCategorias, self.newArchivoCategorias, None, 1)
+				url = self.getURL()
+				if url: self.windowsApp.textoNota.SetValue(url)
 				gui.mainFrame.prePopup()
 				self.windowsApp.Show()
 				self.doblePulsacion = False
