@@ -674,6 +674,8 @@ Esta acción no es reversible.
 			dlg.Destroy()
 			varGlobal.setConfig("tituloCaptura", dlg.chkSave)
 			varGlobal.tituloCaptura = dlg.chkSave
+			varGlobal.setConfig("urlCaptura", dlg.chkURL.GetValue())
+			varGlobal.urlCaptura = dlg.chkURL.GetValue()
 		else:
 			dlg.Destroy()
 
@@ -1477,6 +1479,9 @@ class OpcionesDialogo(wx.Dialog):
 		self.chkSave = varGlobal.tituloCaptura
 		self.chkTitulo = wx.CheckBox(self.panel_1, wx.ID_ANY, _("Capturar el título de la ventana en las notas rápidas (desde cualquier parte)"))
 		self.chkTitulo.SetValue(self.chkSave)
+
+		self.chkURL = wx.CheckBox(self.panel_1, wx.ID_ANY, _("Anexar la URL del documento a las notas rápidas  cuando se copia texto de una página web."))
+		self.chkURL.SetValue(varGlobal.urlCaptura)
 
 		self.aceptarBTN = wx.Button(self.panel_1, 1, _("&Aceptar"))
 		self.cancelarBTN = wx.Button(self.panel_1, 2, _("&Cancelar"))
