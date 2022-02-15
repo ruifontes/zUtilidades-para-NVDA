@@ -1,0 +1,1448 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nvda\n"
+"POT-Creation-Date: 2021-11-22 14:05+0300\n"
+"PO-Revision-Date: 2021-11-22 14:06+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ../../../globalPlugins\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: zUtilidades/__init__.py:56 zUtilidades/zLauncher/zl_modulo.py:41
+msgid "Lanzador de Aplicaciones"
+msgstr "Запуск приложений"
+
+#: zUtilidades/__init__.py:58 zUtilidades/zNotes/zn_modulo.py:46
+msgid "Notas rápidas"
+msgstr "Быстрые заметки"
+
+#: zUtilidades/__init__.py:61
+msgid "&zUtilidades"
+msgstr "&zUtilidades"
+
+#: zUtilidades/__init__.py:99
+msgid ""
+"Con una pulsación Muestra la ventana del lanzador de aplicaciones, con doble "
+"pulsación el menú virtual del lanzador de aplicaciones"
+msgstr ""
+"Одним нажатием отображается окно запуска приложений, двойным нажатием-"
+"виртуальное меню запуска приложений"
+
+#: zUtilidades/__init__.py:99 zUtilidades/__init__.py:138
+#: zUtilidades/__init__.py:177
+msgid "zUtilidades"
+msgstr "zUtilidades"
+
+#: zUtilidades/__init__.py:114 zUtilidades/__init__.py:129
+#: zUtilidades/__init__.py:153 zUtilidades/__init__.py:168
+#: zUtilidades/__init__.py:229 zUtilidades/__init__.py:258
+#: zUtilidades/__init__.py:343
+msgid ""
+"Ya hay una instancia de zUtilidades abierta.\n"
+"\n"
+"No es posible tener dos instancias a la vez."
+msgstr ""
+"Уже есть открытый экземпляр zutibility.\n"
+"\n"
+"Невозможно иметь два экземпляра одновременно."
+
+#: zUtilidades/__init__.py:138
+msgid ""
+"Con una pulsación muestra la ventana de notas rápidas, con doble pulsación "
+"el menú virtual de notas rápidas"
+msgstr ""
+"Одним нажатием отображает окно быстрых заметок, двойным нажатием-виртуальное "
+"меню быстрых заметок"
+
+#: zUtilidades/__init__.py:177
+msgid ""
+"Con una pulsación agrega una nota rápida del texto seleccionado, con doble "
+"pulsación agrega una nueva nota rápida"
+msgstr ""
+"Одним нажатием добавляет быструю заметку выделенного текста, двойным "
+"нажатием добавляет новую быструю заметку"
+
+#: zUtilidades/__init__.py:198 zUtilidades/__init__.py:206
+#: zUtilidades/__init__.py:209
+msgid "Seleccione un texto para poder agregar a una nota rápida"
+msgstr "Выделите текст, чтобы добавить его в быструю заметку"
+
+#: zUtilidades/__init__.py:218
+msgid ""
+"No hay categorías para añadir una nota rápida.\n"
+"\n"
+"Agregue una categoría antes para poder copiar un texto a una nota rápida."
+msgstr ""
+"Там нет категорий, чтобы добавить быструю заметку.\n"
+"\n"
+"Добавьте категорию раньше, чтобы вы могли скопировать текст в быструю "
+"заметку."
+
+#: zUtilidades/__init__.py:246
+msgid ""
+"No hay categorías para añadir una nota rápida.\n"
+"\n"
+"Agregue una categoría antes para poder crear una nota rápida."
+msgstr ""
+"Там нет категорий, чтобы добавить быструю заметку.\n"
+"\n"
+"Добавьте категорию раньше, чтобы вы могли создать быструю заметку."
+
+#: zUtilidades/__init__.py:351 zUtilidades/__init__.py:369
+#: zUtilidades/zLauncher/zl_modulo.py:134
+#: zUtilidades/zLauncher/zl_modulo.py:140
+#: zUtilidades/zLauncher/zl_modulo.py:250
+#: zUtilidades/zLauncher/zl_modulo.py:264
+#: zUtilidades/zLauncher/zl_modulo.py:299
+#: zUtilidades/zLauncher/zl_modulo.py:319
+#: zUtilidades/zLauncher/zl_modulo.py:332
+#: zUtilidades/zLauncher/zl_modulo.py:342
+#: zUtilidades/zLauncher/zl_modulo.py:367
+#: zUtilidades/zLauncher/zl_modulo.py:385
+#: zUtilidades/zLauncher/zl_modulo.py:423
+#: zUtilidades/zLauncher/zl_modulo.py:441
+#: zUtilidades/zLauncher/zl_modulo.py:459
+#: zUtilidades/zLauncher/zl_modulo.py:477
+#: zUtilidades/zLauncher/zl_modulo.py:495
+#: zUtilidades/zLauncher/zl_modulo.py:513
+#: zUtilidades/zLauncher/zl_modulo.py:554
+#: zUtilidades/zLauncher/zl_modulo.py:588 zUtilidades/zNotes/zn_modulo.py:140
+#: zUtilidades/zNotes/zn_modulo.py:146 zUtilidades/zNotes/zn_modulo.py:248
+#: zUtilidades/zNotes/zn_modulo.py:262 zUtilidades/zNotes/zn_modulo.py:297
+#: zUtilidades/zNotes/zn_modulo.py:317 zUtilidades/zNotes/zn_modulo.py:330
+#: zUtilidades/zNotes/zn_modulo.py:340 zUtilidades/zNotes/zn_modulo.py:365
+#: zUtilidades/zNotes/zn_modulo.py:383 zUtilidades/zNotes/zn_modulo.py:409
+#: zUtilidades/zNotes/zn_modulo.py:427 zUtilidades/zNotes/zn_modulo.py:453
+#: zUtilidades/zNotes/zn_modulo.py:487
+msgid "No hay categorías"
+msgstr "Нет категорий"
+
+#: zUtilidades/__init__.py:404
+msgid "Menú activado"
+msgstr "Меню включено"
+
+#: zUtilidades/__init__.py:511 zUtilidades/__init__.py:525
+msgid "Sin acción"
+msgstr "Нет действий"
+
+#: zUtilidades/__init__.py:513 zUtilidades/__init__.py:527
+#: zUtilidades/zNotes/zn_modulo.py:147 zUtilidades/zNotes/zn_modulo.py:162
+#: zUtilidades/zNotes/zn_modulo.py:174 zUtilidades/zNotes/zn_modulo.py:434
+#: zUtilidades/zNotes/zn_modulo.py:460 zUtilidades/zNotes/zn_modulo.py:494
+#: zUtilidades/zNotes/zn_modulo.py:521
+msgid "Sin notas"
+msgstr "Без заметок"
+
+#: zUtilidades/__init__.py:531 zUtilidades/__init__.py:686
+msgid ""
+"Use flechas derecha e izquierda para moverse por las categorías, flechas "
+"arriba y abajo para seleccionar item, enter para activarlo o escape para "
+"salir"
+msgstr ""
+"Используйте стрелки вправо и влево для перемещения по категориям, стрелки "
+"вверх и вниз, чтобы выбрать item, enter, чтобы активировать его, или escape, "
+"чтобы выйти"
+
+#: zUtilidades/__init__.py:535
+msgid "Esta categoría no tiene acciones"
+msgstr "Эта категория не имеет действия"
+
+#: zUtilidades/__init__.py:538
+msgid "Ejecutando acción"
+msgstr "Выполнение действия"
+
+#: zUtilidades/__init__.py:556
+msgid ""
+"La ruta a la aplicación {}, no se encontró.\n"
+"\n"
+"Ejecute el lanzador de aplicaciones en modo grafico para editar la acción."
+msgstr ""
+"Путь к приложению {} не найден.\n"
+"\n"
+"Запустите программу запуска приложений в графическом режиме, чтобы "
+"отредактировать действие."
+
+#: zUtilidades/__init__.py:581
+msgid ""
+"La ruta a la carpeta no se encontró.\n"
+"\n"
+"{}\n"
+"\n"
+"Ejecute el lanzador de aplicaciones en modo grafico para editar la acción."
+msgstr ""
+"Путь к папке не найден.\n"
+"\n"
+"{}\n"
+"\n"
+"Запустите программу запуска приложений в графическом режиме, чтобы "
+"отредактировать действие."
+
+#: zUtilidades/__init__.py:598
+msgid ""
+"La ruta al acceso directo no se encontró.\n"
+"\n"
+"{}\n"
+"\n"
+"Ejecute el lanzador de aplicaciones en modo grafico para editar la acción."
+msgstr ""
+"Путь к ярлыку не найден.\n"
+"\n"
+"{}\n"
+"\n"
+"Запустите программу запуска приложений в графическом режиме, чтобы "
+"отредактировать действие."
+
+#: zUtilidades/__init__.py:615 zUtilidades/__init__.py:628
+#: zUtilidades/__init__.py:649 zUtilidades/__init__.py:688
+msgid ""
+"Use flechas derecha e izquierda para moverse por las categorías, flechas "
+"arriba y abajo para seleccionar item, F1 para escuchar el contenido de la "
+"nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para "
+"salir"
+msgstr ""
+"Используйте стрелки вправо и влево для перемещения по категориям, стрелки "
+"вверх и вниз для выбора item, F1 для прослушивания содержимого заметки, F2 "
+"для копирования в буфер обмена, F3 для вставки в фокус или escape для выхода"
+
+#: zUtilidades/__init__.py:619 zUtilidades/__init__.py:632
+#: zUtilidades/__init__.py:653
+msgid "Esta categoría no tiene notas"
+msgstr "Эта категория не имеет заметок"
+
+#: zUtilidades/__init__.py:641
+msgid "Se ha copiado la nota {} al portapapeles"
+msgstr "Примечание {} скопировано в буфер обмена"
+
+#: zUtilidades/__init__.py:643
+msgid "No se pudo copiar la nota {} al portapapeles"
+msgstr "Не удалось скопировать заметку {} в буфер обмена"
+
+#: zUtilidades/__init__.py:678
+msgid "Nota pegada en el foco"
+msgstr "Примечание, застрявшее в фокусе"
+
+#: zUtilidades/__init__.py:691
+msgid "Saliendo del menú"
+msgstr "Выход из меню"
+
+#: zUtilidades/__init__.py:731 zUtilidades/__init__.py:789
+#: zUtilidades/zLauncher/zl_modulo.py:31 zUtilidades/zLauncher/zl_modulo.py:896
+#: zUtilidades/zLauncher/zl_modulo.py:973
+#: zUtilidades/zLauncher/zl_modulo.py:1071
+#: zUtilidades/zLauncher/zl_modulo.py:1224
+#: zUtilidades/zLauncher/zl_modulo.py:1369
+#: zUtilidades/zLauncher/zl_modulo.py:1487
+#: zUtilidades/zLauncher/zl_modulo.py:1602
+#: zUtilidades/zLauncher/zl_modulo.py:1716
+#: zUtilidades/zLauncher/zl_modulo.py:1835
+#: zUtilidades/zLauncher/zl_modulo.py:1970
+#: zUtilidades/zLauncher/zl_modulo.py:2127
+#: zUtilidades/zLauncher/zl_modulo.py:2266
+#: zUtilidades/zLauncher/zl_modulo.py:2483 zUtilidades/zNotes/zn_modulo.py:36
+#: zUtilidades/zNotes/zn_modulo.py:740 zUtilidades/zNotes/zn_modulo.py:817
+#: zUtilidades/zNotes/zn_modulo.py:907 zUtilidades/zNotes/zn_modulo.py:1006
+#: zUtilidades/zNotes/zn_modulo.py:1185 zUtilidades/zNotes/zn_modulo.py:1402
+#: zUtilidades/zNotes/zn_modulo.py:1481
+msgid "&Aceptar"
+msgstr "&Принять"
+
+#: zUtilidades/__init__.py:756
+msgid "Agregar nota rápida del texto seleccionado"
+msgstr "Добавить быстрое Примечание выделенного текста"
+
+#: zUtilidades/__init__.py:758
+msgid "Añadir una nueva nota rápida"
+msgstr "Добавить новую быструю заметку"
+
+#: zUtilidades/__init__.py:771
+msgid "Seleccione una categoría donde guardar la nota rápida:"
+msgstr "Выберите категорию для сохранения быстрой заметки:"
+
+#: zUtilidades/__init__.py:776 zUtilidades/zNotes/zn_modulo.py:901
+#: zUtilidades/zNotes/zn_modulo.py:998
+msgid "Introduzca el nombre de la Nota:"
+msgstr "Введите имя заметки:"
+
+#: zUtilidades/__init__.py:782
+msgid "No se pudo capturar el título"
+msgstr "Не удалось захватить заголовок"
+
+#: zUtilidades/__init__.py:784 zUtilidades/zNotes/zn_modulo.py:904
+#: zUtilidades/zNotes/zn_modulo.py:1102
+msgid "Contenido de la Nota:"
+msgstr "Содержание Примечания:"
+
+#: zUtilidades/__init__.py:792 zUtilidades/zLauncher/zl_modulo.py:899
+#: zUtilidades/zLauncher/zl_modulo.py:976
+#: zUtilidades/zLauncher/zl_modulo.py:1074
+#: zUtilidades/zLauncher/zl_modulo.py:1227
+#: zUtilidades/zLauncher/zl_modulo.py:1372
+#: zUtilidades/zLauncher/zl_modulo.py:1490
+#: zUtilidades/zLauncher/zl_modulo.py:1605
+#: zUtilidades/zLauncher/zl_modulo.py:1719
+#: zUtilidades/zLauncher/zl_modulo.py:1838
+#: zUtilidades/zLauncher/zl_modulo.py:1973
+#: zUtilidades/zLauncher/zl_modulo.py:2130
+#: zUtilidades/zLauncher/zl_modulo.py:2269 zUtilidades/zNotes/zn_modulo.py:743
+#: zUtilidades/zNotes/zn_modulo.py:820 zUtilidades/zNotes/zn_modulo.py:910
+#: zUtilidades/zNotes/zn_modulo.py:1009 zUtilidades/zNotes/zn_modulo.py:1188
+#: zUtilidades/zNotes/zn_modulo.py:1482
+msgid "&Cancelar"
+msgstr "&Отменить"
+
+#: zUtilidades/__init__.py:825 zUtilidades/zNotes/zn_modulo.py:936
+#: zUtilidades/zNotes/zn_modulo.py:1035
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para añadir una Nota."
+msgstr ""
+"Поле не может быть пустым.\n"
+"\n"
+"Введите имя, чтобы добавить заметку."
+
+#: zUtilidades/__init__.py:828 zUtilidades/__init__.py:836
+#: zUtilidades/__init__.py:848 zUtilidades/zLauncher/zl_modulo.py:255
+#: zUtilidades/zLauncher/zl_modulo.py:269
+#: zUtilidades/zLauncher/zl_modulo.py:428
+#: zUtilidades/zLauncher/zl_modulo.py:446
+#: zUtilidades/zLauncher/zl_modulo.py:464
+#: zUtilidades/zLauncher/zl_modulo.py:482
+#: zUtilidades/zLauncher/zl_modulo.py:500
+#: zUtilidades/zLauncher/zl_modulo.py:518
+#: zUtilidades/zLauncher/zl_modulo.py:525
+#: zUtilidades/zLauncher/zl_modulo.py:532
+#: zUtilidades/zLauncher/zl_modulo.py:559
+#: zUtilidades/zLauncher/zl_modulo.py:566
+#: zUtilidades/zLauncher/zl_modulo.py:593
+#: zUtilidades/zLauncher/zl_modulo.py:600
+#: zUtilidades/zLauncher/zl_modulo.py:607
+#: zUtilidades/zLauncher/zl_modulo.py:928
+#: zUtilidades/zLauncher/zl_modulo.py:937
+#: zUtilidades/zLauncher/zl_modulo.py:1005
+#: zUtilidades/zLauncher/zl_modulo.py:1020
+#: zUtilidades/zLauncher/zl_modulo.py:1143
+#: zUtilidades/zLauncher/zl_modulo.py:1151
+#: zUtilidades/zLauncher/zl_modulo.py:1163
+#: zUtilidades/zLauncher/zl_modulo.py:1296
+#: zUtilidades/zLauncher/zl_modulo.py:1304
+#: zUtilidades/zLauncher/zl_modulo.py:1414
+#: zUtilidades/zLauncher/zl_modulo.py:1422
+#: zUtilidades/zLauncher/zl_modulo.py:1434
+#: zUtilidades/zLauncher/zl_modulo.py:1533
+#: zUtilidades/zLauncher/zl_modulo.py:1541
+#: zUtilidades/zLauncher/zl_modulo.py:1560
+#: zUtilidades/zLauncher/zl_modulo.py:1648
+#: zUtilidades/zLauncher/zl_modulo.py:1656
+#: zUtilidades/zLauncher/zl_modulo.py:1668
+#: zUtilidades/zLauncher/zl_modulo.py:1762
+#: zUtilidades/zLauncher/zl_modulo.py:1770
+#: zUtilidades/zLauncher/zl_modulo.py:1896
+#: zUtilidades/zLauncher/zl_modulo.py:1904
+#: zUtilidades/zLauncher/zl_modulo.py:1916
+#: zUtilidades/zLauncher/zl_modulo.py:2031
+#: zUtilidades/zLauncher/zl_modulo.py:2039
+#: zUtilidades/zLauncher/zl_modulo.py:2178
+#: zUtilidades/zLauncher/zl_modulo.py:2186
+#: zUtilidades/zLauncher/zl_modulo.py:2198
+#: zUtilidades/zLauncher/zl_modulo.py:2309
+#: zUtilidades/zLauncher/zl_modulo.py:2330 zUtilidades/zNotes/zn_modulo.py:253
+#: zUtilidades/zNotes/zn_modulo.py:267 zUtilidades/zNotes/zn_modulo.py:414
+#: zUtilidades/zNotes/zn_modulo.py:432 zUtilidades/zNotes/zn_modulo.py:439
+#: zUtilidades/zNotes/zn_modulo.py:458 zUtilidades/zNotes/zn_modulo.py:465
+#: zUtilidades/zNotes/zn_modulo.py:492 zUtilidades/zNotes/zn_modulo.py:499
+#: zUtilidades/zNotes/zn_modulo.py:506 zUtilidades/zNotes/zn_modulo.py:772
+#: zUtilidades/zNotes/zn_modulo.py:781 zUtilidades/zNotes/zn_modulo.py:849
+#: zUtilidades/zNotes/zn_modulo.py:864 zUtilidades/zNotes/zn_modulo.py:939
+#: zUtilidades/zNotes/zn_modulo.py:947 zUtilidades/zNotes/zn_modulo.py:959
+#: zUtilidades/zNotes/zn_modulo.py:1038 zUtilidades/zNotes/zn_modulo.py:1046
+#: zUtilidades/zNotes/zn_modulo.py:1228 zUtilidades/zNotes/zn_modulo.py:1249
+msgid "Información"
+msgstr "Информация"
+
+#: zUtilidades/__init__.py:833 zUtilidades/zNotes/zn_modulo.py:944
+#: zUtilidades/zNotes/zn_modulo.py:1043
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un texto para guardar la nota."
+msgstr ""
+"Поле не может быть пустым.\n"
+"\n"
+"Введите текст, чтобы сохранить заметку."
+
+#: zUtilidades/__init__.py:845 zUtilidades/zNotes/zn_modulo.py:956
+#: zUtilidades/zNotes/zn_modulo.py:1062 zUtilidades/zNotes/zn_modulo.py:1225
+#: zUtilidades/zNotes/zn_modulo.py:1246
+msgid ""
+"No puede duplicar el nombre de una Nota.\n"
+"\n"
+"Modifique el nombre para poder continuar."
+msgstr ""
+"Вы не можете дублировать имя заметки.\n"
+"\n"
+"Измените имя, чтобы продолжить."
+
+#: zUtilidades/varGlobal/__init__.py:151
+msgid ""
+"Compruebe que los datos introducidos son correctos.\n"
+"\n"
+"Se produjo el error: {}\n"
+"\n"
+"Puede buscar información del error en:\n"
+"\n"
+"https://tinyurl.com/yhel7t8c"
+msgstr ""
+"Убедитесь, что введенные данные верны.\n"
+"\n"
+"Произошла ошибка: {}\n"
+"\n"
+"Вы можете найти информацию об ошибке в:\n"
+"\n"
+"https://tinyurl.com/yhel7t8c"
+
+#: zUtilidades/varGlobal/__init__.py:158
+msgid "Error"
+msgstr "Ошибка"
+
+#: zUtilidades/zLauncher/zl_modulo.py:48 zUtilidades/zNotes/zn_modulo.py:54
+msgid "&Categorías:"
+msgstr "&Категории:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:54
+msgid "&Lista acciones:"
+msgstr "& Список действий:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:59 zUtilidades/zNotes/zn_modulo.py:65
+msgid "&Menú"
+msgstr "&Меню"
+
+#: zUtilidades/zLauncher/zl_modulo.py:141
+#: zUtilidades/zLauncher/zl_modulo.py:156
+#: zUtilidades/zLauncher/zl_modulo.py:168
+#: zUtilidades/zLauncher/zl_modulo.py:520
+#: zUtilidades/zLauncher/zl_modulo.py:561
+#: zUtilidades/zLauncher/zl_modulo.py:595
+#: zUtilidades/zLauncher/zl_modulo.py:622
+msgid "Sin acciones"
+msgstr "Без действий"
+
+#: zUtilidades/zLauncher/zl_modulo.py:178
+#: zUtilidades/zLauncher/zl_modulo.py:231 zUtilidades/zNotes/zn_modulo.py:184
+#: zUtilidades/zNotes/zn_modulo.py:229
+msgid "&Añadir categoría"
+msgstr "& Добавить категорию"
+
+#: zUtilidades/zLauncher/zl_modulo.py:180
+#: zUtilidades/zLauncher/zl_modulo.py:233 zUtilidades/zNotes/zn_modulo.py:186
+#: zUtilidades/zNotes/zn_modulo.py:231
+msgid "&Editar categoría"
+msgstr "& Изменить категорию"
+
+#: zUtilidades/zLauncher/zl_modulo.py:182
+#: zUtilidades/zLauncher/zl_modulo.py:235 zUtilidades/zNotes/zn_modulo.py:188
+#: zUtilidades/zNotes/zn_modulo.py:233
+msgid "&Borrar categoría"
+msgstr "& Удалить категорию"
+
+#: zUtilidades/zLauncher/zl_modulo.py:184 zUtilidades/zNotes/zn_modulo.py:190
+msgid "&Categorías"
+msgstr "&Категории"
+
+#: zUtilidades/zLauncher/zl_modulo.py:189
+#: zUtilidades/zLauncher/zl_modulo.py:395
+msgid "Añadir &aplicación"
+msgstr "Добавить & приложение"
+
+#: zUtilidades/zLauncher/zl_modulo.py:191
+#: zUtilidades/zLauncher/zl_modulo.py:397
+msgid "Añadir comando &CMD"
+msgstr "Добавить команду & CMD"
+
+#: zUtilidades/zLauncher/zl_modulo.py:193
+#: zUtilidades/zLauncher/zl_modulo.py:399
+msgid "Añadir accesos a car&petas"
+msgstr "& Добавить доступ к папкам"
+
+#: zUtilidades/zLauncher/zl_modulo.py:195
+#: zUtilidades/zLauncher/zl_modulo.py:401
+msgid "Añadir ejecutar accesos directos de &Windows"
+msgstr "Добавить запуск ярлыков & Windows"
+
+#: zUtilidades/zLauncher/zl_modulo.py:197
+#: zUtilidades/zLauncher/zl_modulo.py:403
+msgid "Añadir aplicación &instalada"
+msgstr "Добавить & установленное приложение"
+
+#: zUtilidades/zLauncher/zl_modulo.py:199
+#: zUtilidades/zLauncher/zl_modulo.py:406
+msgid "&Añadir acción"
+msgstr "& Добавить действие"
+
+#: zUtilidades/zLauncher/zl_modulo.py:201
+#: zUtilidades/zLauncher/zl_modulo.py:408
+msgid "&Editar acción"
+msgstr "& Изменить действие"
+
+#: zUtilidades/zLauncher/zl_modulo.py:203
+#: zUtilidades/zLauncher/zl_modulo.py:410
+msgid "&Borrar acción"
+msgstr "& Удалить действие"
+
+#: zUtilidades/zLauncher/zl_modulo.py:205
+#: zUtilidades/zLauncher/zl_modulo.py:412
+msgid "&Mover acción"
+msgstr "& Переместить действие"
+
+#: zUtilidades/zLauncher/zl_modulo.py:207
+msgid "&Acciones"
+msgstr "&Действия"
+
+#: zUtilidades/zLauncher/zl_modulo.py:210 zUtilidades/zNotes/zn_modulo.py:206
+msgid "&Hacer copia de seguridad"
+msgstr "& Создать резервную копию"
+
+#: zUtilidades/zLauncher/zl_modulo.py:212 zUtilidades/zNotes/zn_modulo.py:208
+msgid "&Restaurar copia de seguridad"
+msgstr "& Восстановить резервную копию"
+
+#: zUtilidades/zLauncher/zl_modulo.py:214 zUtilidades/zNotes/zn_modulo.py:210
+msgid "&Hacer o restaurar copias de seguridad"
+msgstr "& Создавать или восстанавливать резервные копии"
+
+#: zUtilidades/zLauncher/zl_modulo.py:217
+msgid "&Volver a valores por defecto el lanzador de aplicaciones"
+msgstr "& Вернуться к настройкам запуска приложений по умолчанию"
+
+#: zUtilidades/zLauncher/zl_modulo.py:219 zUtilidades/zNotes/zn_modulo.py:213
+#: zUtilidades/zNotes/zn_modulo.py:217
+msgid "&Opciones"
+msgstr "&Выбрать"
+
+#: zUtilidades/zLauncher/zl_modulo.py:221 zUtilidades/zNotes/zn_modulo.py:219
+msgid "&Salir"
+msgstr "&Выйти"
+
+#: zUtilidades/zLauncher/zl_modulo.py:252 zUtilidades/zNotes/zn_modulo.py:250
+msgid ""
+"No tiene ninguna categoría para Editar.\n"
+"\n"
+"Agregue antes una para llevar a cabo esta acción."
+msgstr ""
+"У него нет категории Для редактирования.\n"
+"\n"
+"Добавьте один, чтобы выполнить это действие."
+
+#: zUtilidades/zLauncher/zl_modulo.py:266 zUtilidades/zNotes/zn_modulo.py:264
+msgid ""
+"No tiene ninguna categoría para Borrar.\n"
+"\n"
+"Agregue antes una para llevar a cabo esta acción."
+msgstr ""
+"У него нет категории для удаления.\n"
+"\n"
+"Добавьте один, чтобы выполнить это действие."
+
+#: zUtilidades/zLauncher/zl_modulo.py:272
+msgid ""
+"ADVERTENCIA:\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"Va a borrar la categoría:\n"
+"\n"
+"{}\n"
+"\n"
+"Tenga en cuenta que al borrar la categoría se eliminaran las aplicaciones "
+"que estuvieran en dicha categoría.\n"
+"\n"
+"¿Esta seguro que desea continuar?"
+msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ:\n"
+"\n"
+"Это действие не является обратимым.\n"
+"\n"
+"Он удалит категорию:\n"
+"\n"
+"{}\n"
+"\n"
+"Обратите внимание, что удаление категории приведет к удалению приложений, "
+"относящихся к этой категории.\n"
+"\n"
+"Вы уверены, что хотите продолжить?"
+
+#: zUtilidades/zLauncher/zl_modulo.py:283
+#: zUtilidades/zLauncher/zl_modulo.py:578
+#: zUtilidades/zLauncher/zl_modulo.py:809
+#: zUtilidades/zLauncher/zl_modulo.py:847 zUtilidades/zNotes/zn_modulo.py:281
+#: zUtilidades/zNotes/zn_modulo.py:477 zUtilidades/zNotes/zn_modulo.py:644
+#: zUtilidades/zNotes/zn_modulo.py:691
+msgid "Pregunta"
+msgstr "Вопрос"
+
+#: zUtilidades/zLauncher/zl_modulo.py:425
+#: zUtilidades/zLauncher/zl_modulo.py:443
+#: zUtilidades/zLauncher/zl_modulo.py:461
+#: zUtilidades/zLauncher/zl_modulo.py:479
+#: zUtilidades/zLauncher/zl_modulo.py:497
+#: zUtilidades/zLauncher/zl_modulo.py:515
+#: zUtilidades/zLauncher/zl_modulo.py:556
+msgid ""
+"No tiene ninguna categoría.\n"
+"\n"
+"Agregue una categoría antes para poder añadir una acción."
+msgstr ""
+"Он не имеет никакой категории.\n"
+"\n"
+"Добавьте категорию раньше, чтобы можно было добавить действие."
+
+#: zUtilidades/zLauncher/zl_modulo.py:522
+msgid ""
+"No tiene ninguna acción.\n"
+"\n"
+"Agregue una antes para poder editar."
+msgstr ""
+"У него нет никаких действий.\n"
+"\n"
+"Добавьте один раньше, чтобы вы могли редактировать."
+
+#: zUtilidades/zLauncher/zl_modulo.py:529
+msgid ""
+"Esta acción no es editable.\n"
+"\n"
+"Si lo desea puede eliminarla y volver a añadir otra."
+msgstr ""
+"Это действие не редактируется.\n"
+"\n"
+"Если вы хотите, вы можете удалить его и добавить еще один."
+
+#: zUtilidades/zLauncher/zl_modulo.py:563
+msgid ""
+"No tiene ninguna acción.\n"
+"\n"
+"Agregue una antes para poder borrar."
+msgstr ""
+"У него нет никаких действий.\n"
+"\n"
+"Добавьте один раньше, чтобы вы могли удалить."
+
+#: zUtilidades/zLauncher/zl_modulo.py:569
+msgid ""
+"ADVERTENCIA:\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"Va a borrar la acción:\n"
+"\n"
+"{}\n"
+"\n"
+"¿Esta seguro que desea continuar?"
+msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ:\n"
+"\n"
+"Это действие не является обратимым.\n"
+"\n"
+"Он удалит действие:\n"
+"\n"
+"{}\n"
+"\n"
+"Вы уверены, что хотите продолжить?"
+
+#: zUtilidades/zLauncher/zl_modulo.py:590
+msgid ""
+"No tiene ninguna categoría.\n"
+"\n"
+"Agregue una categoría antes para poder mover una acción."
+msgstr ""
+"Он не имеет никакой категории.\n"
+"\n"
+"Добавьте категорию раньше, чтобы вы могли переместить действие."
+
+#: zUtilidades/zLauncher/zl_modulo.py:597
+msgid ""
+"No tiene ninguna acción.\n"
+"\n"
+"Agregue una antes para poder mover."
+msgstr ""
+"У него нет никаких действий.\n"
+"\n"
+"Добавьте один раньше, чтобы вы могли двигаться."
+
+#: zUtilidades/zLauncher/zl_modulo.py:604 zUtilidades/zNotes/zn_modulo.py:503
+msgid ""
+"No hay categorías suficientes.\n"
+"\n"
+"Para mover entre categorías es necesario al menos dos categorías."
+msgstr ""
+"Не хватает категорий.\n"
+"\n"
+"Для перемещения между категориями необходимо как минимум две категории."
+
+#: zUtilidades/zLauncher/zl_modulo.py:677
+msgid ""
+"La ruta a la aplicación {}, no se encontró.\n"
+"\n"
+"¿Desea editar la entrada de la aplicación para corregir el problema?"
+msgstr ""
+"Путь к приложению {} не найден.\n"
+"\n"
+"Вы хотите отредактировать запись приложения, чтобы исправить проблему?"
+
+#: zUtilidades/zLauncher/zl_modulo.py:680
+#: zUtilidades/zLauncher/zl_modulo.py:722
+#: zUtilidades/zLauncher/zl_modulo.py:754
+msgid "Aviso"
+msgstr "Уведомление"
+
+#: zUtilidades/zLauncher/zl_modulo.py:717
+msgid ""
+"La ruta a la carpeta no se encontró.\n"
+"\n"
+"{}\n"
+"\n"
+"¿Desea editar la entrada de la aplicación para corregir el problema?"
+msgstr ""
+"Путь к папке не найден.\n"
+"\n"
+"{}\n"
+"\n"
+"Вы хотите отредактировать запись приложения, чтобы исправить проблему?"
+
+#: zUtilidades/zLauncher/zl_modulo.py:749
+msgid ""
+"La ruta al acceso directo no se encontró.\n"
+"\n"
+"{}\n"
+"\n"
+"¿Desea editar la entrada de la aplicación para corregir el problema?"
+msgstr ""
+"Путь к ярлыку не найден.\n"
+"\n"
+"{}\n"
+"\n"
+"Вы хотите отредактировать запись приложения, чтобы исправить проблему?"
+
+#: zUtilidades/zLauncher/zl_modulo.py:779
+#: zUtilidades/zLauncher/zl_modulo.py:813
+msgid "Archivo copia de seguridad zUtilidades (*.zut-zl)|*.zut-zl"
+msgstr "Файл резервная копия zutibility (*.zut-zl)|*.zut-zl"
+
+#: zUtilidades/zLauncher/zl_modulo.py:780 zUtilidades/zNotes/zn_modulo.py:615
+msgid "Guardar en..."
+msgstr "Сохранить..."
+
+#: zUtilidades/zLauncher/zl_modulo.py:785 zUtilidades/zNotes/zn_modulo.py:620
+msgid "Haciendo copia de seguridad..."
+msgstr "Резервное копирование..."
+
+#: zUtilidades/zLauncher/zl_modulo.py:798
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"Esto borrara toda la base de datos del lanzador de aplicaciones\n"
+"\n"
+"Toda la base de datos será sustituida por la copia de seguridad.\n"
+"\n"
+"El complemento restaurara la copia de seguridad y se cerrara.\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"¿Desea continuar con el proceso?"
+msgstr ""
+"*** ПРЕДУПРЕЖДЕНИЕ ***\n"
+"\n"
+"Это удалит всю базу данных запуска приложений\n"
+"\n"
+"Вся база данных будет заменена резервной копией.\n"
+"\n"
+"Плагин восстановит резервную копию и закроется.\n"
+"\n"
+"Это действие не является обратимым.\n"
+"\n"
+"Вы хотите продолжить процесс?"
+
+#: zUtilidades/zLauncher/zl_modulo.py:814 zUtilidades/zNotes/zn_modulo.py:649
+msgid "Seleccione un archivo de copia de seguridad"
+msgstr "Выберите файл резервной копии"
+
+#: zUtilidades/zLauncher/zl_modulo.py:818 zUtilidades/zNotes/zn_modulo.py:653
+msgid "Restaurando copia de seguridad..."
+msgstr "Восстановление резервной копии..."
+
+#: zUtilidades/zLauncher/zl_modulo.py:838
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"Esto borrara toda la base de datos del lanzador de aplicaciones\n"
+"\n"
+"El complemento borrara la base de datos y se cerrara.\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"¿Desea continuar con el proceso?"
+msgstr ""
+"*** ПРЕДУПРЕЖДЕНИЕ ***\n"
+"\n"
+"Это удалит всю базу данных запуска приложений\n"
+"\n"
+"Плагин очистит базу данных и закроется.\n"
+"\n"
+"Это действие не является обратимым.\n"
+"\n"
+"Вы хотите продолжить процесс?"
+
+#: zUtilidades/zLauncher/zl_modulo.py:887 zUtilidades/zNotes/zn_modulo.py:731
+msgid "Añadir categoría"
+msgstr "Добавить категорию"
+
+#: zUtilidades/zLauncher/zl_modulo.py:892
+#: zUtilidades/zLauncher/zl_modulo.py:968 zUtilidades/zNotes/zn_modulo.py:736
+#: zUtilidades/zNotes/zn_modulo.py:812
+msgid "&Introduzca el nombre de la categoría:"
+msgstr "&\"Введите название категории:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:925
+#: zUtilidades/zLauncher/zl_modulo.py:1002 zUtilidades/zNotes/zn_modulo.py:769
+#: zUtilidades/zNotes/zn_modulo.py:846
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para añadir una categoría."
+msgstr ""
+"Поле не может быть пустым.\n"
+"\n"
+"Введите имя, чтобы добавить категорию."
+
+#: zUtilidades/zLauncher/zl_modulo.py:934
+#: zUtilidades/zLauncher/zl_modulo.py:1017 zUtilidades/zNotes/zn_modulo.py:778
+#: zUtilidades/zNotes/zn_modulo.py:861
+msgid ""
+"No puede duplicar el nombre de una categoría.\n"
+"\n"
+"Modifique el nombre para poder continuar."
+msgstr ""
+"Вы не можете дублировать имя категории.\n"
+"\n"
+"Измените имя, чтобы продолжить."
+
+#: zUtilidades/zLauncher/zl_modulo.py:963 zUtilidades/zNotes/zn_modulo.py:807
+msgid "Editar categoría"
+msgstr "Изменить категорию"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1046
+msgid "Añadir aplicación"
+msgstr "Добавить приложение"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1055
+#: zUtilidades/zLauncher/zl_modulo.py:1200
+#: zUtilidades/zLauncher/zl_modulo.py:2120
+msgid "Introduzca el nombre de la aplicación:"
+msgstr "Введите имя приложения:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1058
+#: zUtilidades/zLauncher/zl_modulo.py:1204
+msgid "Ruta de la aplicación:"
+msgstr "Путь к приложению:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1060
+#: zUtilidades/zLauncher/zl_modulo.py:1206
+msgid "&Seleccionar archivo"
+msgstr "& Выбрать файл"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1063
+#: zUtilidades/zLauncher/zl_modulo.py:1210
+msgid "Usar parámetros adicionales"
+msgstr "Использование дополнительных параметров"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1064
+#: zUtilidades/zLauncher/zl_modulo.py:1212
+msgid "Introduzca los parámetros para la aplicación:"
+msgstr "Введите параметры для приложения:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1068
+#: zUtilidades/zLauncher/zl_modulo.py:1220
+#: zUtilidades/zLauncher/zl_modulo.py:1366
+#: zUtilidades/zLauncher/zl_modulo.py:1482
+#: zUtilidades/zLauncher/zl_modulo.py:1832
+#: zUtilidades/zLauncher/zl_modulo.py:1965
+#: zUtilidades/zLauncher/zl_modulo.py:2124
+msgid "Ejecutar como administrador"
+msgstr "Запуск от имени администратора"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1122
+#: zUtilidades/zLauncher/zl_modulo.py:1275
+msgid ""
+"Todos los archivos ejecutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|Todos "
+"los ficheros (*.*)|*.*"
+msgstr ""
+"Все исполняемые файлы (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|Все файлы (*."
+"*)|*.*"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1123
+#: zUtilidades/zLauncher/zl_modulo.py:1276
+msgid "Seleccione un archivo"
+msgstr "Выберите файл"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1140
+#: zUtilidades/zLauncher/zl_modulo.py:1293
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para añadir una aplicación."
+msgstr ""
+"Поле не может быть пустым.\n"
+"\n"
+"Введите имя, чтобы добавить приложение."
+
+#: zUtilidades/zLauncher/zl_modulo.py:1148
+#: zUtilidades/zLauncher/zl_modulo.py:1301
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Seleccione una aplicación para poder continuar."
+msgstr ""
+"Поле не может быть пустым.\n"
+"\n"
+"Выберите приложение,чтобы продолжить."
+
+#: zUtilidades/zLauncher/zl_modulo.py:1160
+#: zUtilidades/zLauncher/zl_modulo.py:1320
+#: zUtilidades/zLauncher/zl_modulo.py:1431
+#: zUtilidades/zLauncher/zl_modulo.py:1557
+#: zUtilidades/zLauncher/zl_modulo.py:1665
+#: zUtilidades/zLauncher/zl_modulo.py:1786
+#: zUtilidades/zLauncher/zl_modulo.py:1913
+#: zUtilidades/zLauncher/zl_modulo.py:2055
+#: zUtilidades/zLauncher/zl_modulo.py:2195
+#: zUtilidades/zLauncher/zl_modulo.py:2306
+#: zUtilidades/zLauncher/zl_modulo.py:2327
+msgid ""
+"No puede duplicar el nombre de una acción.\n"
+"\n"
+"Modifique el nombre para poder continuar."
+msgstr ""
+"Вы не можете дублировать имя действия.\n"
+"\n"
+"Измените имя, чтобы продолжить."
+
+#: zUtilidades/zLauncher/zl_modulo.py:1190
+msgid "Editar aplicación"
+msgstr "Редактировать приложение"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1350
+msgid "Añadir CMD"
+msgstr "Добавить CMD"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1359
+#: zUtilidades/zLauncher/zl_modulo.py:1471
+msgid "Introduzca un nombre para identificar el comando CMD:"
+msgstr "Введите имя для идентификации команды CMD:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1362
+#: zUtilidades/zLauncher/zl_modulo.py:1475
+msgid ""
+"Introduzca los comandos de CMD. Puede usar el símbolo (et = Shift+6) para "
+"usar más de una línea de comandos:"
+msgstr ""
+"Введите команды CMD. Вы можете использовать символ (et = Shift+6) для "
+"использования более одной командной строки:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1365
+#: zUtilidades/zLauncher/zl_modulo.py:1479
+msgid ""
+"Pausar la consola de CMD al finalizar el comando. Evitara que se cierre al "
+"terminar"
+msgstr ""
+"Приостановить консоль CMD после завершения команды. Это предотвратит его "
+"закрытие, когда вы закончите"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1411
+#: zUtilidades/zLauncher/zl_modulo.py:1530
+msgid ""
+"El campo (Introduzca un nombre para identificar el comando CMD) no puede "
+"quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para poder identificar el comando."
+msgstr ""
+"Поле (Введите имя для идентификации команды CMD) не может быть пустым.\n"
+"\n"
+"Введите имя, чтобы можно было идентифицировать команду."
+
+#: zUtilidades/zLauncher/zl_modulo.py:1419
+#: zUtilidades/zLauncher/zl_modulo.py:1538
+msgid ""
+"El campo (Introduzca los comandos de CMD. Puede usar el símbolo (et = Shift"
+"+6) para usar más de una línea de comandos) no puede quedar en blanco.\n"
+"\n"
+"Escriba una línea de comandos para continuar."
+msgstr ""
+"Поле (введите команды CMD. Вы можете использовать символ (et = Shift+6) для "
+"использования более одной командной строки) не может быть пустым.\n"
+"\n"
+"Введите командную строку, чтобы продолжить."
+
+#: zUtilidades/zLauncher/zl_modulo.py:1461
+msgid "Editar CMD"
+msgstr "Командный редактор"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1587
+msgid "Añadir carpeta"
+msgstr "Добавить папку"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1594
+#: zUtilidades/zLauncher/zl_modulo.py:1703
+msgid "Introduzca el nombre de la carpeta:"
+msgstr "Введите имя папки:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1597
+#: zUtilidades/zLauncher/zl_modulo.py:1707
+msgid "Ruta de la carpeta:"
+msgstr "Путь к папке:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1599
+#: zUtilidades/zLauncher/zl_modulo.py:1709
+msgid "&Seleccionar carpeta"
+msgstr "& Выбрать папку"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1632
+#: zUtilidades/zLauncher/zl_modulo.py:1746
+msgid "Seleccione una carpeta:"
+msgstr "Выберите папку:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1645
+#: zUtilidades/zLauncher/zl_modulo.py:1759
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para identificar una carpeta."
+msgstr ""
+"Поле не может быть пустым.\n"
+"\n"
+"Введите имя для идентификации папки."
+
+#: zUtilidades/zLauncher/zl_modulo.py:1653
+#: zUtilidades/zLauncher/zl_modulo.py:1767
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Seleccione una carpeta para poder continuar."
+msgstr ""
+"Поле не может быть пустым.\n"
+"\n"
+"Выберите папку, чтобы продолжить."
+
+#: zUtilidades/zLauncher/zl_modulo.py:1695
+msgid "Editar carpeta"
+msgstr "Редактировать папку"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1816
+msgid "Añadir acceso directo"
+msgstr "Добавить ярлык"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1824
+#: zUtilidades/zLauncher/zl_modulo.py:1952
+msgid "Introduzca el nombre del acceso directo:"
+msgstr "Введите имя ярлыка:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1827
+#: zUtilidades/zLauncher/zl_modulo.py:1956
+msgid "Ruta del acceso directo:"
+msgstr "Путь ярлыка:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1829
+#: zUtilidades/zLauncher/zl_modulo.py:1958
+msgid "&Seleccionar acceso directo"
+msgstr "& Выбрать ярлык"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1875
+#: zUtilidades/zLauncher/zl_modulo.py:2010
+msgid "Accesos directos (*.lnk)|*.lnk|"
+msgstr "Ярлыки (*.lnk)|*.lnk|"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1876
+#: zUtilidades/zLauncher/zl_modulo.py:2011
+msgid "Seleccione un acceso directo"
+msgstr "Выберите ярлык"
+
+#: zUtilidades/zLauncher/zl_modulo.py:1893
+#: zUtilidades/zLauncher/zl_modulo.py:2028
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para identificar un acceso directo."
+msgstr ""
+"Поле не может быть пустым.\n"
+"\n"
+"Введите имя, чтобы определить ярлык."
+
+#: zUtilidades/zLauncher/zl_modulo.py:1901
+#: zUtilidades/zLauncher/zl_modulo.py:2036
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Seleccione un acceso directo para poder continuar."
+msgstr ""
+"Поле не может быть пустым.\n"
+"\n"
+"Выберите ярлык, чтобы продолжить."
+
+#: zUtilidades/zLauncher/zl_modulo.py:1943
+msgid "Editar acceso directo"
+msgstr "Изменить ярлык"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2085
+msgid "Añadir aplicación instalada"
+msgstr "Добавить установленное приложение"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2096
+msgid ""
+"En el siguiente campo combinado tendrá todas las aplicaciones instaladas.\n"
+"\n"
+"Esto incluye las aplicaciones instaladas desde la tienda, por el usuario y "
+"aquellos accesos que las aplicaciones instalan junto a la aplicación en sí.\n"
+"\n"
+"También tiene aplicaciones del sistema las cuales también se pueden añadir.\n"
+"\n"
+"Advertencia:\n"
+"\n"
+"Las aplicaciones añadidas desde este apartado no pueden ser editadas en el "
+"lanzador, por lo que si sufren cambios tendrá que eliminar la entrada en el "
+"lanzador y volver a elegir de nuevo la aplicación y añadirla.\n"
+"\n"
+"Igualmente si la aplicación ha sido desinstalada tendrá que borrar el acceso "
+"en el lanzador."
+msgstr ""
+"В следующем объединенном поле у вас будут установлены все приложения.\n"
+"\n"
+"Это включает в себя приложения, установленные из магазина, пользователем и "
+"те доступы, которые приложения устанавливают рядом с самим приложением.\n"
+"\n"
+"Он также имеет системные приложения, которые также могут быть добавлены.\n"
+"\n"
+"Предупреждение:\n"
+"\n"
+"Приложения, добавленные из этого раздела, не могут быть отредактированы в "
+"пусковой установке, поэтому, если они претерпевают изменения, вам придется "
+"удалить запись в пусковой установке и снова выбрать \n"
+"приложение и добавить его.\n"
+"\n"
+"Точно так же, если приложение было удалено, вам нужно будет удалить доступ в "
+"пусковой установке."
+
+#: zUtilidades/zLauncher/zl_modulo.py:2107
+msgid "Información importante:"
+msgstr "Важная информация:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2116
+#: zUtilidades/zLauncher/zl_modulo.py:2158
+msgid "Seleccione algo para añadir al lanzador."
+msgstr "Выберите что-то, чтобы добавить в пусковую установку."
+
+#: zUtilidades/zLauncher/zl_modulo.py:2177
+msgid ""
+"Tiene que elegir una aplicación del cuadro combinado para poder añadirla."
+msgstr "Вы должны выбрать приложение из поля со списком, чтобы добавить его."
+
+#: zUtilidades/zLauncher/zl_modulo.py:2183
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para identificar un acceso."
+msgstr ""
+"Поле не может быть пустым.\n"
+"\n"
+"Введите имя для идентификации доступа."
+
+#: zUtilidades/zLauncher/zl_modulo.py:2243
+msgid "Mover la acción  {} a otra categoría"
+msgstr "Переместить действие {} в другую категорию"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2256
+msgid "Seleccione una categoría donde mover la acción:"
+msgstr "Выберите категорию для перемещения действия:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2262
+msgid "Introduzca un nuevo nombre a la acción:"
+msgstr "Введите новое имя действия:"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2388 zUtilidades/zNotes/zn_modulo.py:1307
+#, python-format
+msgid "Comprimiendo el archivo: %s"
+msgstr "Сжатие файла: %s"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2402 zUtilidades/zNotes/zn_modulo.py:1321
+#, python-format
+msgid "Descomprimiendo el archivo: %s"
+msgstr "Распаковка файла: %s"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2444
+#: zUtilidades/zLauncher/zl_modulo.py:2453
+#: zUtilidades/zLauncher/zl_modulo.py:2458
+#: zUtilidades/zLauncher/zl_modulo.py:2465 zUtilidades/zNotes/zn_modulo.py:1363
+#: zUtilidades/zNotes/zn_modulo.py:1372 zUtilidades/zNotes/zn_modulo.py:1377
+#: zUtilidades/zNotes/zn_modulo.py:1384
+msgid "Algo salió mal.\n"
+msgstr "Что-то пошло не так.\n"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2444
+#: zUtilidades/zLauncher/zl_modulo.py:2453
+#: zUtilidades/zLauncher/zl_modulo.py:2458
+#: zUtilidades/zLauncher/zl_modulo.py:2465 zUtilidades/zNotes/zn_modulo.py:1363
+#: zUtilidades/zNotes/zn_modulo.py:1372 zUtilidades/zNotes/zn_modulo.py:1377
+#: zUtilidades/zNotes/zn_modulo.py:1384
+msgid "Inténtelo de nuevo.\n"
+msgstr "Попробуйте еще раз.\n"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2444
+#: zUtilidades/zLauncher/zl_modulo.py:2447
+#: zUtilidades/zLauncher/zl_modulo.py:2453
+#: zUtilidades/zLauncher/zl_modulo.py:2458
+#: zUtilidades/zLauncher/zl_modulo.py:2463
+#: zUtilidades/zLauncher/zl_modulo.py:2465 zUtilidades/zNotes/zn_modulo.py:1363
+#: zUtilidades/zNotes/zn_modulo.py:1366 zUtilidades/zNotes/zn_modulo.py:1372
+#: zUtilidades/zNotes/zn_modulo.py:1377 zUtilidades/zNotes/zn_modulo.py:1382
+#: zUtilidades/zNotes/zn_modulo.py:1384
+msgid "Ya puede cerrar esta ventana."
+msgstr "Вы можете закрыть это окно."
+
+#: zUtilidades/zLauncher/zl_modulo.py:2447 zUtilidades/zNotes/zn_modulo.py:1366
+msgid "La copia de seguridad fue un éxito.\n"
+msgstr "Резервное копирование было успешным.\n"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2463 zUtilidades/zNotes/zn_modulo.py:1382
+msgid "Se completo la restauración correctamente.\n"
+msgstr "Восстановление завершено правильно.\n"
+
+#: zUtilidades/zLauncher/zl_modulo.py:2487 zUtilidades/zNotes/zn_modulo.py:1108
+#: zUtilidades/zNotes/zn_modulo.py:1406
+msgid "&Cerrar"
+msgstr "&Закрыть"
+
+#: zUtilidades/zNotes/zn_modulo.py:60
+msgid "&Lista notas:"
+msgstr "Список и примечания:"
+
+#: zUtilidades/zNotes/zn_modulo.py:194 zUtilidades/zNotes/zn_modulo.py:392
+msgid "&Añadir Nota"
+msgstr "& Добавить Примечание"
+
+#: zUtilidades/zNotes/zn_modulo.py:196 zUtilidades/zNotes/zn_modulo.py:394
+msgid "&Editar Nota"
+msgstr "&Редактировать примечание"
+
+#: zUtilidades/zNotes/zn_modulo.py:198 zUtilidades/zNotes/zn_modulo.py:396
+msgid "&Borrar Nota"
+msgstr "& Удалить Примечание"
+
+#: zUtilidades/zNotes/zn_modulo.py:200 zUtilidades/zNotes/zn_modulo.py:398
+msgid "&Mover Nota"
+msgstr "&Примечание для перемещения"
+
+#: zUtilidades/zNotes/zn_modulo.py:203
+msgid "&Notas"
+msgstr "&Примечания"
+
+#: zUtilidades/zNotes/zn_modulo.py:215
+msgid "&Volver a valores por defecto Notas rápidas"
+msgstr "& Вернуться к значениям по умолчанию быстрые заметки"
+
+#: zUtilidades/zNotes/zn_modulo.py:270
+msgid ""
+"ADVERTENCIA:\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"Va a borrar la categoría:\n"
+"\n"
+"{}\n"
+"\n"
+"Tenga en cuenta que al borrar la categoría se eliminaran las notas que "
+"estuvieran en dicha categoría.\n"
+"\n"
+"¿Esta seguro que desea continuar?"
+msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ:\n"
+"\n"
+"Это действие не является обратимым.\n"
+"\n"
+"Он удалит категорию:\n"
+"\n"
+"{}\n"
+"\n"
+"Обратите внимание, что удаление категории приведет к удалению заметок, "
+"относящихся к этой категории.\n"
+"\n"
+"Вы уверены, что хотите продолжить?"
+
+#: zUtilidades/zNotes/zn_modulo.py:411 zUtilidades/zNotes/zn_modulo.py:429
+#: zUtilidades/zNotes/zn_modulo.py:455
+msgid ""
+"No tiene ninguna categoría.\n"
+"\n"
+"Agregue una categoría antes para poder añadir una Nota."
+msgstr ""
+"Он не имеет никакой категории.\n"
+"\n"
+"Добавьте категорию, чтобы добавить заметку."
+
+#: zUtilidades/zNotes/zn_modulo.py:436
+msgid ""
+"No tiene ninguna Nota.\n"
+"\n"
+"Agregue una antes para poder editar."
+msgstr ""
+"У него нет Записки.\n"
+"\n"
+"Добавьте одну, чтобы вы могли редактировать."
+
+#: zUtilidades/zNotes/zn_modulo.py:462
+msgid ""
+"No tiene ninguna Nota.\n"
+"\n"
+"Agregue una antes para poder borrar."
+msgstr ""
+"У него нет Записки.\n"
+"\n"
+"Добавьте одну, чтобы вы могли удалить."
+
+#: zUtilidades/zNotes/zn_modulo.py:468
+msgid ""
+"ADVERTENCIA:\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"Va a borrar la Nota:\n"
+"\n"
+"{}\n"
+"\n"
+"¿Esta seguro que desea continuar?"
+msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ:\n"
+"\n"
+"Это действие не является обратимым.\n"
+"\n"
+"Он удалит записку:\n"
+"\n"
+"{}\n"
+"\n"
+"Вы уверены, что хотите продолжить?"
+
+#: zUtilidades/zNotes/zn_modulo.py:489
+msgid ""
+"No tiene ninguna categoría.\n"
+"\n"
+"Agregue una categoría antes para poder mover una Nota."
+msgstr ""
+"Он не имеет никакой категории.\n"
+"\n"
+"Добавьте категорию, чтобы вы могли переместить заметку."
+
+#: zUtilidades/zNotes/zn_modulo.py:496
+msgid ""
+"No tiene ninguna Nota.\n"
+"\n"
+"Agregue una antes para poder mover."
+msgstr ""
+"У него нет Записки.\n"
+"\n"
+"Добавьте одну, чтобы вы могли двигаться."
+
+#: zUtilidades/zNotes/zn_modulo.py:582
+msgid "Se a copiado la nota {} al portapapeles."
+msgstr "Заметка {} скопированна в буфер обмена."
+
+#: zUtilidades/zNotes/zn_modulo.py:584
+msgid "No se a podido copiar la nota {} al portapapeles."
+msgstr "Не удалось скопировать заметку {} в буфер обмена."
+
+#: zUtilidades/zNotes/zn_modulo.py:614 zUtilidades/zNotes/zn_modulo.py:648
+msgid "Archivo copia de seguridad zUtilidades (*.zut-zn)|*.zut-zn"
+msgstr "Файл резервная копия zUtilidades (*.zut-zn)|*.zut-zn"
+
+#: zUtilidades/zNotes/zn_modulo.py:633
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"Esto borrara toda la base de datos de Notas rápidas\n"
+"\n"
+"Toda la base de datos será sustituida por la copia de seguridad.\n"
+"\n"
+"El complemento restaurara la copia de seguridad y se cerrara.\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"¿Desea continuar con el proceso?"
+msgstr ""
+"*** ПРЕДУПРЕЖДЕНИЕ ***\n"
+"\n"
+"Это удалит всю базу данных быстрых заметок\n"
+"\n"
+"Вся база данных будет заменена резервной копией.\n"
+"\n"
+"Плагин восстановит резервную копию и закроется.\n"
+"\n"
+"Это действие не является обратимым.\n"
+"\n"
+"Вы хотите продолжить процесс?"
+
+#: zUtilidades/zNotes/zn_modulo.py:682
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"Esto borrara toda la base de datos de Notas rápidas\n"
+"\n"
+"El complemento borrara la base de datos y se cerrara.\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"¿Desea continuar con el proceso?"
+msgstr ""
+"*** ПРЕДУПРЕЖДЕНИЕ ***\n"
+"\n"
+"Это удалит всю базу данных быстрых заметок\n"
+"\n"
+"Плагин очистит базу данных и закроется.\n"
+"\n"
+"Это действие не является обратимым.\n"
+"\n"
+"Вы хотите продолжить процесс?"
+
+#: zUtilidades/zNotes/zn_modulo.py:894
+msgid "Añadir Nota"
+msgstr "Добавить Примечание"
+
+#: zUtilidades/zNotes/zn_modulo.py:990
+msgid "Editar Nota"
+msgstr "Редактировать Примечание"
+
+#: zUtilidades/zNotes/zn_modulo.py:1002
+msgid "Contenido de la nota:"
+msgstr "Содержание заметки:"
+
+#: zUtilidades/zNotes/zn_modulo.py:1162
+msgid "Mover la nota {} a otra categoría"
+msgstr "Переместить заметку {} в другую категорию"
+
+#: zUtilidades/zNotes/zn_modulo.py:1175
+msgid "Seleccione una categoría donde mover la nota:"
+msgstr "Выберите категорию для перемещения заметки:"
+
+#: zUtilidades/zNotes/zn_modulo.py:1181
+msgid "Introduzca un nuevo nombre a la nota:"
+msgstr "Введите новое имя заметки:"
+
+#: zUtilidades/zNotes/zn_modulo.py:1473
+msgid "Opciones"
+msgstr "Выбрать"
+
+#: zUtilidades/zNotes/zn_modulo.py:1478
+msgid ""
+"Capturar el título de la ventana en las notas rápidas (desde cualquier parte)"
+msgstr "Захват заголовка окна в быстрых заметках (из любой точки мира)"

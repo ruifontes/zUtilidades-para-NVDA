@@ -17,7 +17,7 @@ import sys
 import varGlobal
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import zl_ajustes as ajustes
-
+sys.path.remove(os.path.dirname(os.path.abspath(__file__)))
 # For translation
 addonHandler.initTranslation()
 

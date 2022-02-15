@@ -22,6 +22,7 @@ import sys
 import varGlobal
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import zn_ajustes as ajustes
+sys.path.remove(os.path.dirname(os.path.abspath(__file__)))
 
 # For translation
 addonHandler.initTranslation()
@@ -603,7 +604,12 @@ Para mover entre categorías es necesario al menos dos categorías.""")
 				watchdog.cancellableSendMessage(focus.windowHandle, WM_COMMAND, 0xfff1, 0)
 			else:
 				varGlobal.mensaje("Nota pegada en el foco.")
-				KeyboardInputGesture.fromName("Control+v").send()
+				try:
+					KeyboardInputGesture.fromName("Control+v").send()
+				except:
+					# Solución para teclados con caracteres cirilicos.
+					KeyboardInputGesture.fromName("shift+insert").send()
+
 			try:
 				core.callLater(300, lambda: api.copyToClip(clipboardBackup))
 			except:

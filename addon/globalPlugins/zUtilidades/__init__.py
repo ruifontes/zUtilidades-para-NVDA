@@ -36,7 +36,7 @@ if not hasattr(controlTypes, "Role"):
 	[(x.split("STATE_")[1], getattr(controlTypes, x)) for x in dir(controlTypes) if x.startswith("STATE_")])))
 	setattr(controlTypes, "role", type("role", (), {"roleLabels": controlTypes.role._roleLabels}))
 # End of compatibility fixes
-
+sys.path.remove(os.path.dirname(os.path.abspath(__file__)))
 # For translationn
 addonHandler.initTranslation()
 
@@ -716,7 +716,12 @@ Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").
 					watchdog.cancellableSendMessage(focus.windowHandle, WM_COMMAND, 0xfff1, 0)
 				else:
 					time.sleep(0.1)
-					KeyboardInputGesture.fromName("Control+v").send()
+					try:
+						KeyboardInputGesture.fromName("Control+v").send()
+					except:
+						# Solución para teclados con caracteres cirilicos.
+						KeyboardInputGesture.fromName("shift+insert").send()
+
 				varGlobal.mensaje(_("Nota pegada en el foco"))
 				try:
 					core.callLater(300, lambda: api.copyToClip(clipboardBackup))

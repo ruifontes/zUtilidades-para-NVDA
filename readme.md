@@ -25,6 +25,7 @@
 - [Menús Virtuales para el Lanzador de aplicaciones y para Notas rápidas](#mark13)
 - [Traductores y colaboradores](#mark14)
 - [Registro de cambios](#mark15)
+- [Versión 0.2.4](#mark0.2.4)
 - [Versión 0.2.3](#mark0.2.3)
 - [Versión 0.2.2](#mark0.2.2)
 - [Versión 0.2.1](#mark0.2.1)
@@ -325,9 +326,25 @@ Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que puls
 * Francés: Rémy Ruiz
 * Portugués: Ângelo Miguel Abrantes
 * Italiano: Alessio Lenzi
+* Ruso: Valentin Kupriyanov
+* Turco: Umut KORKMAZ
 * Javi Domínguez: Mil gracias por enseñarme a programar el menú. Mejor dicho por explicarlo para tontos como yo.
 
 # Registro de cambios.<a id="mark15"></a>
+## Versión 0.2.4.<a id="mark0.2.4"></a>
+
+* Agregada posibilidad de capturar la URL en una nota rápida.
+
+Configurar en opciones del módulo zNotas.
+
+* Agregados idiomas Ruso y Turco.
+
+* Solucionado error con rutas internas de NVDA.
+
+* Solucionado error en teclados con caracteres cirílicos.
+
+* Compatible con NVDA 2022.1.
+
 ## Versión 0.2.3.<a id="mark0.2.3"></a>
 
 Se agrego la posibilidad de capturar el título de las ventanas en Añadir una nueva nota rápida o en Agregar nota rápida del texto seleccionado.

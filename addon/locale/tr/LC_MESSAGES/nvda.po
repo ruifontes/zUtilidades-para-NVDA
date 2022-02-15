@@ -1,0 +1,1530 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'zUtilidades' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'zUtilidades' '0.2.3'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2022-01-24 11:21+0100\n"
+"PO-Revision-Date: 2022-01-24 14:19+0300\n"
+"Last-Translator: Umut KORKMAZ <umutkork@gmail.com>\n"
+"Language-Team: Umut KORKMAZ <umutkork@gmail.com>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Bookmarks: -1,-1,-1,-1,-1,20,112,-1,-1,-1\n"
+"X-Poedit-Basepath: ../../../globalPlugins\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. add-on Name/identifier, internal for NVDA
+#: buildVars.py:19 addon\globalPlugins\zUtilidades\__init__.py:109
+#: addon\globalPlugins\zUtilidades\__init__.py:148
+#: addon\globalPlugins\zUtilidades\__init__.py:187
+msgid "zUtilidades"
+msgstr "zAraçlar"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
+msgid "zUtilidades para NVDA"
+msgstr "NVDA için zAraçlar"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid "Conjunto de utilidades para Windows"
+msgstr "Windows için yardımcı Araçlar paketi"
+
+#. Translators: Nombre del submenú para el lanzador de aplicaciones
+#: addon\globalPlugins\zUtilidades\__init__.py:66
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:41
+msgid "Lanzador de Aplicaciones"
+msgstr "Uygulama Başlatıcı"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:68
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:46
+msgid "Notas rápidas"
+msgstr "Çabuk notlar"
+
+#. Translators: Nombre del menú zUtilidades
+#: addon\globalPlugins\zUtilidades\__init__.py:71
+msgid "&zUtilidades"
+msgstr "&zAraçlar"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:109
+msgid "Con una pulsación Muestra la ventana del lanzador de aplicaciones, con doble pulsación el menú virtual del lanzador de aplicaciones"
+msgstr "Tek basışta uygulama başlatıcı penceresini gösterir, çift basışta uygulama başlatıcısının sanal menüsünü gösterir"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:124
+#: addon\globalPlugins\zUtilidades\__init__.py:139
+#: addon\globalPlugins\zUtilidades\__init__.py:163
+#: addon\globalPlugins\zUtilidades\__init__.py:178
+#: addon\globalPlugins\zUtilidades\__init__.py:242
+#: addon\globalPlugins\zUtilidades\__init__.py:300
+#: addon\globalPlugins\zUtilidades\__init__.py:385
+msgid ""
+"Ya hay una instancia de zUtilidades abierta.\n"
+"\n"
+"No es posible tener dos instancias a la vez."
+msgstr ""
+"zAraçlar penceresi zaten açık..\n"
+"\n"
+"Aynı anda iki pencere açılamaz."
+
+#: addon\globalPlugins\zUtilidades\__init__.py:148
+msgid "Con una pulsación muestra la ventana de notas rápidas, con doble pulsación el menú virtual de notas rápidas"
+msgstr "Tek basışta Çabuk notlar penceresini gösterir, çift basışta sanal Çabuk notlar menüsünü gösterir"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:187
+msgid "Con una pulsación agrega una nota rápida del texto seleccionado, con doble pulsación agrega una nueva nota rápida"
+msgstr "Tek basışta seçili metinden Çabuk bir not ekler, çift basışta yeni bir Çabuk not ekler"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:208
+#: addon\globalPlugins\zUtilidades\__init__.py:216
+#: addon\globalPlugins\zUtilidades\__init__.py:219
+msgid "Seleccione un texto para poder agregar a una nota rápida"
+msgstr "Çabuk nota ekleyebileceğiniz bir metin seçin"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:231
+msgid ""
+"No hay categorías para añadir una nota rápida.\n"
+"\n"
+"Agregue una categoría antes para poder copiar un texto a una nota rápida."
+msgstr ""
+"Çabuk not eklenecek kategori yok.\n"
+"\n"
+"Bir metni Çabuk nota kopyalayabilmek için önce bir kategori ekleyin."
+
+#: addon\globalPlugins\zUtilidades\__init__.py:286
+msgid ""
+"No hay categorías para añadir una nota rápida.\n"
+"\n"
+"Agregue una categoría antes para poder crear una nota rápida."
+msgstr ""
+"Çabuk not eklenecek kategori yok.\n"
+"\n"
+"Çabuk not oluşturabilmek için lütfen önce bir kategori ekleyin."
+
+#: addon\globalPlugins\zUtilidades\__init__.py:393
+#: addon\globalPlugins\zUtilidades\__init__.py:411
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:134
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:140
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:250
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:264
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:299
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:319
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:332
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:342
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:367
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:385
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:423
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:441
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:459
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:477
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:495
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:513
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:554
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:588
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:140
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:146
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:248
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:262
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:297
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:317
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:330
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:340
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:365
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:383
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:409
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:427
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:453
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:487
+msgid "No hay categorías"
+msgstr "Kategori yok"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:446
+msgid "Menú activado"
+msgstr "Menü etkinleştirildi"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:553
+#: addon\globalPlugins\zUtilidades\__init__.py:567
+msgid "Sin acción"
+msgstr "Eylem yok"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:555
+#: addon\globalPlugins\zUtilidades\__init__.py:569
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:147
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:162
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:174
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:434
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:460
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:494
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:521
+msgid "Sin notas"
+msgstr "Not yok"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:573
+#: addon\globalPlugins\zUtilidades\__init__.py:728
+msgid "Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, enter para activarlo o escape para salir"
+msgstr "Kategoriler arasında gezinmek için sağ ve sol yön, öğeyi seçmek için yukarı ve aşağı yön, etkinleştirmek için enter veya çıkmak için Escape tuşlarını kullanın."
+
+#: addon\globalPlugins\zUtilidades\__init__.py:577
+msgid "Esta categoría no tiene acciones"
+msgstr "Bu kategori boş"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:580
+msgid "Ejecutando acción"
+msgstr "Eylem yürütülüyor"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:598
+msgid ""
+"La ruta a la aplicación {}, no se encontró.\n"
+"\n"
+"Ejecute el lanzador de aplicaciones en modo grafico para editar la acción."
+msgstr ""
+"{} uygulamasının yolu bulunamadı.\n"
+"\n"
+"Eylemi düzenlemek için uygulama başlatıcıyı grafik modunda çalıştırın."
+
+#: addon\globalPlugins\zUtilidades\__init__.py:623
+msgid ""
+"La ruta a la carpeta no se encontró.\n"
+"\n"
+"{}\n"
+"\n"
+"Ejecute el lanzador de aplicaciones en modo grafico para editar la acción."
+msgstr ""
+"Klasör yolu bulunamıyor.\n"
+"\n"
+"{}\n"
+"\n"
+"Eylemi değiştirmek için uygulama başlatıcıyı grafik modunda çalıştırın."
+
+#: addon\globalPlugins\zUtilidades\__init__.py:640
+msgid ""
+"La ruta al acceso directo no se encontró.\n"
+"\n"
+"{}\n"
+"\n"
+"Ejecute el lanzador de aplicaciones en modo grafico para editar la acción."
+msgstr ""
+"Kısayolun konumu bulunamadı.\n"
+"\n"
+"{}\n"
+"\n"
+"Eylemi düzenlemek için uygulama başlatıcıyı grafik modunda çalıştırın."
+
+#: addon\globalPlugins\zUtilidades\__init__.py:657
+#: addon\globalPlugins\zUtilidades\__init__.py:670
+#: addon\globalPlugins\zUtilidades\__init__.py:691
+#: addon\globalPlugins\zUtilidades\__init__.py:730
+msgid "Use flechas derecha e izquierda para moverse por las categorías, flechas arriba y abajo para seleccionar item, F1 para escuchar el contenido de la nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para salir"
+msgstr "Kategoriler arasında gezinmek için sağ ve sol yön, öğeyi seçmek için yukarı ve aşağı yön, notun içeriğini dinlemek için F1, panoya kopyalamak için F2, odakta yapıştırmak için F3 veya çıkmak için escape tuşlarını kullanın."
+
+#: addon\globalPlugins\zUtilidades\__init__.py:661
+#: addon\globalPlugins\zUtilidades\__init__.py:674
+#: addon\globalPlugins\zUtilidades\__init__.py:695
+msgid "Esta categoría no tiene notas"
+msgstr "Bu kategoride not yok"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:683
+msgid "Se ha copiado la nota {} al portapapeles"
+msgstr "{} notu panoya kopyalandı"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:685
+msgid "No se pudo copiar la nota {} al portapapeles"
+msgstr "{} notu panoya kopyalanamıyor"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:720
+msgid "Nota pegada en el foco"
+msgstr "Not odağa yapıştırıldı"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:733
+msgid "Saliendo del menú"
+msgstr "Menüden çık"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:773
+#: addon\globalPlugins\zUtilidades\__init__.py:831
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:31
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:896
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:973
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1071
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1224
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1369
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1487
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1602
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1716
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1835
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1970
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2127
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2266
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2483
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:36
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:742
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:819
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:909
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1008
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1187
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1404
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1486
+msgid "&Aceptar"
+msgstr "&Tamam"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:798
+msgid "Agregar nota rápida del texto seleccionado"
+msgstr "Seçili metinden çabuk not ekle"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:800
+msgid "Añadir una nueva nota rápida"
+msgstr "Yeni bir Çabuk not ekle"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:813
+msgid "Seleccione una categoría donde guardar la nota rápida:"
+msgstr "Kısa notu kaydetmek için bir kategori seçin:"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:818
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:903
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1000
+msgid "Introduzca el nombre de la Nota:"
+msgstr "Not için bir ad girin:"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:824
+msgid "No se pudo capturar el título"
+msgstr "Başlık yakalanamadı"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:826
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:906
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1104
+msgid "Contenido de la Nota:"
+msgstr "Not içeriği:"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:834
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:899
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:976
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1074
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1227
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1372
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1490
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1605
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1719
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1838
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1973
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2130
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2269
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:745
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:822
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:912
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1011
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1190
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1487
+msgid "&Cancelar"
+msgstr "İ&ptal"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:867
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:938
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1037
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para añadir una Nota."
+msgstr ""
+"Bu Alan boş bırakılamaz.\n"
+"\n"
+"Eklenecek not için bir ad girin."
+
+#: addon\globalPlugins\zUtilidades\__init__.py:870
+#: addon\globalPlugins\zUtilidades\__init__.py:878
+#: addon\globalPlugins\zUtilidades\__init__.py:890
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:255
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:269
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:428
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:446
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:464
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:482
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:500
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:518
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:525
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:532
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:559
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:566
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:593
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:600
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:607
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:928
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:937
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1005
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1020
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1143
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1151
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1163
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1296
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1304
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1414
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1422
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1434
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1533
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1541
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1560
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1648
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1656
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1668
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1762
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1770
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1896
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1904
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1916
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2031
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2039
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2178
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2186
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2198
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2309
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2330
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:253
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:267
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:414
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:432
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:439
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:458
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:465
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:492
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:499
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:506
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:774
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:783
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:851
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:866
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:941
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:949
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:961
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1040
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1048
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1230
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1251
+msgid "Información"
+msgstr "Bilgi"
+
+#: addon\globalPlugins\zUtilidades\__init__.py:875
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:946
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1045
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un texto para guardar la nota."
+msgstr ""
+"Bu Alan boş bırakılamaz.\n"
+"\n"
+"Notu kaydedebilmek için bir metin girin."
+
+#: addon\globalPlugins\zUtilidades\__init__.py:887
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:958
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1064
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1227
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1248
+msgid ""
+"No puede duplicar el nombre de una Nota.\n"
+"\n"
+"Modifique el nombre para poder continuar."
+msgstr ""
+"Bu ad kullanılıyor\n"
+"\n"
+"Devam edebilmek için lütfen başka bir ad girin."
+
+#: addon\globalPlugins\zUtilidades\varGlobal\__init__.py:151
+msgid ""
+"Compruebe que los datos introducidos son correctos.\n"
+"\n"
+"Se produjo el error: {}\n"
+"\n"
+"Puede buscar información del error en:\n"
+"\n"
+"https://tinyurl.com/yhel7t8c"
+msgstr ""
+"Girilen verilerin doğru olup olmadığını kontrol edin.\n"
+"\n"
+"Hata oluştu: {}\n"
+"\n"
+"Hata ile ilgili bilgileri aşağıdaki adreste bulabilirsiniz:\n"
+"\n"
+"https://tinyurl.com/yhel7t8c"
+
+#: addon\globalPlugins\zUtilidades\varGlobal\__init__.py:158
+msgid "Error"
+msgstr "Hata"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:48
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:54
+msgid "&Categorías:"
+msgstr "&Kategoriler::"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:54
+msgid "&Lista acciones:"
+msgstr "Eylem &listesi:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:59
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:65
+msgid "&Menú"
+msgstr "&Menü"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:141
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:156
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:168
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:520
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:561
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:595
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:622
+msgid "Sin acciones"
+msgstr "Eylem yok"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:178
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:231
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:184
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:229
+msgid "&Añadir categoría"
+msgstr "Kategori &ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:180
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:233
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:186
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:231
+msgid "&Editar categoría"
+msgstr "Kategoriyi &düzenle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:182
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:235
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:188
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:233
+msgid "&Borrar categoría"
+msgstr "Kategoriyi &sil"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:184
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:190
+msgid "&Categorías"
+msgstr "&Kategoriler:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:189
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:395
+msgid "Añadir &aplicación"
+msgstr "&Uygulama ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:191
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:397
+msgid "Añadir comando &CMD"
+msgstr "&CMD komutu ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:193
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:399
+msgid "Añadir accesos a car&petas"
+msgstr "Klas&ör erişimi ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:195
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:401
+msgid "Añadir ejecutar accesos directos de &Windows"
+msgstr "Çalıştır &Windows kısayolları ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:197
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:403
+msgid "Añadir aplicación &instalada"
+msgstr "&Yüklü uygulama ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:199
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:406
+msgid "&Añadir acción"
+msgstr "&Eylem ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:201
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:408
+msgid "&Editar acción"
+msgstr "Eylemi &düzenle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:203
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:410
+msgid "&Borrar acción"
+msgstr "Eylemi &Sil"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:205
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:412
+msgid "&Mover acción"
+msgstr "Eylemi &taşı"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:207
+msgid "&Acciones"
+msgstr "&Eylemler"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:210
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:206
+msgid "&Hacer copia de seguridad"
+msgstr "&Yedekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:212
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:208
+msgid "&Restaurar copia de seguridad"
+msgstr "&Geri yükle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:214
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:210
+msgid "&Hacer o restaurar copias de seguridad"
+msgstr "&Yedekle veya geri yükle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:217
+msgid "&Volver a valores por defecto el lanzador de aplicaciones"
+msgstr "Uygulama başlatıcısını &varsayılana sıfırla"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:219
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:213
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:217
+msgid "&Opciones"
+msgstr "Seçenekle&r"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:221
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:219
+msgid "&Salir"
+msgstr "&Çık"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:252
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:250
+msgid ""
+"No tiene ninguna categoría para Editar.\n"
+"\n"
+"Agregue antes una para llevar a cabo esta acción."
+msgstr ""
+"Düzenlenecek herhangi bir kategori yok.\n"
+"\n"
+"Düzenleme işlemini gerçekleştirebilmek için listede en az bir kategori bulunması gerekir."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:266
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:264
+msgid ""
+"No tiene ninguna categoría para Borrar.\n"
+"\n"
+"Agregue antes una para llevar a cabo esta acción."
+msgstr ""
+"Silinecek kategori yok.\n"
+"\n"
+"Silme işlemini gerçekleştirebilmek için listede en az bir kategori bulunması gerekir."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:272
+msgid ""
+"ADVERTENCIA:\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"Va a borrar la categoría:\n"
+"\n"
+"{}\n"
+"\n"
+"Tenga en cuenta que al borrar la categoría se eliminaran las aplicaciones que estuvieran en dicha categoría.\n"
+"\n"
+"¿Esta seguro que desea continuar?"
+msgstr ""
+"UYARI:\n"
+"\n"
+"Bu işlem geri alınamaz.\n"
+"\n"
+"Kategoriyi silmek üzeresiniz:\n"
+"\n"
+"{}\n"
+"\n"
+"Bu Kategoriyi silerseniz, içindeki uygulamaların da silineceğini unutmayın.\n"
+"\n"
+"Devam etmek istediğinizden emin misiniz?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:283
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:578
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:809
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:847
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:281
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:477
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:644
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:693
+msgid "Pregunta"
+msgstr "Uyarı!"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:425
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:443
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:461
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:479
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:497
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:515
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:556
+msgid ""
+"No tiene ninguna categoría.\n"
+"\n"
+"Agregue una categoría antes para poder añadir una acción."
+msgstr ""
+"Kategori yok.\n"
+"\n"
+"Eylem ekleyebilmek için bir kategori eklemelisiniz."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:522
+msgid ""
+"No tiene ninguna acción.\n"
+"\n"
+"Agregue una antes para poder editar."
+msgstr ""
+"eylem yok.\n"
+"\n"
+"Düzenleyebilmek için önce bir tane eklemeniz gerekir."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:529
+msgid ""
+"Esta acción no es editable.\n"
+"\n"
+"Si lo desea puede eliminarla y volver a añadir otra."
+msgstr ""
+"Bu Eylem düzenlenemez.\n"
+"\n"
+"Dilerseniz bu eylemi silip isteğinize uygun bir tane ekleyebilirsiniz."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:563
+msgid ""
+"No tiene ninguna acción.\n"
+"\n"
+"Agregue una antes para poder borrar."
+msgstr ""
+"Eylem Yok\n"
+"\n"
+"Silebilmek için Listede en az bir eylem olmalı."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:569
+msgid ""
+"ADVERTENCIA:\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"Va a borrar la acción:\n"
+"\n"
+"{}\n"
+"\n"
+"¿Esta seguro que desea continuar?"
+msgstr ""
+"UYARI:\n"
+"\n"
+"Bu işlem geri alınamaz.\n"
+"\n"
+"Eylemi silmek üzeresiniz:\n"
+"\n"
+"{}\n"
+"\n"
+"Devam etmek istediğinizden emin misiniz?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:590
+msgid ""
+"No tiene ninguna categoría.\n"
+"\n"
+"Agregue una categoría antes para poder mover una acción."
+msgstr ""
+"Kategori yok.\n"
+"\n"
+"Eylemi taşıyabilmek için listede en az bir kategori bulunması gerekir."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:597
+msgid ""
+"No tiene ninguna acción.\n"
+"\n"
+"Agregue una antes para poder mover."
+msgstr ""
+"Eylem yok.\n"
+"\n"
+"Taşıma işlemini gerçekleştirebilmek için listede en az bir eylem bulunması gerekir"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:604
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:503
+msgid ""
+"No hay categorías suficientes.\n"
+"\n"
+"Para mover entre categorías es necesario al menos dos categorías."
+msgstr ""
+"Yeterli kategori yok.\n"
+"\n"
+"Kategoriler arasında geçiş yapabilmek için en az iki kategoriye ihtiyacınız var."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:677
+msgid ""
+"La ruta a la aplicación {}, no se encontró.\n"
+"\n"
+"¿Desea editar la entrada de la aplicación para corregir el problema?"
+msgstr ""
+"{} uygulamasının yolu bulunamadı.\n"
+"\n"
+"Sorunu düzeltmek için uygulama girişini düzenlemek istiyor musunuz?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:680
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:722
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:754
+msgid "Aviso"
+msgstr "Uyarı"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:717
+msgid ""
+"La ruta a la carpeta no se encontró.\n"
+"\n"
+"{}\n"
+"\n"
+"¿Desea editar la entrada de la aplicación para corregir el problema?"
+msgstr ""
+"Klasör yolu bulunamadı.\n"
+"\n"
+"{}\n"
+"\n"
+"Sorunu düzeltmek için uygulama girişini düzenlemek istiyor musunuz?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:749
+msgid ""
+"La ruta al acceso directo no se encontró.\n"
+"\n"
+"{}\n"
+"\n"
+"¿Desea editar la entrada de la aplicación para corregir el problema?"
+msgstr ""
+"Kısayolun konumu bulunamadı.\n"
+"\n"
+"{}\n"
+"\n"
+"Sorunu düzeltmek için uygulama girişini düzenlemek istiyor musunuz?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:779
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:813
+msgid "Archivo copia de seguridad zUtilidades (*.zut-zl)|*.zut-zl"
+msgstr "ZAraçlar yedekleme dosyası (*.zut-zl)|*.zut-zl"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:780
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:615
+msgid "Guardar en..."
+msgstr "Buraya kaydet..."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:785
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:620
+msgid "Haciendo copia de seguridad..."
+msgstr "Yedekleme işlemi devam ediyor..."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:798
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"Esto borrara toda la base de datos del lanzador de aplicaciones\n"
+"\n"
+"Toda la base de datos será sustituida por la copia de seguridad.\n"
+"\n"
+"El complemento restaurara la copia de seguridad y se cerrara.\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"¿Desea continuar con el proceso?"
+msgstr ""
+"*** UYARI ***\n"
+"\n"
+"Bu, tüm uygulama başlatıcı veritabanını siler\n"
+"\n"
+"Tüm veritabanı yedek dosyasındaki verilerle değiştirilecektir.\n"
+"\n"
+"Eklenti, yedeği geri yükleyecek ve kapatacaktır.\n"
+"\n"
+"Bu işlem geri alınamaz.\n"
+"\n"
+"Devam etmek istediğinizden emin misiniz?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:814
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:649
+msgid "Seleccione un archivo de copia de seguridad"
+msgstr "Bir yedek dosyası seçin"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:818
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:653
+msgid "Restaurando copia de seguridad..."
+msgstr "Yedeğiniz geri yükleniyor..."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:838
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"Esto borrara toda la base de datos del lanzador de aplicaciones\n"
+"\n"
+"El complemento borrara la base de datos y se cerrara.\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"¿Desea continuar con el proceso?"
+msgstr ""
+"*** UYARI ***\n"
+"\n"
+"Bu, tüm uygulama başlatıcı veritabanını siler\n"
+"\n"
+"Eklenti veritabanını silecek ve kapanacaktır.\n"
+"\n"
+"Bu işlem geri alınamaz.\n"
+"\n"
+"Devam etmek istediğinizden emin misiniz?"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:887
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:733
+msgid "Añadir categoría"
+msgstr "Kategori ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:892
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:968
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:738
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:814
+msgid "&Introduzca el nombre de la categoría:"
+msgstr "Kategor&i adını girin:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:925
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1002
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:771
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:848
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para añadir una categoría."
+msgstr ""
+"Alan boş bırakılamaz.\n"
+"\n"
+"Kategori eklemek için bir ad girin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:934
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1017
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:780
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:863
+msgid ""
+"No puede duplicar el nombre de una categoría.\n"
+"\n"
+"Modifique el nombre para poder continuar."
+msgstr ""
+"Bu ad başka bir kategori tarafından kullanılıyor\n"
+"\n"
+"Devam edebilmek için lütfen başka bir ad girin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:963
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:809
+msgid "Editar categoría"
+msgstr "Kategoriyi düzenle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1046
+msgid "Añadir aplicación"
+msgstr "Uygulama ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1055
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1200
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2120
+msgid "Introduzca el nombre de la aplicación:"
+msgstr "Uygulama adını girin:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1058
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1204
+msgid "Ruta de la aplicación:"
+msgstr "Uygulama yolu:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1060
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1206
+msgid "&Seleccionar archivo"
+msgstr "&Dosya Seç"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1063
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1210
+msgid "Usar parámetros adicionales"
+msgstr "Ek parametreler kullanın"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1064
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1212
+msgid "Introduzca los parámetros para la aplicación:"
+msgstr "Uygulama için parametreleri girin:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1068
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1220
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1366
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1482
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1832
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1965
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2124
+msgid "Ejecutar como administrador"
+msgstr "Yönetici olarak çalıştır"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1122
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1275
+msgid "Todos los archivos ejecutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|Todos los ficheros (*.*)|*.*"
+msgstr "Tüm yürütülebilir dosyalar (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|TTüm dosyalar (*.*)|*.*"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1123
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1276
+msgid "Seleccione un archivo"
+msgstr "Bir dosya seçin"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1140
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1293
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para añadir una aplicación."
+msgstr ""
+"Alan boş bırakılamaz.\n"
+"\n"
+"Uygulama eklemek için bir ad girin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1148
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1301
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Seleccione una aplicación para poder continuar."
+msgstr ""
+"Alan boş bırakılamaz.\n"
+"\n"
+"Lütfen devam edebilmek için bir uygulama seçin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1160
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1320
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1431
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1557
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1665
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1786
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1913
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2055
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2195
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2306
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2327
+msgid ""
+"No puede duplicar el nombre de una acción.\n"
+"\n"
+"Modifique el nombre para poder continuar."
+msgstr ""
+"Bu ad başka bir eylem tarafından kullanılıyor\n"
+"\n"
+"Devam edebilmek için lütfen başka bir ad girin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1190
+msgid "Editar aplicación"
+msgstr "Uygulama düzenle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1350
+msgid "Añadir CMD"
+msgstr "CMD'yi ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1359
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1471
+msgid "Introduzca un nombre para identificar el comando CMD:"
+msgstr "CMD komutunu tanımlamak için bir ad girin:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1362
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1475
+msgid "Introduzca los comandos de CMD. Puede usar el símbolo (et = Shift+6) para usar más de una línea de comandos:"
+msgstr "CMD komutlarını girin: Birden fazla komut satırı kullanmak için (Bölü = Shift + 7) sembolünü kullanabilirsiniz."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1365
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1479
+msgid "Pausar la consola de CMD al finalizar el comando. Evitara que se cierre al terminar"
+msgstr "Komutun sonunda CMD konsolunu duraklatın. Bittiğinde kapanmasını önleyecektir."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1411
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1530
+msgid ""
+"El campo (Introduzca un nombre para identificar el comando CMD) no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para poder identificar el comando."
+msgstr ""
+"(CMD komutunu tanımlamak için bir ad girin) alanı boş bırakılamaz.\n"
+"\n"
+"Komutu tanımlayabilmek için bir ad girin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1419
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1538
+msgid ""
+"El campo (Introduzca los comandos de CMD. Puede usar el símbolo (et = Shift+6) para usar más de una línea de comandos) no puede quedar en blanco.\n"
+"\n"
+"Escriba una línea de comandos para continuar."
+msgstr ""
+"(CMD komutlarını girin. / Sembolü (bölü = Shift + 7) kullanarak birden fazla komut satırı kullanabilirsiniz) alanı boş bırakılamaz.\n"
+"\n"
+"Devam etmek için bir komut satırı girin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1461
+msgid "Editar CMD"
+msgstr "CMD'yi düzenle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1587
+msgid "Añadir carpeta"
+msgstr "Klasör ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1594
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1703
+msgid "Introduzca el nombre de la carpeta:"
+msgstr "Klasör adını girin:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1597
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1707
+msgid "Ruta de la carpeta:"
+msgstr "Klasör yolu:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1599
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1709
+msgid "&Seleccionar carpeta"
+msgstr "Dosya &Seç"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1632
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1746
+msgid "Seleccione una carpeta:"
+msgstr "Bir klasör seçin:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1645
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1759
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para identificar una carpeta."
+msgstr ""
+"Alan boş bırakılamaz.\n"
+"\n"
+"Tanımlamak istediğiniz klasör için bir ad girin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1653
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1767
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Seleccione una carpeta para poder continuar."
+msgstr ""
+"Alan boş bırakılamaz.\n"
+"\n"
+"Lütfen devam edebilmek için bir klasör seçin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1695
+msgid "Editar carpeta"
+msgstr "Klasörü düzenle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1816
+msgid "Añadir acceso directo"
+msgstr "Kısayol ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1824
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1952
+msgid "Introduzca el nombre del acceso directo:"
+msgstr "Kısayol için bir ad girin:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1827
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1956
+msgid "Ruta del acceso directo:"
+msgstr "Kısayol konumu:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1829
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1958
+msgid "&Seleccionar acceso directo"
+msgstr "Kısayol &seç"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1875
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2010
+msgid "Accesos directos (*.lnk)|*.lnk|"
+msgstr "Kısayollar (* .lnk) | * .lnk |"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1876
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2011
+msgid "Seleccione un acceso directo"
+msgstr "Bir kısayol seçin"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1893
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2028
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para identificar un acceso directo."
+msgstr ""
+"Alan boş bırakılamaz.\n"
+"\n"
+"Kısayol tanımlayabilmek için bir ad girmelisiniz."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1901
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2036
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Seleccione un acceso directo para poder continuar."
+msgstr ""
+"Alan boş bırakılamaz.\n"
+"\n"
+"Devam edebilmek için lütfen bir kısayol seçin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1943
+msgid "Editar acceso directo"
+msgstr "Kısayolu düzenle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2085
+msgid "Añadir aplicación instalada"
+msgstr "Yüklü uygulama ekle"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2096
+msgid ""
+"En el siguiente campo combinado tendrá todas las aplicaciones instaladas.\n"
+"\n"
+"Esto incluye las aplicaciones instaladas desde la tienda, por el usuario y aquellos accesos que las aplicaciones instalan junto a la aplicación en sí.\n"
+"\n"
+"También tiene aplicaciones del sistema las cuales también se pueden añadir.\n"
+"\n"
+"Advertencia:\n"
+"\n"
+"Las aplicaciones añadidas desde este apartado no pueden ser editadas en el lanzador, por lo que si sufren cambios tendrá que eliminar la entrada en el lanzador y volver a elegir de nuevo la aplicación y añadirla.\n"
+"\n"
+"Igualmente si la aplicación ha sido desinstalada tendrá que borrar el acceso en el lanzador."
+msgstr ""
+"Bir sonraki birleşik giriş kutusunda, kurulu tüm uygulamaları bulacaksınız.\n"
+"\n"
+"mağaza tarafından, kullanıcı tarafından yüklenen uygulamaları ve uygulamaların kendisi ile birlikte yüklediği kısayolları içerir.\n"
+"\n"
+"Eklenebilecek sistem uygulamaları da vardır.\n"
+"\n"
+"Dikkat:\n"
+"\n"
+"Bu bölümden eklenen uygulamalar başlatıcıda değiştirilemez, bu nedenle değişirlerse başlatıcıdaki girişi silmeniz ve uygulamayı tekrar seçip eklemeniz gerekir.\n"
+"\n"
+"Benzer şekilde, uygulamanın yüklemesi kaldırılmışsa, başlatıcıdaki erişimi silmeniz gerekir."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2107
+msgid "Información importante:"
+msgstr "Önemli bilgi:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2116
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2158
+msgid "Seleccione algo para añadir al lanzador."
+msgstr "Başlatıcıya eklemek için bir şey seçin."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2177
+msgid "Tiene que elegir una aplicación del cuadro combinado para poder añadirla."
+msgstr "Eklemek için açılan kutudan bir uygulama seçmelisiniz."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2183
+msgid ""
+"El campo no puede quedar en blanco.\n"
+"\n"
+"Introduzca un nombre para identificar un acceso."
+msgstr ""
+"Alan boş bırakılamaz.\n"
+"\n"
+"Erişimi tanımlayabilmek için bir ad girmelisiniz."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2243
+msgid "Mover la acción  {} a otra categoría"
+msgstr "{} işlemini başka bir kategoriye taşı"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2256
+msgid "Seleccione una categoría donde mover la acción:"
+msgstr "Eylemin taşınacağı bir kategori seçin:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2262
+msgid "Introduzca un nuevo nombre a la acción:"
+msgstr "Eylem için yeni bir ad girin:"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2388
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1309
+#, python-format
+msgid "Comprimiendo el archivo: %s"
+msgstr "Dosya sıkıştırma:% s"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2402
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1323
+#, python-format
+msgid "Descomprimiendo el archivo: %s"
+msgstr "Sıkıştırılmış dosyayı açma: %s"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2444
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2453
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2458
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2465
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1365
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1374
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1379
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1386
+msgid "Algo salió mal.\n"
+msgstr "Sorun algılandı\n"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2444
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2453
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2458
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2465
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1365
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1374
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1379
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1386
+msgid "Inténtelo de nuevo.\n"
+msgstr "Tekrar deneyin.\n"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2444
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2447
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2453
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2458
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2463
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2465
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1365
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1368
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1374
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1379
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1384
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1386
+msgid "Ya puede cerrar esta ventana."
+msgstr "Artık bu pencereyi kapatabilirsiniz."
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2447
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1368
+msgid "La copia de seguridad fue un éxito.\n"
+msgstr "Yedekleme başarıyla tamamlandı.\n"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2463
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1384
+msgid "Se completo la restauración correctamente.\n"
+msgstr "Geri yükleme başarıyla tamamlandı.\n"
+
+#: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2487
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1110
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1408
+msgid "&Cerrar"
+msgstr "&Kapat"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:60
+msgid "&Lista notas:"
+msgstr "Not &listesi:"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:194
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:392
+msgid "&Añadir Nota"
+msgstr "&Not ekle"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:196
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:394
+msgid "&Editar Nota"
+msgstr "Notu &düzenle"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:198
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:396
+msgid "&Borrar Nota"
+msgstr "Notu &Sil"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:200
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:398
+msgid "&Mover Nota"
+msgstr "Notu &Taşı"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:203
+msgid "&Notas"
+msgstr "&Notlar"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:215
+msgid "&Volver a valores por defecto Notas rápidas"
+msgstr "Çabuk notları &varsayılan değerlere sıfırla."
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:270
+msgid ""
+"ADVERTENCIA:\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"Va a borrar la categoría:\n"
+"\n"
+"{}\n"
+"\n"
+"Tenga en cuenta que al borrar la categoría se eliminaran las notas que estuvieran en dicha categoría.\n"
+"\n"
+"¿Esta seguro que desea continuar?"
+msgstr ""
+"UYARI:\n"
+"\n"
+"Bu işlem geri alınamaz.\n"
+"\n"
+"Kategoriyi silmek üzeresiniz:\n"
+"\n"
+"{}\n"
+"\n"
+"Bu Kategoriyi silerseniz, içerisinde bulunan bütün notların da silineceğini unutmayın.\n"
+"\n"
+"Devam etmek istediğinizden emin misiniz?"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:411
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:429
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:455
+msgid ""
+"No tiene ninguna categoría.\n"
+"\n"
+"Agregue una categoría antes para poder añadir una Nota."
+msgstr ""
+"Kategori yok.\n"
+"\n"
+"Not ekleyebilmek için lütfen önce bir kategori ekleyin."
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:436
+msgid ""
+"No tiene ninguna Nota.\n"
+"\n"
+"Agregue una antes para poder editar."
+msgstr ""
+"Not yok.\n"
+"\n"
+"Düzenleme yapabilmek için listeye en az bir not eklemek gereklidir."
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:462
+msgid ""
+"No tiene ninguna Nota.\n"
+"\n"
+"Agregue una antes para poder borrar."
+msgstr ""
+"Not yok.\n"
+"\n"
+"Silme işlemini gerçekleştirebilmek için listede en az bir not bulunması gerekir."
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:468
+msgid ""
+"ADVERTENCIA:\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"Va a borrar la Nota:\n"
+"\n"
+"{}\n"
+"\n"
+"¿Esta seguro que desea continuar?"
+msgstr ""
+"UYARI:\n"
+"\n"
+"Bu işlem geri alınamaz.\n"
+"\n"
+"Notu silmek üzeresiniz:\n"
+"\n"
+"{}\n"
+"\n"
+"Devam etmek istediğinizden emin misiniz?"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:489
+msgid ""
+"No tiene ninguna categoría.\n"
+"\n"
+"Agregue una categoría antes para poder mover una Nota."
+msgstr ""
+"Kategori yok.\n"
+"\n"
+"Notu taşıyabileceğiniz bir kategori oluşturmanız gerekir."
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:496
+msgid ""
+"No tiene ninguna Nota.\n"
+"\n"
+"Agregue una antes para poder mover."
+msgstr ""
+"Not yok.\n"
+"\n"
+"Taşıma işlemini gerçekleştirebilmek için en az bir not olmalı."
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:582
+msgid "Se a copiado la nota {} al portapapeles."
+msgstr "{} notu panoya kopyalandı."
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:584
+msgid "No se a podido copiar la nota {} al portapapeles."
+msgstr "{} notu panoya kopyalanamıyor."
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:614
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:648
+msgid "Archivo copia de seguridad zUtilidades (*.zut-zn)|*.zut-zn"
+msgstr "ZAraçları yedekleme dosyası (* .zut-zn) | * .zut-zn"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:633
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"Esto borrara toda la base de datos de Notas rápidas\n"
+"\n"
+"Toda la base de datos será sustituida por la copia de seguridad.\n"
+"\n"
+"El complemento restaurara la copia de seguridad y se cerrara.\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"¿Desea continuar con el proceso?"
+msgstr ""
+"*** UYARI ***\n"
+"\n"
+"Buişlem, Çabuk Notların tüm veritabanını silecektir\n"
+"\n"
+"Tüm veritabanı yedek dosyasındaki içerik iledeğiştirilecektir.\n"
+"\n"
+"Eklenti, yedeği geri yükleyecek ve kapatacaktır.\n"
+"\n"
+"Bu işlem geri alınamaz.\n"
+"\n"
+"Devam etmek istediğinizden emin misiniz?"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:684
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"Esto borrara toda la base de datos de Notas rápidas\n"
+"\n"
+"El complemento borrara la base de datos y se cerrara.\n"
+"\n"
+"Esta acción no es reversible.\n"
+"\n"
+"¿Desea continuar con el proceso?"
+msgstr ""
+"*** UYARI ***\n"
+"\n"
+"Bu, Çabuk Notların tüm veritabanını silecektir\n"
+"\n"
+"Eklenti veritabanını silecek ve kapanacaktır.\n"
+"\n"
+"Bu işlem geri alınamaz.\n"
+"\n"
+"Devam etmek istediğinizden emin misiniz?"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:896
+msgid "Añadir Nota"
+msgstr "Not ekle"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:992
+msgid "Editar Nota"
+msgstr "Notu düzenle"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1004
+msgid "Contenido de la nota:"
+msgstr "Not içeriği:"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1164
+msgid "Mover la nota {} a otra categoría"
+msgstr "{} notunu başka bir kategoriye taşı"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1177
+msgid "Seleccione una categoría donde mover la nota:"
+msgstr "Notu taşımak için bir kategori seçin:"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1183
+msgid "Introduzca un nuevo nombre a la nota:"
+msgstr "Not için yeni bir ad girin:"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1475
+msgid "Opciones"
+msgstr "Seçenekler"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1480
+msgid "Capturar el título de la ventana en las notas rápidas (desde cualquier parte)"
+msgstr "Çabuk notlarda pencere başlığını yakalayın (her yerden)"
+
+#: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1483
+msgid "Anexar la URL del documento a las notas rápidas  cuando se copia texto de una página web."
+msgstr "bir web sayfasından metin kopyalarken  Çabuk notlara varsa belgedeki URL'yi de ekle."
+
+#~ msgid "&Lista aplicaciones:"
+#~ msgstr "Uygulama &listesi:"
+
+#~ msgid "Agregar una nota rápida del texto seleccionado"
+#~ msgstr "Seçili metinden Çabuk not ekleyin."
+
+#~ msgid "Añadir Nota rápida"
+#~ msgstr "Çabuk Not Ekle"
+
+#~ msgid "Se cancelo la copia de nota rápida"
+#~ msgstr "Çabuk not kopyası iptal edildi"
+
+#~ msgid "Muestra la ventana del lanzador de aplicaciones"
+#~ msgstr "Uygulama başlatıcı penceresini göster"
+
+#~ msgid "Todos los archivos ejecutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|"
+#~ msgstr "Tüm yürütülebilir dosyalar (* .exe, * .com, * .bat) | * .exe; *.Com; *. Bat |"
