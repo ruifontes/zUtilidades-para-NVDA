@@ -37,6 +37,7 @@ if not hasattr(controlTypes, "Role"):
 	setattr(controlTypes, "role", type("role", (), {"roleLabels": controlTypes.role._roleLabels}))
 # End of compatibility fixes
 sys.path.remove(os.path.dirname(os.path.abspath(__file__)))
+
 # For translationn
 addonHandler.initTranslation()
 
@@ -54,21 +55,19 @@ def finally_(func, final):
 	return wrap(final)
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
-	def __init__(self, *args, **kwargs):
-		super(GlobalPlugin, self).__init__(*args, **kwargs)
-
+	def __init__(self):
+		super(GlobalPlugin, self).__init__()
 		self._MainWindows = None
-		if globalVars.appArgs.secure: return
 
 		self.menu = wx.Menu()
-		tools_menu = gui.mainFrame.sysTrayIcon.toolsMenu
+		self.tools_menu = gui.mainFrame.sysTrayIcon.toolsMenu
 		# Translators: Nombre del submenú para el lanzador de aplicaciones
 		self.appLauncher = self.menu.Append(wx.ID_ANY, _("Lanzador de Aplicaciones"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.script_zLauncher, self.appLauncher)
 		self.appNotes = self.menu.Append(wx.ID_ANY, _("Notas rápidas"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.script_zNotes, self.appNotes)
 		# Translators: Nombre del menú zUtilidades
-		self.zUtilidadesMenu = tools_menu.AppendSubMenu(self.menu, _("&zUtilidades"))
+		self.zUtilidadesMenu = self.tools_menu.AppendSubMenu(self.menu, _("&zUtilidades"))
 
 ########## Inicio variables
 ##### Para el lanzador y notas
@@ -101,10 +100,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def terminate(self):
 		try:
+			self.tools_menu.Remove(self.zUtilidadesMenu)
+		except Exception:
+			pass
+		try:
 			if not self._MainWindows:
 				self._MainWindows.Destroy()
 		except (AttributeError, RuntimeError):
 			pass
+		super().terminate()
 
 	@script(gesture=None, description= _("Con una pulsación Muestra la ventana del lanzador de aplicaciones, con doble pulsación el menú virtual del lanzador de aplicaciones"), category= _("zUtilidades"))
 	def script_zLauncher(self, event):
@@ -767,6 +771,9 @@ Ejecute el lanzador de aplicaciones en modo grafico para editar la acción.""").
 	"kb:upArrow": "previousItem",
 	}
 ##########Fin menú virtual
+
+if globalVars.appArgs.secure:
+	GlobalPlugin = globalPluginHandler.GlobalPlugin # noqa: F811 
 
 class AñadirNotaCopia(wx.Dialog):
 	def mensaje(self, mensaje, titulo, valor):
