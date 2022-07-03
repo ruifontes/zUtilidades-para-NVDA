@@ -1,4 +1,4 @@
-# Посібник з zУтиліти
+# Посібник із zUtilidades
 
 * Автор: Héctor J. Benítez Corredera
 * Сумісність з NVDA: з 2019.3 до 2021.1

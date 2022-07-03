@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: zUtilidades 1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2022-07-03 09:50+0300\n"
-"PO-Revision-Date: 2022-07-03 09:52+0300\n"
+"PO-Revision-Date: 2022-07-03 11:54+0300\n"
 "Last-Translator: \n"
 "Language-Team: Георгій\n"
 "Language: uk\n"
@@ -30,14 +30,14 @@ msgstr ""
 #: addon\globalPlugins\zUtilidades\__init__.py:152
 #: addon\globalPlugins\zUtilidades\__init__.py:191
 msgid "zUtilidades"
-msgstr "zУтиліти"
+msgstr "zUtilidades"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
 #: buildVars.py:23
 msgid "zUtilidades para NVDA"
-msgstr "zУтиліти для NVDA"
+msgstr "Утиліти для NVDA"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -59,7 +59,7 @@ msgstr "Швидкі нотатки"
 #. Translators: Nombre del menú zUtilidades
 #: addon\globalPlugins\zUtilidades\__init__.py:70
 msgid "&zUtilidades"
-msgstr "&zУтиліти"
+msgstr "&zUtilidades"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:113
 msgid ""
@@ -81,9 +81,9 @@ msgid ""
 "\n"
 "No es posible tener dos instancias a la vez."
 msgstr ""
-"Примірник zУтиліти вже відкритий.\n"
+"Примірник zUtilidades вже відкритий.\n"
 "\n"
-"Неможливо мати два примірника одночасно."
+"Неможливо мати два запущені примірники одночасно."
 
 #: addon\globalPlugins\zUtilidades\__init__.py:152
 msgid ""
@@ -824,7 +824,7 @@ msgstr ""
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:779
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:813
 msgid "Archivo copia de seguridad zUtilidades (*.zut-zl)|*.zut-zl"
-msgstr "Файл резервної копії zУтиліти (*.zut-zl)|*.zut-zl"
+msgstr "Файл резервної копії zUtilidades (*.zut-zl)|*.zut-zl"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:780
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:621
@@ -1484,7 +1484,7 @@ msgstr "Не вдалося скопіювати нотатку {} у буфер
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:620
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:654
 msgid "Archivo copia de seguridad zUtilidades (*.zut-zn)|*.zut-zn"
-msgstr "Файл резервної копії zУтиліти (*.zut-zn)|*.zut-zn"
+msgstr "Файл резервної копії zUtilidades (*.zut-zn)|*.zut-zn"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:639
 msgid ""
