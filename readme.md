@@ -25,6 +25,7 @@
 - [Menús Virtuales para el Lanzador de aplicaciones y para Notas rápidas](#mark13)
 - [Traductores y colaboradores](#mark14)
 - [Registro de cambios](#mark15)
+- [Versión 0.2.6](#mark0.2.6)
 - [Versión 0.2.5](#mark0.2.5)
 - [Versión 0.2.4](#mark0.2.4)
 - [Versión 0.2.3](#mark0.2.3)
@@ -329,9 +330,19 @@ Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que puls
 * Italiano: Alessio Lenzi
 * Ruso: Valentin Kupriyanov
 * Turco: Umut KORKMAZ
+* Árabe: Wafiq Taher
+* Danés: Daniel Gartmann
 * Javi Domínguez: Mil gracias por enseñarme a programar el menú. Mejor dicho por explicarlo para tontos como yo.
 
 # Registro de cambios.<a id="mark15"></a>
+## Versión 0.2.6.<a id="mark0.2.6"></a>
+
+* Añadido idioma Danés.
+
+* Solucionado problema con líneas braille y la muestra de mensajes.
+
+* Añadida compatibilidad con NVDA 2023.1
+
 ## Versión 0.2.5.<a id="mark0.2.5"></a>
 
 * Solucionado un fallo de seguridad en pantallas seguras.

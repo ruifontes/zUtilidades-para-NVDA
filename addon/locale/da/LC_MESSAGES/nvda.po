@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'zUtilidades' '0.2.5'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2022-06-02 11:51+0200\n"
-"PO-Revision-Date: 2022-06-02 11:58+0200\n"
-"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
+"POT-Creation-Date: 2023-02-03 12:43+0100\n"
+"PO-Revision-Date: 2023-02-26 15:24+0100\n"
+"Last-Translator: Daniel Gartmann <lists@danielgartmann.dk>\n"
 "Language-Team: \n"
-"Language: fr\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Bookmarks: -1,-1,-1,-1,-1,20,-1,-1,-1,-1\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #. add-on Name/identifier, internal for NVDA
 #: buildVars.py:19 addon\globalPlugins\zUtilidades\__init__.py:113
@@ -32,24 +31,24 @@ msgstr "zUtilidades"
 #. to be shown on installation and add-on information found in Add-ons Manager.
 #: buildVars.py:23
 msgid "zUtilidades para NVDA"
-msgstr "zUtilidades pour NVDA"
+msgstr "zUtilidades til NVDA"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
 msgid "Conjunto de utilidades para Windows"
-msgstr "Ensemble d'utilité pour Windows"
+msgstr "Samling af værktøjer til Windows"
 
 #. Translators: Nombre del submenú para el lanzador de aplicaciones
 #: addon\globalPlugins\zUtilidades\__init__.py:65
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:41
 msgid "Lanzador de Aplicaciones"
-msgstr "Lanceur d'applications"
+msgstr "Programstarter"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:67
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:47
 msgid "Notas rápidas"
-msgstr "Notes rapides"
+msgstr "Hurtige noter"
 
 #. Translators: Nombre del menú zUtilidades
 #: addon\globalPlugins\zUtilidades\__init__.py:70
@@ -61,8 +60,8 @@ msgid ""
 "Con una pulsación Muestra la ventana del lanzador de aplicaciones, con doble "
 "pulsación el menú virtual del lanzador de aplicaciones"
 msgstr ""
-"Avec un appui s'affiche la fenêtre du lanceur d'applications, avec deux "
-"appuis le menu virtuel du lanceur d'applications"
+"Et tryk åbner vinduet til programstarteren, to tryk åbner programstarterens "
+"virtuelle menu"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:128
 #: addon\globalPlugins\zUtilidades\__init__.py:143
@@ -76,31 +75,31 @@ msgid ""
 "\n"
 "No es posible tener dos instancias a la vez."
 msgstr ""
-"Il existe déjà une instance de zUtilidades ouvertes.\n"
+"En udgave af zUtilidades er allerede åben.\n"
 "\n"
-"Il n'est pas possible d'avoir deux instances à la fois."
+"Det er ikke muligt at køre to udgaver samtidigt."
 
 #: addon\globalPlugins\zUtilidades\__init__.py:152
 msgid ""
 "Con una pulsación muestra la ventana de notas rápidas, con doble pulsación "
 "el menú virtual de notas rápidas"
 msgstr ""
-"Avec un appui s'affiche la fenêtre des notes rapides, avec deux appuis le "
-"menu virtuel des notes rapides"
+"Et tryk åbner vinduet til Hurtige noter, to tryk åbner hurtige noters "
+"virtuelle menu"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:191
 msgid ""
 "Con una pulsación agrega una nota rápida del texto seleccionado, con doble "
 "pulsación agrega una nueva nota rápida"
 msgstr ""
-"Avec un appui s'ajoute une note rapide du texte sélectionné, avec deux "
-"appuis s'ajoute une nouvelle note rapide"
+"Et enkelt tryk tilføjer en hurtig note med den markerede tekst, to tryk "
+"tilføjer en ny hurtig note"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:212
 #: addon\globalPlugins\zUtilidades\__init__.py:220
 #: addon\globalPlugins\zUtilidades\__init__.py:223
 msgid "Seleccione un texto para poder agregar a una nota rápida"
-msgstr "Sélectionner un texte pour pouvoir ajouter une note rapide"
+msgstr "Vælg tekst, som skal føjes til en hurtig note"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:235
 msgid ""
@@ -108,9 +107,9 @@ msgid ""
 "\n"
 "Agregue una categoría antes para poder copiar un texto a una nota rápida."
 msgstr ""
-"Il n'y a pas de catégorie pour ajouter une note rapide.\n"
+"Der findes ingen kategorier til tilføjelse af en hurtig note.\n"
 "\n"
-"Ajouter une catégorie avant de pouvoir copier un texte dans une note rapide."
+"Opret en kategori, før der kan kopieres tekst til en nurtig note."
 
 #: addon\globalPlugins\zUtilidades\__init__.py:290
 msgid ""
@@ -118,9 +117,9 @@ msgid ""
 "\n"
 "Agregue una categoría antes para poder crear una nota rápida."
 msgstr ""
-"Il n'y a pas de catégorie pour ajouter une note rapide.\n"
+"Der findes ingen kategorier til at tilføje en hurtig note.\n"
 "\n"
-"Ajouter une catégorie avant de pouvoir créer une note rapide."
+"Tilføj en kategori for at kunne oprette en hurtig note."
 
 #: addon\globalPlugins\zUtilidades\__init__.py:397
 #: addon\globalPlugins\zUtilidades\__init__.py:415
@@ -157,16 +156,16 @@ msgstr ""
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:454
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:488
 msgid "No hay categorías"
-msgstr "Pas de catégories"
+msgstr "Der findes ingen kategorier"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:450
 msgid "Menú activado"
-msgstr "Menu activé"
+msgstr "Menu aktiveret"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:557
 #: addon\globalPlugins\zUtilidades\__init__.py:571
 msgid "Sin acción"
-msgstr "Sans action"
+msgstr "Ingen handlinger"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:559
 #: addon\globalPlugins\zUtilidades\__init__.py:573
@@ -178,7 +177,7 @@ msgstr "Sans action"
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:495
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:522
 msgid "Sin notas"
-msgstr "Sans notes"
+msgstr "Ingen noter"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:577
 #: addon\globalPlugins\zUtilidades\__init__.py:737
@@ -187,17 +186,17 @@ msgid ""
 "arriba y abajo para seleccionar item, enter para activarlo o escape para "
 "salir"
 msgstr ""
-"Utiliser les flèches droite et gauche pour naviguer dans les catégories, les "
-"flèches haut et bas pour sélectionner un élément, entrée pour l'activer ou "
-"échap pour quitter"
+"Brug piletasterne Venstre og Højre til at flytte imellem kategorier, "
+"piletasterne Op og Ned til at vælge et element, Enter til at aktivere "
+"elementet eller tryk Escape for at lukke"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:581
 msgid "Esta categoría no tiene acciones"
-msgstr "Cette catégorie n'a pas d'actions"
+msgstr "Denne kategori har ingen handlinger"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:584
 msgid "Ejecutando acción"
-msgstr "Action en cours d'exécution"
+msgstr "Udfører handling"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:602
 msgid ""
@@ -205,9 +204,9 @@ msgid ""
 "\n"
 "Ejecute el lanzador de aplicaciones en modo grafico para editar la acción."
 msgstr ""
-"Le chemin de l'application {}, n'a pas été trouvé.\n"
+"Stien til programmet {} blev ikke fundet.\n"
 "\n"
-"Exécutez le lanceur d'applications en mode graphique pour modifier l'action."
+"Kør venligst programstarteren i grafisk tilstadn for at redigere handlingen."
 
 #: addon\globalPlugins\zUtilidades\__init__.py:627
 msgid ""
@@ -217,11 +216,11 @@ msgid ""
 "\n"
 "Ejecute el lanzador de aplicaciones en modo grafico para editar la acción."
 msgstr ""
-"Le chemin du dossier n'a pas été trouvé.\n"
+"Stien til mappen blev ikke fundet.\n"
 "\n"
 "{}\n"
 "\n"
-"Exécutez le lanceur d'applications en mode graphique pour modifier l'action."
+"Kør venligst programstarteren i grafisk tilstand for at redigere handlingen."
 
 #: addon\globalPlugins\zUtilidades\__init__.py:644
 msgid ""
@@ -231,11 +230,11 @@ msgid ""
 "\n"
 "Ejecute el lanzador de aplicaciones en modo grafico para editar la acción."
 msgstr ""
-"Le chemin du raccourci n'a pas été trouvé.\n"
+"Stien til den direkte adgang blev ikke fundet.\n"
 "\n"
 "{}\n"
 "\n"
-"Exécutez le lanceur d'applications en mode graphique pour modifier l'action."
+"Kør venligst programstarteren i grafisk tilstand for at redigere handlingen."
 
 #: addon\globalPlugins\zUtilidades\__init__.py:661
 #: addon\globalPlugins\zUtilidades\__init__.py:674
@@ -247,32 +246,32 @@ msgid ""
 "nota, F2 para copiar al portapapeles, F3 para pegar en el foco o escape para "
 "salir"
 msgstr ""
-"Utiliser les flèches droite et gauche pour naviguer dans les catégories, les "
-"flèches haut et bas pour sélectionner un élément, F1 Pour écouter le contenu "
-"de la note, F2 pour copier dans le presse-papiers, F3 pour coller ayant le "
-"focus ou échap pour quitter"
+"Brug piletasterne Højre og venstre til at flytte imellem kategorierne, "
+"piletasterne Op og Ned til at vælge et element, F1 for at høre notens "
+"indhold, F2 for at kopiere til udklipsholderen, F3 for at indsætte på "
+"markørens position eller Escape for at lukke"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:665
 #: addon\globalPlugins\zUtilidades\__init__.py:678
 #: addon\globalPlugins\zUtilidades\__init__.py:699
 msgid "Esta categoría no tiene notas"
-msgstr "Cette catégorie n'a pas de notes"
+msgstr "Denne kategori har ingen noter"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:687
 msgid "Se ha copiado la nota {} al portapapeles"
-msgstr "La note {} a été copiée dans le presse-papiers"
+msgstr "Noten {} er kopieret til udklipsholderen"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:689
 msgid "No se pudo copiar la nota {} al portapapeles"
-msgstr "Impossible de copier la note {} dans le presse-papiers"
+msgstr "Noten {} kunne ikke kopieres til udklipsholderen"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:729
 msgid "Nota pegada en el foco"
-msgstr "Note collée ayant le focus"
+msgstr "Noten indsat på markørens position"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:742
 msgid "Saliendo del menú"
-msgstr "Sortie en cours du menu"
+msgstr "Forlader menuen"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:785
 #: addon\globalPlugins\zUtilidades\__init__.py:843
@@ -299,35 +298,35 @@ msgstr "Sortie en cours du menu"
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1410
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1492
 msgid "&Aceptar"
-msgstr "&OK"
+msgstr "&Acceptér"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:810
 msgid "Agregar nota rápida del texto seleccionado"
-msgstr "Ajouter une note rapide du texte sélectionné"
+msgstr "Opret hurtig note ud fra den markerede tekst"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:812
 msgid "Añadir una nueva nota rápida"
-msgstr "Ajouter une nouvelle note rapide"
+msgstr "Tilføj en ny hurtig note"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:825
 msgid "Seleccione una categoría donde guardar la nota rápida:"
-msgstr "Sélectionner une catégorie où sauvegarder la note rapide:"
+msgstr "Vælg en kategori, hvor den hurtige note skal gemmes:"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:830
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:909
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1006
 msgid "Introduzca el nombre de la Nota:"
-msgstr "Entrez le nom de la note:"
+msgstr "Angiv navnet på noten:"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:836
 msgid "No se pudo capturar el título"
-msgstr "Impossible de capturer le titre"
+msgstr "Kunne ikke opfange titlen"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:838
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:912
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1110
 msgid "Contenido de la Nota:"
-msgstr "Contenu de la note:"
+msgstr "Notens indhold:"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:846
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:899
@@ -349,7 +348,7 @@ msgstr "Contenu de la note:"
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1196
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1493
 msgid "&Cancelar"
-msgstr "&Annuler"
+msgstr "&Annullér"
 
 #: addon\globalPlugins\zUtilidades\__init__.py:879
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:944
@@ -359,9 +358,9 @@ msgid ""
 "\n"
 "Introduzca un nombre para añadir una Nota."
 msgstr ""
-"Le champ ne peut pas être laissé vide.\n"
+"Feltet må ikke være tomt.\n"
 "\n"
-"Entrez un nom pour ajouter une note."
+"Angiv et navn for at tilføje en note."
 
 #: addon\globalPlugins\zUtilidades\__init__.py:882
 #: addon\globalPlugins\zUtilidades\__init__.py:890
@@ -443,9 +442,9 @@ msgid ""
 "\n"
 "Introduzca un texto para guardar la nota."
 msgstr ""
-"Le champ ne peut pas être laissé vide.\n"
+"Feltet må ikke være tomt.\n"
 "\n"
-"Entrez un texte pour sauvegarder la note."
+"Skriv noget tekst, før noten kan gemmes."
 
 #: addon\globalPlugins\zUtilidades\__init__.py:899
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:964
@@ -457,11 +456,11 @@ msgid ""
 "\n"
 "Modifique el nombre para poder continuar."
 msgstr ""
-"Vous ne pouvez pas dupliquer le nom d'une note.\n"
+"Ikke muligt at dublikere navnet på en note.\n"
 "\n"
-"Modifier le nom pour continuer."
+"Navnet skal ændres, før der kan fortsættes."
 
-#: addon\globalPlugins\zUtilidades\varGlobal\__init__.py:151
+#: addon\globalPlugins\zUtilidades\varGlobal\__init__.py:153
 msgid ""
 "Compruebe que los datos introducidos son correctos.\n"
 "\n"
@@ -471,26 +470,26 @@ msgid ""
 "\n"
 "https://tinyurl.com/yhel7t8c"
 msgstr ""
-"Vérifiez que les données saisies sont correctes.\n"
+"Vær sikker på, at de indtastede oplysninger er korrekte.\n"
 "\n"
-"Une erreur est survenue: {}\n"
+"Der opstod følgende fejl: {}\n"
 "\n"
-"Vous pouvez consulter les informations d'erreur sur:\n"
+"Yderligere informationer om fejlen kan findes på:\n"
 "\n"
 "https://tinyurl.com/yhel7t8c"
 
-#: addon\globalPlugins\zUtilidades\varGlobal\__init__.py:158
+#: addon\globalPlugins\zUtilidades\varGlobal\__init__.py:160
 msgid "Error"
-msgstr "Erreur"
+msgstr "Fejl"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:48
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:55
 msgid "&Categorías:"
-msgstr "&Catégories:"
+msgstr "&Kategorier:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:54
 msgid "&Lista acciones:"
-msgstr "&Liste des actions:"
+msgstr "&Liste med handlinger:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:59
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:66
@@ -505,112 +504,112 @@ msgstr "&Menu"
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:595
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:622
 msgid "Sin acciones"
-msgstr "Sans actions"
+msgstr "Ingen handlinger"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:178
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:231
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:185
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:230
 msgid "&Añadir categoría"
-msgstr "&Ajouter une catégorie"
+msgstr "&Tilføj kategori"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:180
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:233
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:187
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:232
 msgid "&Editar categoría"
-msgstr "&Modifier une catégorie"
+msgstr "&Rediger kategori"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:182
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:235
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:189
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:234
 msgid "&Borrar categoría"
-msgstr "&Supprimer une catégorie"
+msgstr "&Slet kategori"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:184
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:191
 msgid "&Categorías"
-msgstr "&Catégories"
+msgstr "&Kategorier"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:189
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:395
 msgid "Añadir &aplicación"
-msgstr "Ajouter une &application"
+msgstr "Tilføj &program"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:191
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:397
 msgid "Añadir comando &CMD"
-msgstr "Ajouter une commande &CMD"
+msgstr "Tilføj &CMD-kommando"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:193
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:399
 msgid "Añadir accesos a car&petas"
-msgstr "Ajouter des accès aux &dossiers"
+msgstr "Tilføj adgange til &mapper"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:195
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:401
 msgid "Añadir ejecutar accesos directos de &Windows"
-msgstr "Ajouter Exécuter des raccourcis de &Windows"
+msgstr "Tilføj udførelse af &Windows-genveje"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:197
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:403
 msgid "Añadir aplicación &instalada"
-msgstr "Ajouter une application &installée"
+msgstr "Tilføj &installeret program"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:199
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:406
 msgid "&Añadir acción"
-msgstr "&Ajouter une action"
+msgstr "&Tilføj handling"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:201
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:408
 msgid "&Editar acción"
-msgstr "&Modifier une action"
+msgstr "&Rediger handling"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:203
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:410
 msgid "&Borrar acción"
-msgstr "&Supprimer une action"
+msgstr "&Slet handling"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:205
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:412
 msgid "&Mover acción"
-msgstr "&Déplacer une action"
+msgstr "&Flyt handling"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:207
 msgid "&Acciones"
-msgstr "&Actions"
+msgstr "&Handlinger"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:210
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:207
 msgid "&Hacer copia de seguridad"
-msgstr "&Faire  une sauvegarde"
+msgstr "&Opret en sikkerhedskopi"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:212
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:209
 msgid "&Restaurar copia de seguridad"
-msgstr "&Restaurer une sauvegarde"
+msgstr "&Gendan sikkerhedskopi"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:214
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:211
 msgid "&Hacer o restaurar copias de seguridad"
-msgstr "&Faire ou restaurer une sauvegarde"
+msgstr "&Opret eller gendan sikkerhedskopi"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:217
 msgid "&Volver a valores por defecto el lanzador de aplicaciones"
-msgstr "&Réinitialiser le lanceur d'applications aux valeurs par défaut"
+msgstr "&Gendan programstarterens standard-indstillinger"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:219
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:214
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:218
 msgid "&Opciones"
-msgstr "&Options"
+msgstr "&Indstillinger"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:221
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:220
 msgid "&Salir"
-msgstr "&Quitter"
+msgstr "&Luk"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:252
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:251
@@ -619,9 +618,9 @@ msgid ""
 "\n"
 "Agregue antes una para llevar a cabo esta acción."
 msgstr ""
-"Il n'y a aucune catégorie à modifier.\n"
+"Ingen kategorier at redigere.\n"
 "\n"
-"Ajouter une avant d'effectuer cette action."
+"Opret venligst én, før denne handling kan udføres."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:266
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:265
@@ -630,9 +629,9 @@ msgid ""
 "\n"
 "Agregue antes una para llevar a cabo esta acción."
 msgstr ""
-"Il n'y a aucune catégorie à supprimer.\n"
+"Ingen kategorier at slette.\n"
 "\n"
-"Ajouter une avant d'effectuer cette action."
+"Tilføj venligst én, før denne handling kan udføres."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:272
 msgid ""
@@ -649,18 +648,18 @@ msgid ""
 "\n"
 "¿Esta seguro que desea continuar?"
 msgstr ""
-"AVERTISSEMENT:\n"
+"ADVARSEL:\n"
 "\n"
-"Cette action n'est pas réversible.\n"
+"Denne handling kan ikke gøres om.\n"
 "\n"
-"Vous supprimerez la catégorie:\n"
+"Følgende kategori bliver slettet:\n"
 "\n"
 "{}\n"
 "\n"
-"Notez que lors de la suppression de la catégorie, les applications dans "
-"cette catégorie seront éliminées.\n"
+"Vær venligst opmærksom på, at alle programmer i denne kategori fjernes, hvis "
+"kategorien slettes.\n"
 "\n"
-"Êtes-vous sûr de vouloir continuer?"
+"Ønsker du stadig at fortsætte?"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:283
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:578
@@ -671,7 +670,7 @@ msgstr ""
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:650
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:699
 msgid "Pregunta"
-msgstr "Question"
+msgstr "Spørgsmål"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:425
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:443
@@ -685,9 +684,9 @@ msgid ""
 "\n"
 "Agregue una categoría antes para poder añadir una acción."
 msgstr ""
-"Il n'y a aucune catégorie.\n"
+"Der findes ingen kategorier.\n"
 "\n"
-"Ajoutez une catégorie avant de pouvoir ajouter une action."
+"Tilføj en kategori, før der kan tilføjes en handling."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:522
 msgid ""
@@ -695,9 +694,9 @@ msgid ""
 "\n"
 "Agregue una antes para poder editar."
 msgstr ""
-"Il n'y a aucune action.\n"
+"Der findes ingen handlinger.\n"
 "\n"
-"Ajoutez une avant de pouvoir modifier."
+"Tilføj venligst én, før der kan redigeres."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:529
 msgid ""
@@ -705,9 +704,9 @@ msgid ""
 "\n"
 "Si lo desea puede eliminarla y volver a añadir otra."
 msgstr ""
-"Cette action n'est pas modifiable.\n"
+"Denne handling kan ikke redigeres.\n"
 "\n"
-"Si vous le souhaitez, vous pouvez la supprimer et ajouter une autre."
+"Du kan eventuelt slette den og tilføje en ny."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:563
 msgid ""
@@ -715,9 +714,9 @@ msgid ""
 "\n"
 "Agregue una antes para poder borrar."
 msgstr ""
-"Il n'y a aucune action.\n"
+"Der findes ingen handlinger.\n"
 "\n"
-"Ajoutez une avant de pouvoir supprimer."
+"Tilføj venligst én, før der kan slettes."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:569
 msgid ""
@@ -731,15 +730,15 @@ msgid ""
 "\n"
 "¿Esta seguro que desea continuar?"
 msgstr ""
-"AVERTISSEMENT:\n"
+"ADVARSEL:\n"
 "\n"
-"Cette action n'est pas réversible.\n"
+"Denne handling kan ikke gøres om.\n"
 "\n"
-"Vous supprimerez l'action:\n"
+"Følgende handling bliver slettet:\n"
 "\n"
 "{}\n"
 "\n"
-"Êtes-vous sûr de vouloir continuer?"
+"Ønsker du stadig at fortsætte?"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:590
 msgid ""
@@ -747,9 +746,9 @@ msgid ""
 "\n"
 "Agregue una categoría antes para poder mover una acción."
 msgstr ""
-"Il n'y a aucune catégorie.\n"
+"Der findes ingen kategorier.\n"
 "\n"
-"Ajouter une catégorie avant de pouvoir déplacer une action."
+"Tilføj en kategori, før en handling kan flyttes."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:597
 msgid ""
@@ -757,9 +756,9 @@ msgid ""
 "\n"
 "Agregue una antes para poder mover."
 msgstr ""
-"Il n'y a aucune action.\n"
+"Der findes ingen handling.\n"
 "\n"
-"Ajouter une avant de pouvoir déplacer."
+"Tilføj en handling, før der kan flyttes."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:604
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:504
@@ -768,10 +767,10 @@ msgid ""
 "\n"
 "Para mover entre categorías es necesario al menos dos categorías."
 msgstr ""
-"Il n'y a pas de catégories suffisantes.\n"
+"Ikke tilstrækkeligt med kategorier.\n"
 "\n"
-"Pour se déplacer entre les catégories, au moins deux catégories est "
-"nécessaire."
+"Der skal mindst være 2 kategorier, hvis flytning imellem kategorier skal "
+"være mulig."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:677
 msgid ""
@@ -779,15 +778,15 @@ msgid ""
 "\n"
 "¿Desea editar la entrada de la aplicación para corregir el problema?"
 msgstr ""
-"Le chemin de l'application {}, n'a pas été trouvé.\n"
+"Stien til programmet {} kunne ikke findes.\n"
 "\n"
-"Voulez-vous modifier l'entrée de l'application pour corriger le problème?"
+"Ønsker du at redigere program-elementet for at løse problemet?"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:680
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:722
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:754
 msgid "Aviso"
-msgstr "Annonce"
+msgstr "Meddelelse"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:717
 msgid ""
@@ -797,11 +796,11 @@ msgid ""
 "\n"
 "¿Desea editar la entrada de la aplicación para corregir el problema?"
 msgstr ""
-"Le chemin vers le dossier n'a pas été trouvé.\n"
+"Stien til følgende mappe blev ikke fundet:\n"
 "\n"
 "{}\n"
 "\n"
-"Voulez-vous modifier l'entrée de l'application pour corriger le problème?"
+"Ønsker du at redigere elementet for at løse problemet?"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:749
 msgid ""
@@ -811,26 +810,26 @@ msgid ""
 "\n"
 "¿Desea editar la entrada de la aplicación para corregir el problema?"
 msgstr ""
-"Le chemin du raccourci n'a pas été trouvé.\n"
+"Stien til genvejen findes ikke.\n"
 "\n"
 "{}\n"
 "\n"
-"Voulez-vous modifier l'entrée de l'application pour corriger le problème?"
+"Ønsker du at redigere elementet for at løse problemet?"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:779
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:813
 msgid "Archivo copia de seguridad zUtilidades (*.zut-zl)|*.zut-zl"
-msgstr "Fichier de sauvegarde zUtilidades (*.zut-zl)|*.zut-zl"
+msgstr "Fil med sikkerhedskopi zUtilidades (*.zut-zl)|*.zut-zl"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:780
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:621
 msgid "Guardar en..."
-msgstr "Enregistrer sous..."
+msgstr "Gem i..."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:785
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:626
 msgid "Haciendo copia de seguridad..."
-msgstr "Faire une sauvegarde..."
+msgstr "Opretter sikkerhedskopi..."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:798
 msgid ""
@@ -846,27 +845,27 @@ msgid ""
 "\n"
 "¿Desea continuar con el proceso?"
 msgstr ""
-"*** AVERTISSEMENT ***\n"
+"*** ADVARSEL ***\n"
 "\n"
-"Ceci supprimera toute la base de données du lanceur d'applications\n"
+"Dette vil slette hele programstarterens database\n"
 "\n"
-"Toute la base de données sera remplacée par la sauvegarde.\n"
+"Databasen udskiftes med sikkerhedskopien.\n"
 "\n"
-"L'extension restaurera la sauvegarde et se fermera.\n"
+"Tilføjelsesprogrammet gendanner sikkerhedskopien og lukkes.\n"
 "\n"
-"Cette action n'est pas réversible.\n"
+"Denne handling kan ikke gøres om.\n"
 "\n"
-"Voulez-vous continuer avec le processus?"
+"Ønsker du at fortsætte?"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:814
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:655
 msgid "Seleccione un archivo de copia de seguridad"
-msgstr "Sélectionner un fichier de sauvegarde"
+msgstr "Vælg venligst en fil med en sikkerhedskopi"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:818
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:659
 msgid "Restaurando copia de seguridad..."
-msgstr "Restauration de la sauvegarde..."
+msgstr "Gendanner sikkerhedskopi..."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:838
 msgid ""
@@ -880,27 +879,27 @@ msgid ""
 "\n"
 "¿Desea continuar con el proceso?"
 msgstr ""
-"*** AVERTISSEMENT ***\n"
+"*** ADVARSEL ***\n"
 "\n"
-"Ceci supprimera toute la base de données du lanceur d'applications\n"
+"Hele programstarterens database vil blive slettet\n"
 "\n"
-"L'extension supprimera la base de données et se fermera.\n"
+"Tilføjelsesprogrammet sletter databasen og afslutter.\n"
 "\n"
-"Cette action n'est pas réversible.\n"
+"Denne handling kan ikke gøres om.\n"
 "\n"
-"Voulez-vous continuer avec le processus?"
+"Ønsker du at fortsætte?"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:887
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:739
 msgid "Añadir categoría"
-msgstr "Ajouter une catégorie"
+msgstr "Tilføj kategori"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:892
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:968
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:744
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:820
 msgid "&Introduzca el nombre de la categoría:"
-msgstr "&Entrez le nom de la catégorie:"
+msgstr "&Indtast navnet på kategorien:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:925
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1002
@@ -911,9 +910,9 @@ msgid ""
 "\n"
 "Introduzca un nombre para añadir una categoría."
 msgstr ""
-"Le champ ne peut pas être laissé vide.\n"
+"Feltet kan ikke være tomt.\n"
 "\n"
-"Entrez un nom pour ajouter une catégorie."
+"Skriv et navn for at tilføje en kategori."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:934
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1017
@@ -924,44 +923,44 @@ msgid ""
 "\n"
 "Modifique el nombre para poder continuar."
 msgstr ""
-"Vous ne pouvez pas dupliquer le nom d'une catégorie.\n"
+"Det er ikke muligt at bruge samme navn til flere kategorier.\n"
 "\n"
-"Modifier le nom pour continuer."
+"Ret i navnet for at kunne fortsætte."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:963
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:815
 msgid "Editar categoría"
-msgstr "Modifier la catégorie"
+msgstr "Redigér kategori"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1046
 msgid "Añadir aplicación"
-msgstr "Ajouter une application"
+msgstr "Tilføj program"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1055
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1200
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2120
 msgid "Introduzca el nombre de la aplicación:"
-msgstr "Entrez le nom de l'application:"
+msgstr "Skriv navnet på programmet:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1058
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1204
 msgid "Ruta de la aplicación:"
-msgstr "Chemin de l'application:"
+msgstr "Sti til programmet:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1060
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1206
 msgid "&Seleccionar archivo"
-msgstr "&Sélectionner le fichier"
+msgstr "&Vælg fil"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1063
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1210
 msgid "Usar parámetros adicionales"
-msgstr "Utilisez des paramètres supplémentaires"
+msgstr "Brug yderligere parametre"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1064
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1212
 msgid "Introduzca los parámetros para la aplicación:"
-msgstr "Entrez les paramètres de l'application:"
+msgstr "Indtast programmets parametre:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1068
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1220
@@ -971,7 +970,7 @@ msgstr "Entrez les paramètres de l'application:"
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1965
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2124
 msgid "Ejecutar como administrador"
-msgstr "Exécuter en tant qu’administrateur"
+msgstr "Kør som administrator"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1122
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1275
@@ -979,13 +978,13 @@ msgid ""
 "Todos los archivos ejecutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|Todos "
 "los ficheros (*.*)|*.*"
 msgstr ""
-"Tous les fichiers exécutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|Tous "
-"les fichiers (*.*)|*.*"
+"Alle eksekvérbare filer (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|Alle filer "
+"(*.*)|*.*"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1123
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1276
 msgid "Seleccione un archivo"
-msgstr "Sélectionner un fichier"
+msgstr "Vælg en fil"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1140
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1293
@@ -994,9 +993,9 @@ msgid ""
 "\n"
 "Introduzca un nombre para añadir una aplicación."
 msgstr ""
-"Le champ ne peut pas être laissé vide.\n"
+"Feltet må ikke være tomt.\n"
 "\n"
-"Entrez un nom pour ajouter une application."
+"Indtast et navn for at tilføje et program."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1148
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1301
@@ -1005,9 +1004,9 @@ msgid ""
 "\n"
 "Seleccione una aplicación para poder continuar."
 msgstr ""
-"Le champ ne peut pas être laissé vide.\n"
+"Feltet må ikke være tomt.\n"
 "\n"
-"Sélectionnez une application pour continuer."
+"Vælg et program for at fortsæte."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1160
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1320
@@ -1025,22 +1024,22 @@ msgid ""
 "\n"
 "Modifique el nombre para poder continuar."
 msgstr ""
-"Vous ne pouvez pas dupliquer le nom d'une action.\n"
+"Ikke muligt at dublikere navnet på en handling.\n"
 "\n"
-"Modifiez le nom pour continuer."
+"Ret i navnet for at fortsætte."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1190
 msgid "Editar aplicación"
-msgstr "Modifier l'application"
+msgstr "Redigér program"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1350
 msgid "Añadir CMD"
-msgstr "Ajouter CMD"
+msgstr "Tilføj CMD"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1359
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1471
 msgid "Introduzca un nombre para identificar el comando CMD:"
-msgstr "Entrez un nom pour identifier la commande CMD:"
+msgstr "Indtast et navn for at identificere kommandoen CMD:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1362
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1475
@@ -1048,8 +1047,8 @@ msgid ""
 "Introduzca los comandos de CMD. Puede usar el símbolo (et = Shift+6) para "
 "usar más de una línea de comandos:"
 msgstr ""
-"Entrez les commandes CMD. Vous pouvez utiliser le symbole (et commercial = "
-"Maj+6 clavier QWERTY espagnol) pour utiliser plus d'une ligne de commande:"
+"Indtast de enkelte CMD-kommandoer. Brug symbolet (og = Shift+6) for at bruge "
+"mere end én linje med kommandoer:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1365
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1479
@@ -1057,8 +1056,8 @@ msgid ""
 "Pausar la consola de CMD al finalizar el comando. Evitara que se cierre al "
 "terminar"
 msgstr ""
-"Pauser la console CMD à la fin de la commande. Cela empêchera la fermeture "
-"lorsque vous avez terminé"
+"Sæt kommandofortolkeren på pause ved afslutning af kommandoen. Forhindrer at "
+"den lukker, når den afslutter"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1411
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1530
@@ -1068,52 +1067,51 @@ msgid ""
 "\n"
 "Introduzca un nombre para poder identificar el comando."
 msgstr ""
-"Le champ (Entrez un nom pour identifier la commande CMD) ne peut pas être "
-"laissé vide.\n"
+"Feltet (Indtast et navn for at identificere CMD-kommandoen) må ikke være "
+"tomt.\n"
 "\n"
-"Entrez un nom pour pouvoir identifier la commande."
+"Indtast et navn for at kunne identificere kommandoen."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1419
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1538
 msgid ""
-"El campo (Introduzca los comandos de CMD. Puede usar el símbolo (et = Shift"
-"+6) para usar más de una línea de comandos) no puede quedar en blanco.\n"
+"El campo (Introduzca los comandos de CMD. Puede usar el símbolo (et = "
+"Shift+6) para usar más de una línea de comandos) no puede quedar en blanco.\n"
 "\n"
 "Escriba una línea de comandos para continuar."
 msgstr ""
-"Le champ (Entrez les commandes CMD. Vous pouvez utiliser le symbole (et "
-"commercial = Maj+6 clavier QWERTY espagnol) pour utiliser plus d'une ligne "
-"de commande) ne peut pas être laissé vide.\n"
+"Feltet (indtast CMD-kommandoerne. Man kan bruge symbolet (og = Shift+6) for "
+"at benytte mere end én kommandolinje) må ikke være tomt.\n"
 "\n"
-"Écrivez une ligne de commande pour continuer."
+"Angiv en linje med kommandoer for at fortsætte."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1461
 msgid "Editar CMD"
-msgstr "Modifier CMD"
+msgstr "Redigér CMD"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1587
 msgid "Añadir carpeta"
-msgstr "Ajouter le dossier"
+msgstr "Tilføj mappe"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1594
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1703
 msgid "Introduzca el nombre de la carpeta:"
-msgstr "Entrez le nom du dossier:"
+msgstr "Angiv navnet på mappen:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1597
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1707
 msgid "Ruta de la carpeta:"
-msgstr "Chemin du dossier:"
+msgstr "Sti til mappen:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1599
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1709
 msgid "&Seleccionar carpeta"
-msgstr "&Sélectionner le dossier"
+msgstr "&Vælg mappe"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1632
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1746
 msgid "Seleccione una carpeta:"
-msgstr "Sélectionnez un dossier:"
+msgstr "Vælg en mappe:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1645
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1759
@@ -1122,9 +1120,9 @@ msgid ""
 "\n"
 "Introduzca un nombre para identificar una carpeta."
 msgstr ""
-"Le champ ne peut pas être laissé vide.\n"
+"Feltet må ikke være tomt.\n"
 "\n"
-"Entrez un nom pour identifier un dossier."
+"Angiv et navn for at identificere mappen."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1653
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1767
@@ -1133,42 +1131,42 @@ msgid ""
 "\n"
 "Seleccione una carpeta para poder continuar."
 msgstr ""
-"Le champ ne peut pas être laissé vide.\n"
+"Feltet må ikke være tomt.\n"
 "\n"
-"Sélectionnez un dossier pour continuer."
+"Vælg en mappe for at fortsætte."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1695
 msgid "Editar carpeta"
-msgstr "Modifier le dossier"
+msgstr "Redigér mappe"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1816
 msgid "Añadir acceso directo"
-msgstr "Ajouter un raccourci"
+msgstr "Tilføj genvej"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1824
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1952
 msgid "Introduzca el nombre del acceso directo:"
-msgstr "Entrez le nom du raccourci:"
+msgstr "Angiv navnet på genvejen:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1827
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1956
 msgid "Ruta del acceso directo:"
-msgstr "Chemin du raccourci:"
+msgstr "Sti til genvejen:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1829
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1958
 msgid "&Seleccionar acceso directo"
-msgstr "&Sélectionner un raccourci"
+msgstr "&Vælg genvej"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1875
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2010
 msgid "Accesos directos (*.lnk)|*.lnk|"
-msgstr "Raccourcis (*.lnk|*.lnk|)"
+msgstr "Genvej (*.lnk)|*.lnk|"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1876
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2011
 msgid "Seleccione un acceso directo"
-msgstr "Sélectionnez un raccourci"
+msgstr "Vælg en genvej"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1893
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2028
@@ -1177,9 +1175,9 @@ msgid ""
 "\n"
 "Introduzca un nombre para identificar un acceso directo."
 msgstr ""
-"Le champ ne peut pas être laissé vide.\n"
+"Feltet må ikke være tomt.\n"
 "\n"
-"Entrez un nom pour identifier un raccourci."
+"Angiv et navn for at identificere en genvej."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1901
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2036
@@ -1188,17 +1186,17 @@ msgid ""
 "\n"
 "Seleccione un acceso directo para poder continuar."
 msgstr ""
-"Le champ ne peut pas être laissé vide.\n"
+"Feltet må ikke være tomt.\n"
 "\n"
-"Sélectionnez un raccourci pour continuer."
+"Vælg en genvej for at fortsætte."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:1943
 msgid "Editar acceso directo"
-msgstr "Modifier le raccourci"
+msgstr "Redigér genvej"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2085
 msgid "Añadir aplicación instalada"
-msgstr "Ajouter une application installée"
+msgstr "Tilføj installeret program"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2096
 msgid ""
@@ -1218,41 +1216,35 @@ msgid ""
 "Igualmente si la aplicación ha sido desinstalada tendrá que borrar el acceso "
 "en el lanzador."
 msgstr ""
-"Dans la suivante zone de liste déroulante, vous aurez toutes les "
-"applications installées.\n"
+"I følgende comboboks findes alle de installerede programmer.\n"
 "\n"
-"Cela inclut les applications installées à partir  du Microsoft Store, par "
-"l'utilisateur et ces accès auxquels les applications s'installent avec "
-"l'application elle-même.\n"
+"Det omfatter apps installeret fra Microsoft Store, programmer installeret af "
+"brugeren samt de genveje, som programmerne selv lægger ind sammen med selve "
+"programmet.\n"
 "\n"
-"Également il y a des applications système qui peuvent également être "
-"ajoutées.\n"
+"Det omfatter også programmer, som er en del af systemet og som ligeledes kan "
+"tilføjes.\n"
 "\n"
-"Avertissement:\n"
+"Advarsel:\n"
 "\n"
-"Les applications ajoutées à partir de cette section ne peuvent pas être "
-"modifiées dans le lanceur, de sorte que si vous avez des modifications, vous "
-"devez supprimer l'entrée dans le lanceur et choisissez à nouveau "
-"l'application et ajoutez-la.\n"
+"Programmerne der tilføjes fra dette område kan ikke redigeres fra starteren. "
+"De skal derfor fjernes fra starteren og lægges ind igen, hvis de ændres.\n"
 "\n"
-"De même, si l'application a été désinstallée, vous devrez supprimer l'accès "
-"dans le lanceur."
+"Hvis programmet afinstalleres, skal genvejen ligeledes fjernes fra starteren."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2107
 msgid "Información importante:"
-msgstr "Information importante:"
+msgstr "Vigtig information:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2116
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2158
 msgid "Seleccione algo para añadir al lanzador."
-msgstr "Sélectionnez quelque chose à ajouter au lanceur."
+msgstr "Vælg noget at føje til starteren."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2177
 msgid ""
 "Tiene que elegir una aplicación del cuadro combinado para poder añadirla."
-msgstr ""
-"Vous devez choisir une application à partir de la zone de liste déroulante "
-"avant de pouvoir l'ajouter."
+msgstr "Der skal vælges et program fra comboboksen for at tilføje det."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2183
 msgid ""
@@ -1260,33 +1252,33 @@ msgid ""
 "\n"
 "Introduzca un nombre para identificar un acceso."
 msgstr ""
-"Le champ ne peut pas être laissé vide.\n"
+"Feltet må ikke være tomt.\n"
 "\n"
-"Entrez un nom pour identifier l'accès."
+"Angiv et navn for at identificere genvejen."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2243
 msgid "Mover la acción  {} a otra categoría"
-msgstr "Déplacer l'action {} vers une autre catégorie"
+msgstr "Flyt handlingen {} til en anden kategori"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2256
 msgid "Seleccione una categoría donde mover la acción:"
-msgstr "Sélectionnez une catégorie où déplacez l'action:"
+msgstr "Vælg den kategori, hvor handlingen skal placeres:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2262
 msgid "Introduzca un nuevo nombre a la acción:"
-msgstr "Entrez un nouveau nom à l'action:"
+msgstr "Angiv et nyt navn til handlingen:"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2388
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1315
 #, python-format
 msgid "Comprimiendo el archivo: %s"
-msgstr "Compression du fichier: %s"
+msgstr "Komprimerer filen: %s"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2402
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1329
 #, python-format
 msgid "Descomprimiendo el archivo: %s"
-msgstr "Décompression du fichier: %s"
+msgstr "Udpakker filen: %s"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2444
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2453
@@ -1297,7 +1289,7 @@ msgstr "Décompression du fichier: %s"
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1385
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1392
 msgid "Algo salió mal.\n"
-msgstr "Quelque chose a mal tourné.\n"
+msgstr "Noget gik galt.\n"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2444
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2453
@@ -1308,7 +1300,7 @@ msgstr "Quelque chose a mal tourné.\n"
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1385
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1392
 msgid "Inténtelo de nuevo.\n"
-msgstr "Veuillez réessayer.\n"
+msgstr "Prøv igen.\n"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2444
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2447
@@ -1323,55 +1315,55 @@ msgstr "Veuillez réessayer.\n"
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1390
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1392
 msgid "Ya puede cerrar esta ventana."
-msgstr "Vous pouvez fermer cette fenêtre maintenant."
+msgstr "Dette vindue kan nu lukkes."
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2447
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1374
 msgid "La copia de seguridad fue un éxito.\n"
-msgstr "La sauvegarde a été réalisée avec succès.\n"
+msgstr "Sikkerhedskopien lykkedes.\n"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2463
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1390
 msgid "Se completo la restauración correctamente.\n"
-msgstr "La restauration a été complétée avec succès.\n"
+msgstr "Gendannelsen gennnemført korrekt.\n"
 
 #: addon\globalPlugins\zUtilidades\zLauncher\zl_modulo.py:2487
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1116
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1414
 msgid "&Cerrar"
-msgstr "&Fermer"
+msgstr "&Luk"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:61
 msgid "&Lista notas:"
-msgstr "&Liste des notes:"
+msgstr "&Liste med noter:"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:195
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:393
 msgid "&Añadir Nota"
-msgstr "&Ajouter une Note"
+msgstr "&Tilføj Note"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:197
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:395
 msgid "&Editar Nota"
-msgstr "&Modifier une Note"
+msgstr "&Redigér Note"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:199
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:397
 msgid "&Borrar Nota"
-msgstr "&Supprimer une Note"
+msgstr "&Slet Note"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:201
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:399
 msgid "&Mover Nota"
-msgstr "&Déplacer une note"
+msgstr "&Flyt Note"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:204
 msgid "&Notas"
-msgstr "&Notes"
+msgstr "&Noter"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:216
 msgid "&Volver a valores por defecto Notas rápidas"
-msgstr "&Réinitialiser les Notes rapides aux valeurs par défaut"
+msgstr "#Indstil Hurtige Noter til fabriksindstillinger"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:271
 msgid ""
@@ -1388,18 +1380,18 @@ msgid ""
 "\n"
 "¿Esta seguro que desea continuar?"
 msgstr ""
-"AVERTISSEMENT:\n"
+"ADVARSEL:\n"
 "\n"
-"Cette action n'est pas réversible.\n"
+"Denne handling kan ikke gøres om.\n"
 "\n"
-"Vous supprimerez la catégorie:\n"
+"Følgende kategori bliver slettet:\n"
 "\n"
 "{}\n"
 "\n"
-"Notez que lors de la suppression de la catégorie, les notes dans cette "
-"catégorie seront éliminées.\n"
+"Vær opmærksom på, at sletning af en kategori også sletter alle noterne i "
+"kategorien.\n"
 "\n"
-"Êtes-vous sûr de vouloir continuer?"
+"Ønsker du stadig at fortsætte?"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:412
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:430
@@ -1409,9 +1401,9 @@ msgid ""
 "\n"
 "Agregue una categoría antes para poder añadir una Nota."
 msgstr ""
-"Il n'y a aucune catégorie.\n"
+"Der findes ingen kategorier.\n"
 "\n"
-"Ajoutez une catégorie avant de pouvoir ajouter une Note."
+"Der skal tilføjes en kategori, før der kan tilføjes en note."
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:437
 msgid ""
@@ -1419,9 +1411,9 @@ msgid ""
 "\n"
 "Agregue una antes para poder editar."
 msgstr ""
-"Il n'y a aucune Note.\n"
+"Der findes ingen noter.\n"
 "\n"
-"Ajoutez une avant de pouvoir modifier."
+"Der skal tilføjes én, før der kan redigeres."
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:463
 msgid ""
@@ -1429,9 +1421,9 @@ msgid ""
 "\n"
 "Agregue una antes para poder borrar."
 msgstr ""
-"Il n'y a aucune Note.\n"
+"Der findes ingen noter.\n"
 "\n"
-"Ajoutez-en une avant de pouvoir supprimer."
+"Der skal tilføjes én, før der kan slettes."
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:469
 msgid ""
@@ -1445,15 +1437,15 @@ msgid ""
 "\n"
 "¿Esta seguro que desea continuar?"
 msgstr ""
-"AVERTISSEMENT:\n"
+"ADVARSEL:\n"
 "\n"
-"Cette action n'est pas réversible.\n"
+"Denne handling kan ikke gøres om.\n"
 "\n"
-"Vous supprimerez la Note:\n"
+"Følgende note bliver slettet:\n"
 "\n"
 "{}\n"
 "\n"
-"Êtes-vous sûr de vouloir continuer?"
+"Ønsker du stadig at fortsætte?"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:490
 msgid ""
@@ -1461,9 +1453,9 @@ msgid ""
 "\n"
 "Agregue una categoría antes para poder mover una Nota."
 msgstr ""
-"Il n'y a aucune catégorie.\n"
+"No tiene ninguna categoría.\n"
 "\n"
-"Ajoutez une catégorie avant de pouvoir déplacer une Note."
+"Agregue una categoría antes para poder mover una Nota."
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:497
 msgid ""
@@ -1471,22 +1463,22 @@ msgid ""
 "\n"
 "Agregue una antes para poder mover."
 msgstr ""
-"Il n'y a aucune Note.\n"
+"Der findes ingen Noter.\n"
 "\n"
-"Ajoutez-en une avant de pouvoir déplacer."
+"Du skal tilføje én, før der kan flyttes."
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:583
 msgid "Se a copiado la nota {} al portapapeles."
-msgstr "La note {} a été copiée dans le presse-papiers."
+msgstr "Noten {} blev kopieret til udklipsholderen."
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:585
 msgid "No se a podido copiar la nota {} al portapapeles."
-msgstr "Impossible de copier la note {} dans le presse-papiers."
+msgstr "Det var ikke muligt at kopiere noten {} til udklipsholderen."
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:620
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:654
 msgid "Archivo copia de seguridad zUtilidades (*.zut-zn)|*.zut-zn"
-msgstr "Fichier de sauvegarde zUtilidades (*.zut-zn)|*.zut-zn"
+msgstr "Fil med ZUtilidades sikkerhedskopi (*.zut-zn)|*.zut-zn"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:639
 msgid ""
@@ -1502,17 +1494,17 @@ msgid ""
 "\n"
 "¿Desea continuar con el proceso?"
 msgstr ""
-"*** AVERTISSEMENT ***\n"
+"*** ADVARSEL***\n"
 "\n"
-"Ceci supprimera toute la base de données de Notes rapides\n"
+"Dette sletter hele databasen med hurtige noter\n"
 "\n"
-"Toute la base de données sera remplacée par la sauvegarde.\n"
+"Databasen udskiftes med sikkerhedskopien.\n"
 "\n"
-"L'extension restaurera la sauvegarde et se fermera.\n"
+"Tilføjelsesprogrammet gendanner sikkerhedskopien og lukker.\n"
 "\n"
-"Cette action n'est pas réversible.\n"
+"Denne handling kan ikke gøres om.\n"
 "\n"
-"Voulez-vous continuer avec le processus?"
+"Ønsker du at fortsætte?"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:690
 msgid ""
@@ -1526,74 +1518,53 @@ msgid ""
 "\n"
 "¿Desea continuar con el proceso?"
 msgstr ""
-"*** AVERTISSEMENT ***\n"
+"*** ADVARSEL ***\n"
 "\n"
-"Ceci supprimera toute la base de données de Notes rapides\n"
+"Dette sletter hele databasen med hurtige noter\n"
 "\n"
-"L'extension supprimera la base de données et se fermera.\n"
+"Tilføjelsesprogrammet sletter databasen og lukker.\n"
 "\n"
-"Cette action n'est pas réversible.\n"
+"Denne handling kan ikke gøres om.\n"
 "\n"
-"Voulez-vous continuer avec le processus?"
+"Ønsker du at fortsætte?"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:902
 msgid "Añadir Nota"
-msgstr "Ajouter une Note"
+msgstr "Tilføj note"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:998
 msgid "Editar Nota"
-msgstr "Modifier une Note"
+msgstr "Redigér note"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1010
 msgid "Contenido de la nota:"
-msgstr "Contenu de la note:"
+msgstr "Notens indhold:"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1170
 msgid "Mover la nota {} a otra categoría"
-msgstr "Déplacer la note {} dans une autre catégorie"
+msgstr "Flyt noten {} til en anden kategori"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1183
 msgid "Seleccione una categoría donde mover la nota:"
-msgstr "Sélectionner une catégorie où déplacez la note:"
+msgstr "Vælg en kategori, hvortil noten skal flyttes:"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1189
 msgid "Introduzca un nuevo nombre a la nota:"
-msgstr "Entrez un nouveau nom à la note:"
+msgstr "Angiv et nyt navn til noten:"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1481
 msgid "Opciones"
-msgstr "Options"
+msgstr "Indstillinger"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1486
 msgid ""
 "Capturar el título de la ventana en las notas rápidas (desde cualquier parte)"
-msgstr ""
-"Capturer le titre de la fenêtre dans les notes rapides (de n'importe où)"
+msgstr "Medtag titlen på vinduet i de hurtige noter (fra hvor som helst)"
 
 #: addon\globalPlugins\zUtilidades\zNotes\zn_modulo.py:1489
 msgid ""
 "Anexar la URL del documento a las notas rápidas  cuando se copia texto de "
 "una página web."
 msgstr ""
-"Annexer l'URL du document aux notes rapides lors de la copie du texte à "
-"partir d'une page Web."
-
-#~ msgid "&Lista aplicaciones:"
-#~ msgstr "&Liste des applications:"
-
-#~ msgid "Agregar una nota rápida del texto seleccionado"
-#~ msgstr "Ajouter une note rapide du texte sélectionné"
-
-#~ msgid "Añadir Nota rápida"
-#~ msgstr "Ajouter une note rapide"
-
-#~ msgid "Se cancelo la copia de nota rápida"
-#~ msgstr "La copie de la note rapide est annulée"
-
-#~ msgid "Muestra la ventana del lanzador de aplicaciones"
-#~ msgstr "Affiche la fenêtre du lanceur d'applications"
-
-#~ msgid ""
-#~ "Todos los archivos ejecutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|"
-#~ msgstr ""
-#~ "Tous les fichiers exécutables (*.exe, *.com, *.bat)|*.exe;*.com;*.bat|"
+"Føj dokumentets URL til de hurtige noter ved kopiering af tekst fra en web-"
+"side."

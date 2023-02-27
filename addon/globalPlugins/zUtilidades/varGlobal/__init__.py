@@ -4,6 +4,7 @@
 
 import addonHandler
 import braille
+import speech
 import config
 import ui
 import os, sys
@@ -133,6 +134,7 @@ def ejecutar(objeto, modo, aplicacion, parametros, directorio, ventana):
 #    NO_ASSOC = 31
 #    OOM = 8
 #    SHARE = 26
+
 	p = ctypes.windll.shell32.ShellExecuteW(
 		None,
 		modo,
@@ -218,18 +220,13 @@ def returnValue(diccionario, valor):
 def returnKeys(diccionario):
 	return list(diccionario.keys())
 
-def mensaje(msg): 
-	# Esto solo funciona si está el seguimiento de braille a la revisión, así que primero guardamos el ajuste original y luego lo cambiamos a revisión 
-	tether = braille.handler.TETHER_AUTO if config.conf["braille"]["autoTether"] else config.conf["braille"]["tetherTo"] 
-	braille.handler.setTether("review") 
-	# Ahora lanzamos el mensaje 
-	ui.message(msg) 
-	# ui.message llama internamente a braille.handler.message 
-	if braille.handler._messageCallLater : 
-		braille.handler._messageCallLater .Stop() 
-	# Con esto el mensaje quedaría estático en la línea hasta que se envíe otro mensaje o algún otroproceso quiera escribir en ella. 
-	# Devolvemos el ajuste original 
-	braille.handler.setTether(tether) 
+def mensaje(message):
+	speech.speakMessage(message)
+	braille.handler.message(message)
+
+def menuMessage(msg): 
+	speech.speakMessage(msg)
+	braille.handler.message(msg)
 
 def initConfiguration():
 	confspec = {

@@ -25,6 +25,8 @@ Sommaire<a id="Sommaire"></a>
 - [Menus virtuels pour le Lanceur d'applications et pour les Notes rapides](#mark13)
 - [Traducteurs et contributeurs](#mark14)
 - [Journal des changements](#mark15)
+- [Version 0.2.5](#mark0.2.5)
+- [Version 0.2.4](#mark0.2.4)
 - [Version 0.2.3](#mark0.2.3)
 - [Version 0.2.2](#mark0.2.2)
 - [Version 0.2.1](#mark0.2.1)
@@ -325,9 +327,31 @@ Lorsque nous sommes sur un élément, si nous appuyons sur F1 nous verbalisera l
 * Français: Rémy Ruiz
 * Portugais: Ângelo Miguel Abrantes
 * Italien: Alessio Lenzi
+* Russe: Valentin Kupriyanov
+* Turc: Umut KORKMAZ
 * Javi Domínguez: Mille merci de m'avoir appris à programmer le menu. Mieux dit pour l'expliquer pour les imbéciles comme moi.
 
 # Journal des changements.<a id="mark15"></a>
+## Version 0.2.5.<a id="mark0.2.5"></a>
+
+* Résolu une erreur de sécurité sur les écrans sécurisés.
+
+* Résolu un problème avec la recharge des extensions dans NVDA.
+
+## Version 0.2.4.<a id="mark0.2.4"></a>
+
+* Ajouté la possibilité de capturer l'URL sur une note rapide.
+
+Configurer dans Options du module zNotas.
+
+* Ajout des langues Russe et Turc.
+
+* Corrigé erreur avec les chemins internes de NVDA.
+
+* Un problème a été résolu dans les distributions de clavier qui utilisent des caractères cyrilliques.
+
+* Compatibilité avec NVDA 2022.1.
+
 ## Version 0.2.3.<a id="mark0.2.3"></a>
 
 Ajouté la possibilité de capturer le titre des fenêtres sur Ajouter une nouvelle note rapide ou sur Ajouter une note rapide du texte sélectionné.
