@@ -333,6 +333,7 @@ Igualmente lo dicho mientras el menú este activo tiene prioridad hasta que puls
 * Árabe: Wafiq Taher
 * Danés: Daniel Gartmann
 * Javi Domínguez: Mil gracias por enseñarme a programar el menú. Mejor dicho por explicarlo para tontos como yo.
+* Ukrainian: Heorhii Halas
 
 # Registro de cambios.<a id="mark15"></a>
 ## Versión 0.2.6.<a id="mark0.2.6"></a>
