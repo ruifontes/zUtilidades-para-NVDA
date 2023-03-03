@@ -3,8 +3,8 @@
 scons --clean
 git init
 git add --all
-git commit -m "Versión 0.2.7"
+git commit -m "Versión 0.2.8"
 git push -u origin master
-git tag 0.2.7
+git tag 0.2.8
 git push --tags
 pause

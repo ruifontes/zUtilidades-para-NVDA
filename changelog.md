@@ -1,1 +1,1 @@
-* Añadido idioma Ucraniano.
+* Añadido idioma Inglés.
